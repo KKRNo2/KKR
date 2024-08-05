@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container, #result-container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            border: 2px solid #1e90ff; /* เพิ่มเส้นขอบสีฟ้า */
+            margin: 20px;
+        }
+
+        h1 {
+            color: #1e90ff; /* เปลี่ยนสีของหัวเรื่องเป็นสีฟ้า */
+        }
+
+        .name-input, .background-selector {
+            margin-bottom: 20px;
+        }
+
+        .name-input label, .background-selector label {
+            display: block;
+            margin-bottom: 5px;
+            color: #1e90ff; /* เปลี่ยนสีของ label เป็นสีฟ้า */
+        }
+
+        .name-input input, .background-selector select {
+            width: 100%;
+            padding: 8px;
+            margin: auto;
+            display: block;
+            border: 1px solid #1e90ff; /* เพิ่มเส้นขอบสีฟ้า */
+            border-radius: 4px; /* เพิ่มเส้นโค้งมนที่มุม */
+        }
+
+        .question {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1c86ee;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #1e90ff; /* เปลี่ยนสีของข้อความผลลัพธ์เป็นสีฟ้า */
+        }
+
+        /* Media Queries for iPad and mobile devices */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container, #result-container {
+                width: 100%;
+                max-width: 100%;
+                margin: 10px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz</h1>
+        <form id="quiz-form">
+            <!-- Name Input -->
+            <div class="name-input">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <!-- Background Selector -->
+            <div class="background-selector">
+                <label for="background">Select Background:</label>
+                <select id="background" onchange="changeBackground()">
+                    <option value="#f0f0f0">Default</option>
+                    <option value="#ffebcd">Blanched Almond</option>
+                    <option value="#e6e6fa">Lavender</option>
+                    <option value="#ffe4e1">Misty Rose</option>
+                </select>
+            </div>
+            
+            <!-- Question 1 -->
+            <div class="question">
+                <p>1. Which of the following are capitals of France?</p>
+                <label><input type="checkbox" name="q1" value="Paris"> Paris (3 points)</label>
+                <label><input type="checkbox" name="q1" value="Marseille"> Marseille (1 point)</label>
+                <label><input type="checkbox" name="q1" value="Berlin"> Berlin</label>
+                <label><input type="checkbox" name="q1" value="Lyon"> Lyon</label>
+                <label><input type="checkbox" name="q1" value="London"> London</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>2. What is 2 + 2? (1 point)</p>
+                <label><input type="radio" name="q2" value="3"> 3</label>
+                <label><input type="radio" name="q2" value="4"> 4</label>
+                <label><input type="radio" name="q2" value="5"> 5</label>
+                <label><input type="radio" name="q2" value="6"> 6</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. What is the largest planet in our solar system? (3 points)</p>
+                <label><input type="radio" name="q3" value="Earth"> Earth</label>
+                <label><input type="radio" name="q3" value="Jupiter"> Jupiter</label>
+                <label><input type="radio" name="q3" value="Mars"> Mars</label>
+                <label><input type="radio" name="q3" value="Venus"> Venus</label>
+            </div>
+
+            <!-- Add more questions here in the same format -->
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+    </div>
+    <div id="result-container" class="hidden">
+        <h1>Quiz Result</h1>
+        <div id="result"></div>
+        <button onclick="retakeQuiz()">Retake Quiz</button>
+    </div>
+    <script>
+        const questions = {
+            q1: { answers: { 'Paris': 3, 'Marseille': 1 }, points: 0 }, // คะแนนแต่ละคำตอบ
+            q2: { answer: '4', points: 1 },
+            q3: { answer: 'Jupiter', points: 3 },
+            // Add more questions with their correct answers and points here
+        };
+
+        function submitQuiz() {
+            const form = document.getElementById('quiz-form');
+            const formData = new FormData(form);
+            let score = 0;
+            let userName = formData.get('username');
+
+            for (let [question, value] of Object.entries(questions)) {
+                if (question === 'q1') {
+                    // สำหรับคำถามที่มีหลายคำตอบที่ถูก
+                    const userAnswers = formData.getAll(question);
+                    for (const answer of userAnswers) {
+                        if (value.answers[answer] !== undefined) {
+                            score += value.answers[answer]; // คะแนนสำหรับตอบถูก
+                        }
+                    }
+                } else {
+                    // สำหรับคำถามที่มีคำตอบที่ถูกเพียงคำตอบเดียว
+                    if (formData.get(question) === value.answer) {
+                        score += value.points; // คะแนนสำหรับตอบถูก
+                    }
+                }
+            }
+
+            document.getElementById('result').innerText = `${userName}, you scored ${score} points.`;
+
+            document.querySelector('.container').classList.add('hidden');
+            document.getElementById('result-container').classList.remove('hidden');
+        }
+
+        function retakeQuiz() {
+            document.getElementById('quiz-form').reset();
+            document.querySelector('.container').classList.remove('hidden');
+            document.getElementById('result-container').classList.add('hidden');
+        }
+
+        function changeBackground() {
+            const background = document.getElementById('background').value;
+            document.body.style.backgroundColor = background;
+        }
+    </script>
+</body>
+</html>
