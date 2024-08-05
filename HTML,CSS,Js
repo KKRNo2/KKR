@@ -1,0 +1,204 @@
+ <!-- HTML -->
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KN Robot Racing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>KN Robot Racing</h1>
+        <form id="quiz-form">
+            <!-- Name Input -->
+            <div class="name-input">
+                <label for="username">ชื่อทีม:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            
+            <!-- Background Selector -->
+            <div class="background-selector">
+                <label for="background">เปลี่ยนพื้นหลัง:</label>
+                <select id="background" onchange="changeBackground()">
+                    <option value="#f0f0f0">Default</option>
+                    <option value="#ffebcd">Blanched Almond</option>
+                    <option value="#e6e6fa">Lavender</option>
+                    <option value="#ffe4e1">Misty Rose</option>
+                </select>
+            </div>
+            
+            <!-- Question 1 -->
+            <div class="question">
+                <p>เช็คพอยย์ 1</p>
+                <label><input type="radio" name="q1" value="ok1" data-points="10"> ผ่าน (10 point)</label>
+                <label><input type="radio" name="q1" value="no1" data-points="5"> ไม่ผ่าน (5 point)</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p>เช็คพอยย์ 2</p>
+                <label><input type="radio" name="q2" value="ok2" data-points="10"> ผ่าน (10 point)</label>
+                <label><input type="radio" name="q2" value="no2" data-points="5"> ไม่ผ่าน (5 point)</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>ยัดตังใต้โต๊ะ</p>
+                <label><input type="radio" name="q3" value="ok3"> จ่ายแล้ว</label>
+                <label><input type="radio" name="q3" value="no3"> ไม่จ่าย</label>
+            </div>
+
+            <!-- Penalty Points Input -->
+            <div class="penalty">
+                <label for="penalty">หักคะแนน:</label>
+                <input type="number" id="penalty" name="penalty" min="0" value="0">
+            </div>
+
+            <button type="button" onclick="submitQuiz()">เสร็จสิ้น</button>
+        </form>
+    </div>
+
+    <div id="result-container" class="hidden">
+        <h1>ฺBy.KKR x GPT</h1>
+        <div id="result"></div>
+        <button onclick="retakeQuiz()">ทีมถัดไป</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+/* CSS */
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container, #result-container {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  width: 500px; /* ขยายขนาดของคอนเทนเนอร์ */
+  text-align: center;
+  border: 2px solid #1e90ff; /* เพิ่มเส้นขอบสีฟ้า */
+}
+
+h1 {
+  color: #1e90ff; /* เปลี่ยนสีของหัวเรื่องเป็นสีฟ้า */
+  font-size: 2em; /* ขยายขนาดของฟอนต์ */
+}
+
+.name-input, .background-selector {
+  margin-bottom: 30px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.name-input label, .background-selector label {
+  display: block;
+  margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
+  color: #1e90ff; /* เปลี่ยนสีของ label เป็นสีฟ้า */
+}
+
+.name-input input, .background-selector select {
+  width: calc(100% - 20px);
+  padding: 10px; /* เพิ่มการเว้นระยะขอบในช่องกรอกข้อมูล */
+  margin: auto;
+  display: block;
+  border: 1px solid #1e90ff; /* เพิ่มเส้นขอบสีฟ้า */
+  border-radius: 4px; /* เพิ่มเส้นโค้งมนที่มุม */
+  font-size: 1em; /* ขยายขนาดของฟอนต์ในช่องกรอกข้อมูล */
+}
+
+.question {
+  margin-bottom: 25px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 12px 25px; /* เพิ่มขนาดของปุ่ม */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em; /* ขยายขนาดของฟอนต์ในปุ่ม */
+}
+
+button:hover {
+  background-color: #1c86ee;
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  margin-top: 30px; /* เพิ่มระยะห่างด้านบน */
+  font-size: 1.5em; /* ขยายขนาดของฟอนต์ */
+  color: #1e90ff; /* เปลี่ยนสีของข้อความผลลัพธ์เป็นสีฟ้า */
+}
+
+//Js
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const questions = {
+    q1: { answers: { 'ok1': 10, 'no1': 5 }, points: 0 },
+    q2: { answers: { 'ok2': 10, 'no2': 5}, points: 0 },
+    q3: { answers: { 'ok3': 100, 'no1': 0}, points: 0 },
+    // Add more questions with their correct answers and points here
+};
+
+function submitQuiz() {
+    const form = document.getElementById('quiz-form');
+    const formData = new FormData(form);
+    let score = 0;
+    let userName = formData.get('username');
+
+    for (let [question, value] of Object.entries(questions)) {
+        if (value.answers) {
+            // สำหรับคำถามที่มีหลายคำตอบที่ถูก
+            const userAnswers = formData.getAll(question);
+            for (const answer of userAnswers) {
+                if (value.answers[answer] !== undefined) {
+                    score += value.answers[answer]; // คะแนนสำหรับตอบถูก
+                }
+            }
+        } else {
+            // สำหรับคำถามที่มีคำตอบที่ถูกเพียงคำตอบเดียว
+            if (formData.get(question) === value.answer) {
+                score += value.points; // คะแนนสำหรับตอบถูก
+            }
+        }
+    }
+    
+    const penaltyPoints = parseInt(formData.get('penalty')) || 0;
+    score -= penaltyPoints;
+
+    // Make sure score is not negative
+    if (score < 0) score = 0;
+    
+    document.getElementById('result').innerText = `${userName}, คะแนน ${score} Robux.`;
+
+    document.querySelector('.container').classList.add('hidden');
+    document.getElementById('result-container').classList.remove('hidden');
+}
+
+function retakeQuiz() {
+    document.getElementById('quiz-form').reset();
+    document.querySelector('.container').classList.remove('hidden');
+    document.getElementById('result-container').classList.add('hidden');
+}
+
+function changeBackground() {
+    const background = document.getElementById('background').value;
+    document.body.style.backgroundColor = background;
+}
