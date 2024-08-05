@@ -75,76 +75,74 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
 .container, #result-container {
-  background: #fff;
-  padding: 30px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  width: 500px; /* ขยายขนาดของคอนเทนเนอร์ */
-  text-align: center;
-  border: 2px solid #1e90ff; /* เพิ่มเส้นขอบสีฟ้า */
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    border: 2px solid #1e90ff; /* เพิ่มเส้นขอบสีฟ้า */
 }
 
 h1 {
-  color: #1e90ff; /* เปลี่ยนสีของหัวเรื่องเป็นสีฟ้า */
-  font-size: 2em; /* ขยายขนาดของฟอนต์ */
+    color: #1e90ff; /* เปลี่ยนสีของหัวเรื่องเป็นสีฟ้า */
 }
 
 .name-input, .background-selector {
-  margin-bottom: 30px; /* เพิ่มระยะห่างด้านล่าง */
+    margin-bottom: 20px;
 }
 
 .name-input label, .background-selector label {
-  display: block;
-  margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่าง */
-  color: #1e90ff; /* เปลี่ยนสีของ label เป็นสีฟ้า */
+    display: block;
+    margin-bottom: 5px;
+    color: #1e90ff; /* เปลี่ยนสีของ label เป็นสีฟ้า */
 }
 
 .name-input input, .background-selector select {
-  width: calc(100% - 20px);
-  padding: 10px; /* เพิ่มการเว้นระยะขอบในช่องกรอกข้อมูล */
-  margin: auto;
-  display: block;
-  border: 1px solid #1e90ff; /* เพิ่มเส้นขอบสีฟ้า */
-  border-radius: 4px; /* เพิ่มเส้นโค้งมนที่มุม */
-  font-size: 1em; /* ขยายขนาดของฟอนต์ในช่องกรอกข้อมูล */
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: auto;
+    display: block;
+    border: 1px solid #1e90ff; /* เพิ่มเส้นขอบสีฟ้า */
+    border-radius: 4px; /* เพิ่มเส้นโค้งมนที่มุม */
 }
 
 .question {
-  margin-bottom: 25px; /* เพิ่มระยะห่างด้านล่าง */
+    margin-bottom: 15px;
 }
 
 button {
-  background-color: #1e90ff;
-  color: white;
-  padding: 12px 25px; /* เพิ่มขนาดของปุ่ม */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1.1em; /* ขยายขนาดของฟอนต์ในปุ่ม */
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #1c86ee;
+    background-color: #1c86ee;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 #result {
-  margin-top: 30px; /* เพิ่มระยะห่างด้านบน */
-  font-size: 1.5em; /* ขยายขนาดของฟอนต์ */
-  color: #1e90ff; /* เปลี่ยนสีของข้อความผลลัพธ์เป็นสีฟ้า */
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #1e90ff; /* เปลี่ยนสีของข้อความผลลัพธ์เป็นสีฟ้า */
 }
+
 
 //Js
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
