@@ -1,0 +1,349 @@
+game.StarterGui:SetCore("SendNotification", {
+	Title = "KKR HUB";
+	Text = "🙂"; -- what the text says (ofc)
+	Duration = 5;
+})
+
+local KKRHUB = Instance.new("ScreenGui")
+local Frame1 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local SpawnLuckyBlock = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local SpawnRainbowBlock = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local SpawnDiamondBlock = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local SpawnSuperBlock = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_6 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local X = Instance.new("TextButton")
+local pop = Instance.new("TextButton")
+local setting = Instance.new("ImageButton")
+local UICorner_7 = Instance.new("UICorner")
+local FF = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
+local Frame_2 = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Frame_3 = Instance.new("Frame")
+local XX = Instance.new("TextButton")
+local TextBox = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+KKRHUB.Name = "KKRHUB"
+KKRHUB.Parent = game.CoreGui
+KKRHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame1.Name = "Frame1"
+Frame1.Parent = KKRHUB
+Frame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(0.326700896, 0, 0.24378109, 0)
+Frame1.Size = UDim2.new(0, 539, 0, 411)
+
+UICorner.Parent = Frame1
+
+SpawnLuckyBlock.Name = "SpawnLuckyBlock"
+SpawnLuckyBlock.Parent = Frame1
+SpawnLuckyBlock.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+SpawnLuckyBlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpawnLuckyBlock.BorderSizePixel = 0
+SpawnLuckyBlock.Position = UDim2.new(0.0649350658, 0, 0.296836972, 0)
+SpawnLuckyBlock.Size = UDim2.new(0, 200, 0, 50)
+SpawnLuckyBlock.Font = Enum.Font.SourceSans
+SpawnLuckyBlock.Text = "SpawnLuckyBlock"
+SpawnLuckyBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpawnLuckyBlock.TextScaled = true
+SpawnLuckyBlock.TextSize = 14.000
+SpawnLuckyBlock.TextWrapped = true
+SpawnLuckyBlock.MouseButton1Click:Connect(function()
+	for i=1, TextBox.Text do 
+		game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
+	end
+end)
+
+UICorner_2.Parent = SpawnLuckyBlock
+
+TextLabel.Parent = Frame1
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.280148417, 0, 0.0218978096, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Cartoon
+TextLabel.Text = "KKR HUB"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+SpawnRainbowBlock.Name = "SpawnRainbowBlock"
+SpawnRainbowBlock.Parent = Frame1
+SpawnRainbowBlock.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+SpawnRainbowBlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpawnRainbowBlock.BorderSizePixel = 0
+SpawnRainbowBlock.Position = UDim2.new(0.565862715, 0, 0.608272493, 0)
+SpawnRainbowBlock.Size = UDim2.new(0, 200, 0, 50)
+SpawnRainbowBlock.Font = Enum.Font.SourceSans
+SpawnRainbowBlock.Text = "SpawnRainbowBlock"
+SpawnRainbowBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpawnRainbowBlock.TextScaled = true
+SpawnRainbowBlock.TextSize = 14.000
+SpawnRainbowBlock.TextWrapped = true
+SpawnRainbowBlock.MouseButton1Click:Connect(function()
+	for i=1, TextBox.Text do 
+		game.ReplicatedStorage.SpawnRainbowBlock:FireServer()
+	end
+end)
+
+UICorner_3.Parent = SpawnRainbowBlock
+
+SpawnDiamondBlock.Name = "SpawnDiamondBlock"
+SpawnDiamondBlock.Parent = Frame1
+SpawnDiamondBlock.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+SpawnDiamondBlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpawnDiamondBlock.BorderSizePixel = 0
+SpawnDiamondBlock.Position = UDim2.new(0.0649350658, 0, 0.608272493, 0)
+SpawnDiamondBlock.Size = UDim2.new(0, 200, 0, 50)
+SpawnDiamondBlock.Font = Enum.Font.SourceSans
+SpawnDiamondBlock.Text = "SpawnDiamondBlock"
+SpawnDiamondBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpawnDiamondBlock.TextScaled = true
+SpawnDiamondBlock.TextSize = 14.000
+SpawnDiamondBlock.TextWrapped = true
+SpawnDiamondBlock.MouseButton1Click:Connect(function()
+	for i=1, TextBox.Text do 
+		game.ReplicatedStorage.SpawnDiamondBlock:FireServer()
+	end
+end)
+
+
+UICorner_4.Parent = SpawnDiamondBlock
+
+SpawnSuperBlock.Name = "SpawnSuperBlock"
+SpawnSuperBlock.Parent = Frame1
+SpawnSuperBlock.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
+SpawnSuperBlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpawnSuperBlock.BorderSizePixel = 0
+SpawnSuperBlock.Position = UDim2.new(0.565862715, 0, 0.296836972, 0)
+SpawnSuperBlock.Size = UDim2.new(0, 200, 0, 50)
+SpawnSuperBlock.Font = Enum.Font.SourceSans
+SpawnSuperBlock.Text = "SpawnSuperBlock"
+SpawnSuperBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpawnSuperBlock.TextScaled = true
+SpawnSuperBlock.TextSize = 14.000
+SpawnSuperBlock.TextWrapped = true
+SpawnSuperBlock.MouseButton1Click:Connect(function()
+	for i=1, TextBox.Text do 
+		game.ReplicatedStorage.SpawnSuperBlock:FireServer()
+	end
+end)
+
+
+UICorner_5.Parent = SpawnSuperBlock
+
+ImageLabel.Parent = Frame1
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.406307966, 0, 0.394160599, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "rbxassetid://18459519372"
+
+UICorner_6.Parent = ImageLabel
+
+Frame.Parent = Frame1
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 539, 0, 58)
+
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.893844247, 0, 0.155172408, 0)
+X.Size = UDim2.new(0, 49, 0, 41)
+X.Font = Enum.Font.Merriweather
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(170, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+pop.Name = "pop"
+pop.Parent = Frame
+pop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pop.BackgroundTransparency = 1.000
+pop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+pop.BorderSizePixel = 0
+pop.Position = UDim2.new(0.785678625, 0, 0.155172408, 0)
+pop.Size = UDim2.new(0, 49, 0, 41)
+pop.Font = Enum.Font.Merriweather
+pop.Text = "-"
+pop.TextColor3 = Color3.fromRGB(170, 0, 0)
+pop.TextScaled = true
+pop.TextSize = 14.000
+pop.TextWrapped = true
+
+setting.Name = "setting"
+setting.Parent = Frame
+setting.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+setting.BorderColor3 = Color3.fromRGB(0, 0, 0)
+setting.BorderSizePixel = 0
+setting.Size = UDim2.new(0, 64, 0, 58)
+setting.Image = "rbxassetid://4859271243"
+
+UICorner_7.CornerRadius = UDim.new(0, 10)
+UICorner_7.Parent = setting
+
+FF.Name = "FF"
+FF.Parent = KKRHUB
+FF.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FF.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FF.BorderSizePixel = 0
+FF.Position = UDim2.new(0.0449293964, 0, 0.208955228, 0)
+FF.Size = UDim2.new(0, 30, 0, 28)
+FF.Visible = false
+
+ImageButton.Parent = FF
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Size = UDim2.new(0, 30, 0, 28)
+ImageButton.Image = "rbxassetid://9011713759"
+
+Frame_2.Parent = KKRHUB
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.326700896, 0, 0.24378109, 0)
+Frame_2.Size = UDim2.new(0, 539, 0, 411)
+Frame_2.Visible = false
+
+UICorner_8.Parent = Frame_2
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.280148417, 0, 0.0218978096, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Cartoon
+TextLabel_2.Text = "KKR HUB"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+ImageLabel_2.Parent = Frame_2
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0.0408163257, 0, 0.37956205, 0)
+ImageLabel_2.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_2.Image = "rbxassetid://18459519372"
+
+UICorner_9.Parent = ImageLabel_2
+
+Frame_3.Parent = Frame_2
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Size = UDim2.new(0, 539, 0, 58)
+
+XX.Name = "XX"
+XX.Parent = Frame_3
+XX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+XX.BackgroundTransparency = 1.000
+XX.BorderColor3 = Color3.fromRGB(0, 0, 0)
+XX.BorderSizePixel = 0
+XX.Position = UDim2.new(0.893844247, 0, 0.155172408, 0)
+XX.Size = UDim2.new(0, 49, 0, 41)
+XX.Font = Enum.Font.Merriweather
+XX.Text = "X"
+XX.TextColor3 = Color3.fromRGB(170, 0, 0)
+XX.TextScaled = true
+XX.TextSize = 14.000
+XX.TextWrapped = true
+
+TextBox.Parent = Frame_2
+TextBox.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.538033366, 0, 0.437956214, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Text = "1"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+UICorner_10.Parent = TextBox
+
+TextLabel_3.Parent = Frame_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.226345077, 0, 0.445255488, 0)
+TextLabel_3.Size = UDim2.new(0, 168, 0, 44)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "ใส่จำนวนตัวเลข :"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+-- Scripts:
+
+local function OBCK_fake_script() -- KKRHUB.LocalScript 
+	local script = Instance.new('LocalScript', KKRHUB)
+
+	script.Parent.Frame1.Frame.X.MouseButton1Click:Connect(function()
+		script.Parent.Frame1.Visible = false
+		script.Parent.FF.Visible = false
+		script.Parent.Frame.Visible = false
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "See you again";
+			Text = "😕"; -- what the text says (ofc)
+			Duration = 5;
+		})
+	end)
+	
+	script.Parent.Frame1.Frame.pop.MouseButton1Click:Connect(function()
+		script.Parent.Frame1.Visible = false
+		script.Parent.FF.Visible = true
+	end)
+	
+	script.Parent.FF.ImageButton.MouseButton1Click:Connect(function()
+		script.Parent.FF.Visible = false
+		script.Parent.Frame1.Visible = true
+	end)
+	
+	script.Parent.Frame1.Frame.setting.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = true
+		script.Parent.Frame1.Visible = false
+	end)
+	
+	script.Parent.Frame.Frame.XX.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = false
+		script.Parent.Frame1.Visible = true
+	end)
+end
+coroutine.wrap(OBCK_fake_script)()
