@@ -52,7 +52,7 @@ Frame1.Size = UDim2.new(0, 539, 0, 411)
 
 UICorner.Parent = Frame1
 
-SpawnLuckyBlock.Name = "SpawnLuckyBlock"
+SpawnLuckyBlock.Name = "SpawnGalaxyBlock"
 SpawnLuckyBlock.Parent = Frame1
 SpawnLuckyBlock.BackgroundColor3 = Color3.fromRGB(144, 144, 144)
 SpawnLuckyBlock.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -60,14 +60,14 @@ SpawnLuckyBlock.BorderSizePixel = 0
 SpawnLuckyBlock.Position = UDim2.new(0.0649350658, 0, 0.296836972, 0)
 SpawnLuckyBlock.Size = UDim2.new(0, 200, 0, 50)
 SpawnLuckyBlock.Font = Enum.Font.SourceSans
-SpawnLuckyBlock.Text = "SpawnLuckyBlock"
+SpawnLuckyBlock.Text = "SpawnGalaxyBlock"
 SpawnLuckyBlock.TextColor3 = Color3.fromRGB(255, 255, 255)
 SpawnLuckyBlock.TextScaled = true
 SpawnLuckyBlock.TextSize = 14.000
 SpawnLuckyBlock.TextWrapped = true
 SpawnLuckyBlock.MouseButton1Click:Connect(function()
 	for i=1, TextBox.Text do 
-		game.ReplicatedStorage.SpawnLuckyBlock:FireServer()
+		game.ReplicatedStorage.SpawnGalaxyBlock:FireServer()
 	end
 end)
 
