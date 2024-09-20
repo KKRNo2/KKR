@@ -725,6 +725,8 @@ local function BUHX_fake_script() -- KKRHUB.LocalScript
 			script.Parent.Frame2.Frame2.Rock.Ture1.Visible = false
 			script.Parent.Frame2.Frame2.Rock.false1.Visible = true
 			stopLoop()
+ local character = game.Players.LocalPlayer.Character
+        character.Humanoid:UnequipTools()
 		end
 	end)
 	
@@ -791,6 +793,8 @@ local function BUHX_fake_script() -- KKRHUB.LocalScript
 			script.Parent.Frame2.Frame2.Wood.Ture1.Visible = false
 			script.Parent.Frame2.Frame2.Wood.false1.Visible = true
 			stopLoop()
+ local character = game.Players.LocalPlayer.Character
+        character.Humanoid:UnequipTools()
 		end
 	end)
 	
@@ -855,6 +859,8 @@ local function BUHX_fake_script() -- KKRHUB.LocalScript
 			script.Parent.Frame2.Frame2.Scrap.Ture1.Visible = false
 			script.Parent.Frame2.Frame2.Scrap.false1.Visible = true
 			stopLoop()
+ local character = game.Players.LocalPlayer.Character
+        character.Humanoid:UnequipTools()
 		end
 	end)
 	
@@ -919,6 +925,8 @@ local function BUHX_fake_script() -- KKRHUB.LocalScript
 			script.Parent.Frame2.Frame2.Squid.Ture1.Visible = false
 			script.Parent.Frame2.Frame2.Squid.false1.Visible = true
 			stopLoop()
+ local character = game.Players.LocalPlayer.Character
+        character.Humanoid:UnequipTools()
 		end
 	end)
 	--------------------------------------------------
@@ -981,6 +989,8 @@ local function BUHX_fake_script() -- KKRHUB.LocalScript
 			script.Parent.Frame2.Frame2.Chicken.Ture1.Visible = false
 			script.Parent.Frame2.Frame2.Chicken.false1.Visible = true
 			stopLoop()
+ local character = game.Players.LocalPlayer.Character
+        character.Humanoid:UnequipTools()
 		end
 	end)
 	--------------------------------------------------
@@ -1043,6 +1053,8 @@ local function BUHX_fake_script() -- KKRHUB.LocalScript
 			script.Parent.Frame2.Frame2.Cactus.Ture1.Visible = false
 			script.Parent.Frame2.Frame2.Cactus.false1.Visible = true
 			stopLoop()
+ local character = game.Players.LocalPlayer.Character
+        character.Humanoid:UnequipTools()
 		end
 	end)
 	--------------------------------------------------
@@ -1105,6 +1117,8 @@ local function BUHX_fake_script() -- KKRHUB.LocalScript
 			script.Parent.Frame2.Frame2.Cow.Ture1.Visible = false
 			script.Parent.Frame2.Frame2.Cow.false1.Visible = true
 			stopLoop()
+ local character = game.Players.LocalPlayer.Character
+        character.Humanoid:UnequipTools()
 		end
 	end)
 	--------------------------------------------------
