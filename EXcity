@@ -1,0 +1,1021 @@
+game.StarterGui:SetCore("SendNotification", {
+	Title = "KKR HUB";
+	Text = "😈";
+	Duration = 5;
+})
+print("KKR HUB")
+local KKRHUB = Instance.new("ScreenGui")
+local Frame1 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local KUY = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local X = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton = Instance.new("TextButton")
+local TextButton2 = Instance.new("TextButton")
+local By = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Copy = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
+local Frame2 = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Frame1_2 = Instance.new("Frame")
+local Farm = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+local TP = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local ImageButton_2 = Instance.new("ImageButton")
+local Frame2_2 = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Stone = Instance.new("TextLabel")
+local Ture1 = Instance.new("ImageButton")
+local false1 = Instance.new("ImageButton")
+local Banana = Instance.new("TextLabel")
+local false1_2 = Instance.new("ImageButton")
+local Ture1_2 = Instance.new("ImageButton")
+local Scrap = Instance.new("TextLabel")
+local Ture1_3 = Instance.new("ImageButton")
+local false1_3 = Instance.new("ImageButton")
+local Wood = Instance.new("TextLabel")
+local Ture1_4 = Instance.new("ImageButton")
+local false1_4 = Instance.new("ImageButton")
+local Oil = Instance.new("TextLabel")
+local Ture1_5 = Instance.new("ImageButton")
+local false1_5 = Instance.new("ImageButton")
+local A = Instance.new("TextLabel")
+local Ture1_6 = Instance.new("ImageButton")
+local false1_6 = Instance.new("ImageButton")
+local Cow = Instance.new("TextLabel")
+local Ture1_7 = Instance.new("ImageButton")
+local false1_7 = Instance.new("ImageButton")
+local Frame3 = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local WorldMarket = Instance.new("TextButton")
+local TP2 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient = Instance.new("UIGradient")
+
+--Properties:
+
+KKRHUB.Name = "KKRHUB"
+KKRHUB.Parent = game.CoreGui
+KKRHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame1.Name = "Frame1"
+Frame1.Parent = KKRHUB
+Frame1.BackgroundColor3 = Color3.fromRGB(112, 112, 112)
+Frame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(0.0750988126, 0, 0.101758793, 0)
+Frame1.Size = UDim2.new(0, 280, 0, 265)
+
+UICorner.Parent = Frame1
+
+KUY.Name = "KUY"
+KUY.Parent = Frame1
+KUY.BackgroundColor3 = Color3.fromRGB(122, 40, 40)
+KUY.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KUY.BorderSizePixel = 0
+KUY.Position = UDim2.new(0, 0, 0.154716983, 0)
+KUY.Size = UDim2.new(0, 280, 0, -5)
+
+UICorner_2.Parent = KUY
+
+TextLabel.Parent = KUY
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.221428573, 0, -6.5999999, 0)
+TextLabel.Size = UDim2.new(0, 155, 0, 39)
+TextLabel.Font = Enum.Font.Kalam
+TextLabel.Text = "KUY HUB"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Frame1
+X.BackgroundColor3 = Color3.fromRGB(122, 40, 40)
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0, 0, 0.324528307, 0)
+X.Size = UDim2.new(0, 280, 0, -5)
+
+UICorner_3.Parent = X
+
+TextButton.Parent = X
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.528571427, 0, -7, 0)
+TextButton.Size = UDim2.new(0, 62, 0, 37)
+TextButton.Font = Enum.Font.Creepster
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton2.Name = "TextButton2"
+TextButton2.Parent = X
+TextButton2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton2.BackgroundTransparency = 1.000
+TextButton2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton2.BorderSizePixel = 0
+TextButton2.Position = UDim2.new(0.257142872, 0, -7, 0)
+TextButton2.Size = UDim2.new(0, 62, 0, 37)
+TextButton2.Font = Enum.Font.Creepster
+TextButton2.Text = "-"
+TextButton2.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton2.TextScaled = true
+TextButton2.TextSize = 14.000
+TextButton2.TextWrapped = true
+
+By.Name = "By"
+By.Parent = Frame1
+By.BackgroundColor3 = Color3.fromRGB(122, 40, 40)
+By.BorderColor3 = Color3.fromRGB(0, 0, 0)
+By.BorderSizePixel = 0
+By.Position = UDim2.new(0, 0, 0.509433985, 0)
+By.Size = UDim2.new(0, 280, 0, -5)
+
+UICorner_4.Parent = By
+
+Copy.Name = "Copy"
+Copy.Parent = By
+Copy.BackgroundColor3 = Color3.fromRGB(138, 138, 138)
+Copy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Copy.BorderSizePixel = 0
+Copy.Position = UDim2.new(0.142857149, 0, -3.4000001, 0)
+Copy.Size = UDim2.new(0, 200, 0, 50)
+Copy.Font = Enum.Font.IndieFlower
+Copy.Text = "Discord"
+Copy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Copy.TextScaled = true
+Copy.TextSize = 14.000
+Copy.TextWrapped = true
+
+Frame.Parent = Frame1
+Frame.BackgroundColor3 = Color3.fromRGB(122, 40, 40)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.762264132, 0)
+Frame.Size = UDim2.new(0, 280, 0, -5)
+
+UICorner_5.Parent = Frame
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(58, 66, 84)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.139285713, 0, 2.4000001, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "เมนู"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 30)
+UICorner_6.Parent = TextButton_2
+
+ImageButton.Parent = KKRHUB
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.0210440233, 0, 0.271356791, 0)
+ImageButton.Size = UDim2.new(0, 50, 0, 42)
+ImageButton.Visible = false
+ImageButton.Image = "rbxassetid://15273937357"
+
+Frame2.Name = "Frame2"
+Frame2.Parent = KKRHUB
+Frame2.BackgroundColor3 = Color3.fromRGB(194, 194, 194)
+Frame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame2.BorderSizePixel = 0
+Frame2.Position = UDim2.new(0.490809202, 0, 0.340452254, 0)
+Frame2.Size = UDim2.new(0, 651, 0, 518)
+Frame2.Visible = false
+
+UICorner_7.Parent = Frame2
+
+Frame1_2.Name = "Frame1"
+Frame1_2.Parent = Frame2
+Frame1_2.BackgroundColor3 = Color3.fromRGB(91, 91, 91)
+Frame1_2.BackgroundTransparency = 0.500
+Frame1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame1_2.BorderSizePixel = 0
+Frame1_2.Position = UDim2.new(0.1781874, 0, 0, 0)
+Frame1_2.Size = UDim2.new(0, 17, 0, 518)
+
+Farm.Name = "Farm"
+Farm.Parent = Frame1_2
+Farm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Farm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Farm.BorderSizePixel = 0
+Farm.Position = UDim2.new(-6.29411745, 0, 0.0444015451, 0)
+Farm.Size = UDim2.new(0, 100, 0, 64)
+Farm.Font = Enum.Font.SourceSans
+Farm.Text = "โปรฟาม"
+Farm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Farm.TextSize = 20.000
+Farm.TextWrapped = true
+
+UICorner_8.Parent = Farm
+
+UICorner_9.Parent = Frame1_2
+
+TP.Name = "TP"
+TP.Parent = Frame1_2
+TP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TP.BorderSizePixel = 0
+TP.Position = UDim2.new(-6.29411745, 0, 0.181467175, 0)
+TP.Size = UDim2.new(0, 100, 0, 64)
+TP.Font = Enum.Font.SourceSans
+TP.Text = "โปรวาป"
+TP.TextColor3 = Color3.fromRGB(0, 0, 0)
+TP.TextSize = 20.000
+TP.TextWrapped = true
+
+UICorner_10.Parent = TP
+
+ImageButton_2.Parent = Frame1_2
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.BackgroundTransparency = 1.000
+ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_2.BorderSizePixel = 0
+ImageButton_2.Position = UDim2.new(-5.47058821, 0, 0.833976805, 0)
+ImageButton_2.Size = UDim2.new(0, 71, 0, 69)
+ImageButton_2.Image = "rbxassetid://1061421540"
+
+Frame2_2.Name = "Frame2"
+Frame2_2.Parent = Frame2
+Frame2_2.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+Frame2_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame2_2.BorderSizePixel = 0
+Frame2_2.Position = UDim2.new(0.219662055, 0, 0.0250965245, 0)
+Frame2_2.Size = UDim2.new(0, 494, 0, 488)
+Frame2_2.Visible = false
+Frame2_2.ZIndex = 2
+
+UICorner_11.Parent = Frame2_2
+
+Stone.Name = "Stone"
+Stone.Parent = Frame2_2
+Stone.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Stone.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Stone.BorderSizePixel = 0
+Stone.Position = UDim2.new(0, 0, 0.165983602, 0)
+Stone.Size = UDim2.new(0, 200, 0, 50)
+Stone.Font = Enum.Font.SourceSans
+Stone.Text = "ฟาม หิน"
+Stone.TextColor3 = Color3.fromRGB(0, 0, 0)
+Stone.TextSize = 30.000
+Stone.TextWrapped = true
+
+Ture1.Name = "Ture1"
+Ture1.Parent = Stone
+Ture1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ture1.BackgroundTransparency = 1.000
+Ture1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ture1.BorderSizePixel = 0
+Ture1.Position = UDim2.new(1.29999995, 0, -0.0199999996, 0)
+Ture1.Size = UDim2.new(0, 60, 0, 52)
+Ture1.Visible = false
+Ture1.Image = "rbxassetid://12817454402"
+
+false1.Name = "false1"
+false1.Parent = Stone
+false1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+false1.BackgroundTransparency = 1.000
+false1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+false1.BorderSizePixel = 0
+false1.Position = UDim2.new(1.29999995, 0, -0.0399999991, 0)
+false1.Size = UDim2.new(0, 60, 0, 52)
+false1.Image = "rbxassetid://7970580926"
+
+Banana.Name = "Banana"
+Banana.Parent = Frame2_2
+Banana.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Banana.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Banana.BorderSizePixel = 0
+Banana.Position = UDim2.new(0, 0, 0.0245901644, 0)
+Banana.Size = UDim2.new(0, 200, 0, 50)
+Banana.Font = Enum.Font.SourceSans
+Banana.Text = "ฟาม กล้วย"
+Banana.TextColor3 = Color3.fromRGB(0, 0, 0)
+Banana.TextSize = 30.000
+Banana.TextWrapped = true
+
+false1_2.Name = "false1"
+false1_2.Parent = Banana
+false1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+false1_2.BackgroundTransparency = 1.000
+false1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+false1_2.BorderSizePixel = 0
+false1_2.Position = UDim2.new(1.29999995, 0, -0.0399999991, 0)
+false1_2.Size = UDim2.new(0, 60, 0, 52)
+false1_2.Image = "rbxassetid://7970580926"
+
+Ture1_2.Name = "Ture1"
+Ture1_2.Parent = Banana
+Ture1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ture1_2.BackgroundTransparency = 1.000
+Ture1_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ture1_2.BorderSizePixel = 0
+Ture1_2.Position = UDim2.new(1.29999995, 0, -0.0199999996, 0)
+Ture1_2.Size = UDim2.new(0, 60, 0, 52)
+Ture1_2.Visible = false
+Ture1_2.Image = "rbxassetid://12817454402"
+
+Scrap.Name = "Scrap"
+Scrap.Parent = Frame2_2
+Scrap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scrap.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scrap.BorderSizePixel = 0
+Scrap.Position = UDim2.new(0, 0, 0.295081973, 0)
+Scrap.Size = UDim2.new(0, 200, 0, 50)
+Scrap.Font = Enum.Font.SourceSans
+Scrap.Text = "ฟาม เหล็ก"
+Scrap.TextColor3 = Color3.fromRGB(0, 0, 0)
+Scrap.TextSize = 30.000
+Scrap.TextWrapped = true
+
+Ture1_3.Name = "Ture1"
+Ture1_3.Parent = Scrap
+Ture1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ture1_3.BackgroundTransparency = 1.000
+Ture1_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ture1_3.BorderSizePixel = 0
+Ture1_3.Position = UDim2.new(1.29999995, 0, -0.0199999996, 0)
+Ture1_3.Size = UDim2.new(0, 60, 0, 52)
+Ture1_3.Visible = false
+Ture1_3.Image = "rbxassetid://12817454402"
+
+false1_3.Name = "false1"
+false1_3.Parent = Scrap
+false1_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+false1_3.BackgroundTransparency = 1.000
+false1_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+false1_3.BorderSizePixel = 0
+false1_3.Position = UDim2.new(1.29999995, 0, -0.0399999991, 0)
+false1_3.Size = UDim2.new(0, 60, 0, 52)
+false1_3.Image = "rbxassetid://7970580926"
+
+Wood.Name = "Wood"
+Wood.Parent = Frame2_2
+Wood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wood.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Wood.BorderSizePixel = 0
+Wood.Position = UDim2.new(0, 0, 0.430327863, 0)
+Wood.Size = UDim2.new(0, 200, 0, 50)
+Wood.Font = Enum.Font.SourceSans
+Wood.Text = "ฟาม ไม้"
+Wood.TextColor3 = Color3.fromRGB(0, 0, 0)
+Wood.TextSize = 30.000
+Wood.TextWrapped = true
+
+Ture1_4.Name = "Ture1"
+Ture1_4.Parent = Wood
+Ture1_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ture1_4.BackgroundTransparency = 1.000
+Ture1_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ture1_4.BorderSizePixel = 0
+Ture1_4.Position = UDim2.new(1.29999995, 0, -0.0199999996, 0)
+Ture1_4.Size = UDim2.new(0, 60, 0, 52)
+Ture1_4.Visible = false
+Ture1_4.Image = "rbxassetid://12817454402"
+
+false1_4.Name = "false1"
+false1_4.Parent = Wood
+false1_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+false1_4.BackgroundTransparency = 1.000
+false1_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+false1_4.BorderSizePixel = 0
+false1_4.Position = UDim2.new(1.29999995, 0, -0.0399999991, 0)
+false1_4.Size = UDim2.new(0, 60, 0, 52)
+false1_4.Image = "rbxassetid://7970580926"
+
+Oil.Name = "Oil"
+Oil.Parent = Frame2_2
+Oil.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Oil.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Oil.BorderSizePixel = 0
+Oil.Position = UDim2.new(0, 0, 0.561475396, 0)
+Oil.Size = UDim2.new(0, 200, 0, 50)
+Oil.Font = Enum.Font.SourceSans
+Oil.Text = "ฟาม น้ำมัน"
+Oil.TextColor3 = Color3.fromRGB(0, 0, 0)
+Oil.TextSize = 30.000
+Oil.TextWrapped = true
+
+Ture1_5.Name = "Ture1"
+Ture1_5.Parent = Oil
+Ture1_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ture1_5.BackgroundTransparency = 1.000
+Ture1_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ture1_5.BorderSizePixel = 0
+Ture1_5.Position = UDim2.new(1.29999995, 0, -0.0199999996, 0)
+Ture1_5.Size = UDim2.new(0, 60, 0, 52)
+Ture1_5.Visible = false
+Ture1_5.Image = "rbxassetid://12817454402"
+
+false1_5.Name = "false1"
+false1_5.Parent = Oil
+false1_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+false1_5.BackgroundTransparency = 1.000
+false1_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+false1_5.BorderSizePixel = 0
+false1_5.Position = UDim2.new(1.29999995, 0, -0.0399999991, 0)
+false1_5.Size = UDim2.new(0, 60, 0, 52)
+false1_5.Image = "rbxassetid://7970580926"
+
+A.Name = "A"
+A.Parent = Frame2_2
+A.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+A.BorderColor3 = Color3.fromRGB(0, 0, 0)
+A.BorderSizePixel = 0
+A.Position = UDim2.new(0, 0, 0.686475396, 0)
+A.Size = UDim2.new(0, 200, 0, 50)
+A.Font = Enum.Font.SourceSans
+A.Text = "ฟาม แอปเปิ้ล"
+A.TextColor3 = Color3.fromRGB(0, 0, 0)
+A.TextSize = 30.000
+A.TextWrapped = true
+
+Ture1_6.Name = "Ture1"
+Ture1_6.Parent = A
+Ture1_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ture1_6.BackgroundTransparency = 1.000
+Ture1_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ture1_6.BorderSizePixel = 0
+Ture1_6.Position = UDim2.new(1.29999995, 0, -0.0199999996, 0)
+Ture1_6.Size = UDim2.new(0, 60, 0, 52)
+Ture1_6.Visible = false
+Ture1_6.Image = "rbxassetid://12817454402"
+
+false1_6.Name = "false1"
+false1_6.Parent = A
+false1_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+false1_6.BackgroundTransparency = 1.000
+false1_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+false1_6.BorderSizePixel = 0
+false1_6.Position = UDim2.new(1.29999995, 0, -0.0399999991, 0)
+false1_6.Size = UDim2.new(0, 60, 0, 52)
+false1_6.Image = "rbxassetid://7970580926"
+
+Cow.Name = "Cow"
+Cow.Parent = Frame2_2
+Cow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cow.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Cow.BorderSizePixel = 0
+Cow.Position = UDim2.new(0, 0, 0.821721315, 0)
+Cow.Size = UDim2.new(0, 200, 0, 50)
+Cow.Font = Enum.Font.SourceSans
+Cow.Text = "ฟาม วัว"
+Cow.TextColor3 = Color3.fromRGB(0, 0, 0)
+Cow.TextSize = 30.000
+Cow.TextWrapped = true
+
+Ture1_7.Name = "Ture1"
+Ture1_7.Parent = Cow
+Ture1_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ture1_7.BackgroundTransparency = 1.000
+Ture1_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ture1_7.BorderSizePixel = 0
+Ture1_7.Position = UDim2.new(1.29999995, 0, -0.0199999996, 0)
+Ture1_7.Size = UDim2.new(0, 60, 0, 52)
+Ture1_7.Visible = false
+Ture1_7.Image = "rbxassetid://12817454402"
+
+false1_7.Name = "false1"
+false1_7.Parent = Cow
+false1_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+false1_7.BackgroundTransparency = 1.000
+false1_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+false1_7.BorderSizePixel = 0
+false1_7.Position = UDim2.new(1.29999995, 0, -0.0399999991, 0)
+false1_7.Size = UDim2.new(0, 60, 0, 52)
+false1_7.Image = "rbxassetid://7970580926"
+
+Frame3.Name = "Frame3"
+Frame3.Parent = Frame2
+Frame3.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+Frame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame3.BorderSizePixel = 0
+Frame3.Position = UDim2.new(0.219662055, 0, 0.0250965245, 0)
+Frame3.Size = UDim2.new(0, 494, 0, 488)
+Frame3.Visible = false
+Frame3.ZIndex = 2
+
+UICorner_12.Parent = Frame3
+
+WorldMarket.Name = "WorldMarket"
+WorldMarket.Parent = Frame3
+WorldMarket.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WorldMarket.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WorldMarket.BorderSizePixel = 0
+WorldMarket.Position = UDim2.new(0.281376511, 0, 0.0860655755, 0)
+WorldMarket.Size = UDim2.new(0, 200, 0, 50)
+WorldMarket.Font = Enum.Font.SourceSans
+WorldMarket.Text = "ตลาดโลก"
+WorldMarket.TextColor3 = Color3.fromRGB(0, 0, 0)
+WorldMarket.TextScaled = true
+WorldMarket.TextSize = 14.000
+WorldMarket.TextWrapped = true
+
+TP2.Name = "TP2"
+TP2.Parent = Frame3
+TP2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TP2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TP2.BorderSizePixel = 0
+TP2.Position = UDim2.new(0.281376511, 0, 0.22131148, 0)
+TP2.Size = UDim2.new(0, 200, 0, 50)
+TP2.Font = Enum.Font.SourceSans
+TP2.Text = "จุดเริ่มต้น"
+TP2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TP2.TextScaled = true
+TP2.TextSize = 14.000
+TP2.TextWrapped = true
+
+TextLabel_2.Parent = Frame2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.336405516, 0, 0.277992278, 0)
+TextLabel_2.Size = UDim2.new(0, 326, 0, 171)
+TextLabel_2.Font = Enum.Font.IndieFlower
+TextLabel_2.Text = "By.KUY HUB"
+TextLabel_2.TextColor3 = Color3.fromRGB(217, 217, 217)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 91, 26)), ColorSequenceKeypoint.new(0.25, Color3.fromRGB(255, 184, 156)), ColorSequenceKeypoint.new(0.44, Color3.fromRGB(255, 185, 158)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(255, 156, 117)), ColorSequenceKeypoint.new(0.53, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.56, Color3.fromRGB(255, 212, 195)), ColorSequenceKeypoint.new(0.84, Color3.fromRGB(255, 135, 88)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = TextLabel_2
+
+-- Scripts:
+
+local function GEAFZXK_fake_script() -- KKRHUB.LocalScript 
+	local script = Instance.new('LocalScript', KKRHUB)
+
+	--เปิดปิด
+	script.Parent.Frame1.X.TextButton.MouseButton1Click:Connect(function()
+		script.Parent.Frame2.Visible = false
+		script.Parent.Frame1.Visible = false
+		script.Parent.ImageButton.Visible = false
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "See you again";
+			Text = "😕"; -- what the text says (ofc)
+			Duration = 5;
+		})
+	end)
+	
+	script.Parent.Frame1.X.TextButton2.MouseButton1Click:Connect(function()
+		script.Parent.Frame2.Visible = false
+		script.Parent.Frame1.Visible = false
+		script.Parent.ImageButton.Visible = true
+	end)
+	
+	script.Parent.ImageButton.MouseButton1Click:Connect(function()
+		script.Parent.Frame1.Visible = true
+		script.Parent.ImageButton.Visible = false
+	end)
+	script.Parent.Frame1.Frame.TextButton.MouseButton1Click:Connect(function()
+		script.Parent.Frame1.Visible = false
+		script.Parent.Frame2.Visible = true
+	end)
+	
+	script.Parent.Frame2.Frame1.ImageButton.MouseButton1Click:Connect(function()
+		script.Parent.Frame1.Visible = true
+		script.Parent.Frame2.Visible = false
+	end)
+	
+	script.Parent.Frame2.Frame1.Farm.MouseButton1Click:Connect(function()
+		script.Parent.Frame2.Frame2.Visible = true
+		script.Parent.Frame2.Frame3.Visible = false
+	end)
+	script.Parent.Frame2.Frame1.TP.MouseButton1Click:Connect(function()
+		script.Parent.Frame2.Frame2.Visible = false
+		script.Parent.Frame2.Frame3.Visible = true
+	end)
+	
+	script.Parent.Frame1.By.Copy.MouseButton1Click:Connect(function()
+		setclipboard("ดีครัฟ")
+		print("KKR HUB")
+	end)
+	
+	--กลวย
+	
+	local running = false
+	local loop
+	
+	
+	local function startLoop()
+		running = true
+		loop = coroutine.create(function()
+			while running do
+				local player = game.Players.LocalPlayer
+				local character = player.Character or player.CharacterAdded:Wait()
+	
+				-- หาตำแหน่งของ Banana ในโฟเดอร์ Farm
+				local bananaFolder = game.Workspace.Farm.Banana
+	
+				-- สร้างตารางสำหรับ Banana ที่จะ Teleport
+				local bananaList = {}
+	
+				-- เพิ่ม Banana ที่มีชื่อในรูปแบบ Banana1 ถึง Banana11 ลงในตาราง
+				for i = 1, 11 do
+					local bananaName = "Banana" .. i
+					local banana = bananaFolder:FindFirstChild(bananaName)
+					if banana then
+						table.insert(bananaList, banana)
+					end
+				end
+	
+				-- ตรวจสอบว่ามี Banana ในตารางหรือไม่
+				if #bananaList > 0 then
+					-- เลือก Banana อันใดอันหนึ่งแบบสุ่ม
+					local randomBanana = bananaList[math.random(1, #bananaList)]
+					character:SetPrimaryPartCFrame(randomBanana.CFrame)
+				else
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "ไม่พบโฟเดอร์นี้";
+						Text = "🧐"; -- what the text says (ofc)
+						Duration = 5;
+					})	
+				end
+	
+				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
+			end
+		end)
+		coroutine.resume(loop)
+	end
+	
+	local function stopLoop()
+		running = false
+	end
+	
+	script.Parent.Frame2.Frame2.Banana.false1.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2928.74805, 32.9999962, 153.417542, -0.0172345024, 1.12006555e-08, 0.999851465, 1.05002869e-08, 1, -1.10213252e-08, -0.999851465, 1.03087805e-08, -0.0172345024)
+		script.Parent.Frame2.Frame2.Banana.Ture1.Visible = true
+		script.Parent.Frame2.Frame2.Banana.false1.Visible = false
+				startLoop()
+	end)
+	
+	script.Parent.Frame2.Frame2.Banana.Ture1.MouseButton1Click:Connect(function()
+		if running then
+			script.Parent.Frame2.Frame2.Banana.Ture1.Visible = false
+			script.Parent.Frame2.Frame2.Banana.false1.Visible = true
+			stopLoop()
+		end
+	end)
+	
+	
+	--------------------------------------------------
+	
+	
+	--หิน
+	
+	local running = false
+	local loop
+	
+	
+	local function startLoop()
+		running = true
+		loop = coroutine.create(function()
+			while running do
+				--Code
+				local player = game.Players.LocalPlayer
+				local character = player.Character or player.CharacterAdded:Wait()
+	
+				local StoneFolder = game.Workspace.Farm.Stone
+	
+				local StoneList = {}
+	
+				for i = 1, 14 do
+					local StoneName = "Stone" .. i
+					local Stone = StoneFolder:FindFirstChild(StoneName)
+					if Stone then
+						table.insert(StoneList, Stone)
+					end
+				end
+	
+				if #StoneList > 0 then
+					local randomStone = StoneList[math.random(1, #StoneList)]
+					character:SetPrimaryPartCFrame(randomStone.CFrame)
+				else
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "ไม่พบโฟเดอร์นี้";
+						Text = "🧐"; -- what the text says (ofc)
+						Duration = 5;
+					})	
+				end
+	
+				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
+			end
+		end)
+		coroutine.resume(loop)
+	end
+	
+	local function stopLoop()
+		running = false
+	end
+	
+	script.Parent.Frame2.Frame2.Stone.false1.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4350.97021, 32.3387146, -191.191666, 0.562987447, 1.50780792e-08, 0.826465487, -5.68859164e-08, 1, 2.0506576e-08, -0.826465487, -5.85591877e-08, 0.562987447)
+		script.Parent.Frame2.Frame2.Stone.Ture1.Visible = true
+		script.Parent.Frame2.Frame2.Stone.false1.Visible = false
+		startLoop()
+	end)
+	
+	script.Parent.Frame2.Frame2.Stone.Ture1.MouseButton1Click:Connect(function()
+		if running then
+			script.Parent.Frame2.Frame2.Stone.Ture1.Visible = false
+			script.Parent.Frame2.Frame2.Stone.false1.Visible = true
+			stopLoop()
+		end
+	end)
+	
+	--------------------------------------------------
+	
+	--Scrap
+	
+	local running = false
+	local loop
+	
+	
+	local function startLoop()
+		running = true
+		loop = coroutine.create(function()
+			while running do
+				--Code
+				local player = game.Players.LocalPlayer
+				local character = player.Character or player.CharacterAdded:Wait()
+	
+				local ScrapFolder = game.Workspace.Farm.Scrap
+	
+				local ScrapList = {}
+	
+				for i = 1, 11 do
+					local ScrapName = "Scrap" .. i
+					local Scrap = ScrapFolder:FindFirstChild(ScrapName)
+					if Scrap then
+						table.insert(ScrapList, Scrap)
+					end
+				end
+	
+				if #ScrapList > 0 then
+					local randomScrap = ScrapList[math.random(1, #ScrapList)]
+					character:SetPrimaryPartCFrame(randomScrap.CFrame)
+				else
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "ไม่พบโฟเดอร์นี้";
+						Text = "🧐"; -- what the text says (ofc)
+						Duration = 5;
+					})	
+				end
+				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
+			end
+		end)
+		coroutine.resume(loop)
+	end
+	
+	local function stopLoop()
+		running = false
+	end
+	
+	script.Parent.Frame2.Frame2.Scrap.false1.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4060.06567, 32.9999924, 4063.73804, -0.769804358, 5.62155478e-08, 0.638279915, 6.18078921e-10, 1, -8.73280612e-08, -0.638279915, -6.68310136e-08, -0.769804358)
+		script.Parent.Frame2.Frame2.Scrap.Ture1.Visible = true
+		script.Parent.Frame2.Frame2.Scrap.false1.Visible = false
+		startLoop()
+	end)
+	
+	script.Parent.Frame2.Frame2.Scrap.Ture1.MouseButton1Click:Connect(function()
+		if running then
+			script.Parent.Frame2.Frame2.Scrap.Ture1.Visible = false
+			script.Parent.Frame2.Frame2.Scrap.false1.Visible = true
+			stopLoop()
+		end
+	end)
+	
+	--------------------------------------------------
+	
+	--Wood
+	
+	local running = false
+	local loop
+	
+	
+	local function startLoop()
+		running = true
+		loop = coroutine.create(function()
+			while running do
+				--Code
+				local player = game.Players.LocalPlayer
+				local character = player.Character or player.CharacterAdded:Wait()
+	
+				local WoodFolder = game.Workspace.Farm.Wood
+	
+				local WoodList = {}
+	
+				for i = 1, 11 do
+					local WoodName = "Wood" .. i
+					local Wood = WoodFolder:FindFirstChild(WoodName)
+					if Wood then
+						table.insert(WoodList, Wood)
+					end
+				end
+	
+				if #WoodList > 0 then
+					local randomWood = WoodList[math.random(1, #WoodList)]
+					character:SetPrimaryPartCFrame(randomWood.CFrame)
+				else
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "ไม่พบโฟเดอร์นี้";
+						Text = "🧐"; -- what the text says (ofc)
+						Duration = 5;
+					})	
+				end
+				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
+			end
+		end)
+		coroutine.resume(loop)
+	end
+	
+	local function stopLoop()
+		running = false
+	end
+	
+	script.Parent.Frame2.Frame2.Wood.false1.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4698.30127, 32.6507072, 1471.85767, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+		script.Parent.Frame2.Frame2.Wood.Ture1.Visible = true
+		script.Parent.Frame2.Frame2.Wood.false1.Visible = false
+		startLoop()
+	end)
+	
+	script.Parent.Frame2.Frame2.Wood.Ture1.MouseButton1Click:Connect(function()
+		if running then
+			script.Parent.Frame2.Frame2.Wood.Ture1.Visible = false
+			script.Parent.Frame2.Frame2.Wood.false1.Visible = true
+			stopLoop()
+		end
+	end)
+	--------------------------------------------------
+	--น้ำมัน
+	local running = false
+	local loop
+	
+	
+	local function startLoop()
+		running = true
+		loop = coroutine.create(function()
+			while running do
+				--Code
+				local player = game.Players.LocalPlayer
+				local character = player.Character or player.CharacterAdded:Wait()
+	
+				local OilFolder = game.Workspace.Farm.Oil
+	
+				local OilList = {}
+	
+				for i = 1, 21 do
+					local OilName = "Oil" .. i
+					local Oil = OilFolder:FindFirstChild(OilName)
+					if Oil then
+						table.insert(OilList, Oil)
+					end
+				end
+	
+				if #OilList > 0 then
+					local randomOil = OilList[math.random(1, #OilList)]
+					character:SetPrimaryPartCFrame(randomOil.CFrame)
+				else
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "ไม่พบโฟเดอร์นี้";
+						Text = "🧐"; -- what the text says (ofc)
+						Duration = 5;
+					})	
+				end
+				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
+			end
+		end)
+		coroutine.resume(loop)
+	end
+	
+	local function stopLoop()
+		running = false
+	end
+	
+	script.Parent.Frame2.Frame2.Oil.false1.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2560.64722, 12.9999981, 5185.50732, 0.993756056, -2.05730863e-08, 0.111574762, 2.13040892e-08, 1, -5.35945865e-09, -0.111574762, 7.70299291e-09, 0.993756056)
+		script.Parent.Frame2.Frame2.Oil.Ture1.Visible = true
+		script.Parent.Frame2.Frame2.Oil.false1.Visible = false
+		startLoop()
+	end)
+	
+	script.Parent.Frame2.Frame2.Oil.Ture1.MouseButton1Click:Connect(function()
+		if running then
+			script.Parent.Frame2.Frame2.Oil.Ture1.Visible = false
+			script.Parent.Frame2.Frame2.Oil.false1.Visible = true
+			stopLoop()
+		end
+	end)
+	
+	--------------------------------------------------
+	--แอปเปิ้ล 
+	script.Parent.Frame2.Frame2.Oil.false1.MouseButton1Click:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "รออัพเดท";
+		Text = "😗😗"; -- what the text says (ofc)
+		Duration = 5;
+	})	
+	end)
+	
+	--------------------------------------------------
+	--วัว
+	
+	local running = false
+	local loop
+	
+	
+	local function startLoop()
+		running = true
+		loop = coroutine.create(function()
+			while running do
+				--Code
+				local player = game.Players.LocalPlayer
+				local character = player.Character or player.CharacterAdded:Wait()
+	
+				local OilFolder = game.Workspace.Farm.Meat
+	
+				local OilList = {}
+	
+				for i = 1, 14 do
+					local OilName = "Meat" .. i
+					local Oil = OilFolder:FindFirstChild(OilName)
+					if Oil then
+						table.insert(OilList, Oil)
+					end
+				end
+	
+				if #OilList > 0 then
+					local randomOil = OilList[math.random(1, #OilList)]
+					character:SetPrimaryPartCFrame(randomOil.CFrame)
+				else
+					game.StarterGui:SetCore("SendNotification", {
+						Title = "ไม่พบโฟเดอร์นี้";
+						Text = "🧐"; -- what the text says (ofc)
+						Duration = 5;
+					})	
+				end
+				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
+			end
+		end)
+		coroutine.resume(loop)
+	end
+	
+	local function stopLoop()
+		running = false
+	end
+	
+	script.Parent.Frame2.Frame2.Cow.false1.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4191.59619, 32.9999924, 3419.78735, 0.351626992, -5.33386535e-09, 0.93614018, 5.09918774e-10, 1, 5.50618795e-09, -0.93614018, -1.45876899e-09, 0.351626992)
+	
+		script.Parent.Frame2.Frame2.Cow.Ture1.Visible = true
+		script.Parent.Frame2.Frame2.Cow.false1.Visible = false
+		startLoop()
+	end)
+	
+	script.Parent.Frame2.Frame2.Cow.Ture1.MouseButton1Click:Connect(function()
+		if running then
+			script.Parent.Frame2.Frame2.Cow.Ture1.Visible = false
+			script.Parent.Frame2.Frame2.Cow.false1.Visible = true
+			stopLoop()
+		end
+	end)
+	--------------------------------------------------
+	
+	
+	---------------------------------วาป--------------------
+	script.Parent.Frame2.Frame3.WorldMarket.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(857.375, 35, 3336.39331, -0.999804497, -9.52561496e-09, -0.0197724532, -1.09517257e-08, 1, 7.20178761e-08, 0.0197724532, 7.22203382e-08, -0.999804497)
+	end)
+	script.Parent.Frame2.Frame3.TP2.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1753.83032, 42.28936, 2213.89282, -0.998440444, -3.76658313e-08, 0.055827409, -3.78062559e-08, 1, -1.45916923e-09, -0.055827409, -3.56751872e-09, -0.998440444)
+	end)
+end
+coroutine.wrap(GEAFZXK_fake_script)()
