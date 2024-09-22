@@ -4,6 +4,7 @@ game.StarterGui:SetCore("SendNotification", {
 	Duration = 5;
 })
 print("KKR HUB")
+
 local KKRHUB = Instance.new("ScreenGui")
 local Frame1 = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -568,7 +569,7 @@ UIGradient.Parent = TextLabel_2
 
 -- Scripts:
 
-local function GEAFZXK_fake_script() -- KKRHUB.LocalScript 
+local function OSGRKS_fake_script() -- KKRHUB.LocalScript 
 	local script = Instance.new('LocalScript', KKRHUB)
 
 	--เปิดปิด
@@ -621,8 +622,9 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 	
 	local running = false
 	local loop
+	local Players = game:GetService("Players")
 	
-	
+	-- ฟังก์ชันเริ่มต้นลูป
 	local function startLoop()
 		running = true
 		loop = coroutine.create(function()
@@ -630,7 +632,7 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 				local player = game.Players.LocalPlayer
 				local character = player.Character or player.CharacterAdded:Wait()
 	
-				-- หาตำแหน่งของ Banana ในโฟเดอร์ Farm
+				-- หาตำแหน่งของ Banana ในโฟลเดอร์ Farm
 				local bananaFolder = game.Workspace.Farm.Banana
 	
 				-- สร้างตารางสำหรับ Banana ที่จะ Teleport
@@ -653,9 +655,29 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 				else
 					game.StarterGui:SetCore("SendNotification", {
 						Title = "ไม่พบโฟเดอร์นี้";
-						Text = "🧐"; -- what the text says (ofc)
+						Text = "🧐"; 
 						Duration = 5;
-					})	
+					})
+				end
+	
+				-- เช็คค่า Banana ใน Inventory ของผู้เล่น
+				local inventory = player:FindFirstChild("Inventory")
+				if inventory then
+					local bananaValue = inventory:FindFirstChild("Banana")
+					if bananaValue and bananaValue:IsA("IntValue") then
+						-- ถ้า Banana ครบ 50 หยุดลูป
+						if bananaValue.Value >= 50 then
+							game.StarterGui:SetCore("SendNotification", {
+								Title = "ครบ 50 กล้วยแล้ว!";
+								Text = "ลูปหยุดทำงานแล้ว 🛑";
+								Duration = 5;
+							})
+							script.Parent.Frame2.Frame2.Banana.Ture1.Visible = false
+							script.Parent.Frame2.Frame2.Banana.false1.Visible = true
+							stopLoop() -- หยุดลูป
+							break -- ออกจากลูป
+						end
+					end
 				end
 	
 				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
@@ -664,24 +686,28 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 		coroutine.resume(loop)
 	end
 	
+	-- ฟังก์ชันหยุดลูป
 	local function stopLoop()
 		running = false
 	end
 	
+	-- เมื่อกดปุ่ม false1 จะเริ่มต้นลูป
 	script.Parent.Frame2.Frame2.Banana.false1.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2928.74805, 32.9999962, 153.417542, -0.0172345024, 1.12006555e-08, 0.999851465, 1.05002869e-08, 1, -1.10213252e-08, -0.999851465, 1.03087805e-08, -0.0172345024)
 		script.Parent.Frame2.Frame2.Banana.Ture1.Visible = true
 		script.Parent.Frame2.Frame2.Banana.false1.Visible = false
-				startLoop()
+		startLoop() -- เริ่มลูป
 	end)
 	
+	-- เมื่อกดปุ่ม Ture1 จะหยุดลูป
 	script.Parent.Frame2.Frame2.Banana.Ture1.MouseButton1Click:Connect(function()
 		if running then
 			script.Parent.Frame2.Frame2.Banana.Ture1.Visible = false
 			script.Parent.Frame2.Frame2.Banana.false1.Visible = true
-			stopLoop()
+			stopLoop() -- หยุดลูป
 		end
 	end)
+	
 	
 	
 	--------------------------------------------------
@@ -722,6 +748,24 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 						Text = "🧐"; -- what the text says (ofc)
 						Duration = 5;
 					})	
+				end
+				local inventory = player:FindFirstChild("Inventory")
+				if inventory then
+					local bananaValue = inventory:FindFirstChild("Stone")
+					if bananaValue and bananaValue:IsA("IntValue") then
+						-- ถ้า Banana ครบ 50 หยุดลูป
+						if bananaValue.Value >= 60 then
+							game.StarterGui:SetCore("SendNotification", {
+								Title = "หินครบ 60 ก้อนแล้ว!";
+								Text = "ลูปหยุดทำงานแล้ว 🛑";
+								Duration = 5;
+							})
+							script.Parent.Frame2.Frame2.Stone.Ture1.Visible = false
+							script.Parent.Frame2.Frame2.Stone.false1.Visible = true
+							stopLoop() -- หยุดลูป
+							break -- ออกจากลูป
+						end
+					end
 				end
 	
 				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
@@ -787,6 +831,25 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 						Duration = 5;
 					})	
 				end
+				local inventory = player:FindFirstChild("Inventory")
+				if inventory then
+					local bananaValue = inventory:FindFirstChild("Scrap")
+					if bananaValue and bananaValue:IsA("IntValue") then
+						-- ถ้า Banana ครบ 50 หยุดลูป
+						if bananaValue.Value >= 60 then
+							game.StarterGui:SetCore("SendNotification", {
+								Title = "เหล็กครบ 60 ก้อนแล้ว!";
+								Text = "ลูปหยุดทำงานแล้ว 🛑";
+								Duration = 5;
+							})
+							script.Parent.Frame2.Frame2.Scrap.Ture1.Visible = false
+							script.Parent.Frame2.Frame2.Scrap.false1.Visible = true
+							stopLoop() -- หยุดลูป
+							break -- ออกจากลูป
+						end
+					end
+				end
+	
 				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
 			end
 		end)
@@ -850,6 +913,25 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 						Duration = 5;
 					})	
 				end
+				local inventory = player:FindFirstChild("Inventory")
+				if inventory then
+					local bananaValue = inventory:FindFirstChild("Wood")
+					if bananaValue and bananaValue:IsA("IntValue") then
+						-- ถ้า Banana ครบ 50 หยุดลูป
+						if bananaValue.Value >= 60 then
+							game.StarterGui:SetCore("SendNotification", {
+								Title = "ไม้ครบ 60 ก้อนแล้ว!";
+								Text = "ลูปหยุดทำงานแล้ว 🛑";
+								Duration = 5;
+							})
+							script.Parent.Frame2.Frame2.Wood.Ture1.Visible = false
+							script.Parent.Frame2.Frame2.Wood.false1.Visible = true
+							stopLoop() -- หยุดลูป
+							break -- ออกจากลูป
+						end
+					end
+				end
+	
 				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
 			end
 		end)
@@ -910,6 +992,25 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 						Duration = 5;
 					})	
 				end
+				local inventory = player:FindFirstChild("Inventory")
+				if inventory then
+					local bananaValue = inventory:FindFirstChild("Oil")
+					if bananaValue and bananaValue:IsA("IntValue") then
+						-- ถ้า Banana ครบ 50 หยุดลูป
+						if bananaValue.Value >= 60 then
+							game.StarterGui:SetCore("SendNotification", {
+								Title = "น้ำมันครบ 60 ก้อนแล้ว!";
+								Text = "ลูปหยุดทำงานแล้ว 🛑";
+								Duration = 5;
+							})
+							script.Parent.Frame2.Frame2.Oil.Ture1.Visible = false
+							script.Parent.Frame2.Frame2.Oil.false1.Visible = true
+							stopLoop() -- หยุดลูป
+							break -- ออกจากลูป
+						end
+					end
+				end
+	
 				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
 			end
 		end)
@@ -982,6 +1083,25 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 						Duration = 5;
 					})	
 				end
+				local inventory = player:FindFirstChild("Inventory")
+				if inventory then
+					local bananaValue = inventory:FindFirstChild("Meat")
+					if bananaValue and bananaValue:IsA("IntValue") then
+						-- ถ้า Banana ครบ 50 หยุดลูป
+						if bananaValue.Value >= 60 then
+							game.StarterGui:SetCore("SendNotification", {
+								Title = "เนื้อครบ 60 ก้อนแล้ว!";
+								Text = "ลูปหยุดทำงานแล้ว 🛑";
+								Duration = 5;
+							})
+							script.Parent.Frame2.Frame2.Cow.Ture1.Visible = false
+							script.Parent.Frame2.Frame2.Cow.false1.Visible = true
+							stopLoop() -- หยุดลูป
+							break -- ออกจากลูป
+						end
+					end
+				end
+	
 				wait(1) -- รอ 1 วินาทีก่อนจะลูปใหม่
 			end
 		end)
@@ -1018,4 +1138,4 @@ local function GEAFZXK_fake_script() -- KKRHUB.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1753.83032, 42.28936, 2213.89282, -0.998440444, -3.76658313e-08, 0.055827409, -3.78062559e-08, 1, -1.45916923e-09, -0.055827409, -3.56751872e-09, -0.998440444)
 	end)
 end
-coroutine.wrap(GEAFZXK_fake_script)()
+coroutine.wrap(OSGRKS_fake_script)()
