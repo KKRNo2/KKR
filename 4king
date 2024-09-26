@@ -1,0 +1,151 @@
+game.StarterGui:SetCore("SendNotification", {
+	Title = "KKR HUB";
+	Text = "😈";
+	Duration = 5;
+})
+print("KKR HUB")
+local KKRHUB4king = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local on = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local off = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+
+--Properties:
+
+KKRHUB4king.Name = "KKRHUB4king"
+KKRHUB4king.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+KKRHUB4king.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = KKRHUB4king
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.0558804572, 0, 0.819095492, 0)
+Frame.Size = UDim2.new(0, 100, 0, 100)
+
+on.Name = "on"
+on.Parent = Frame
+on.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+on.BorderColor3 = Color3.fromRGB(0, 0, 0)
+on.BorderSizePixel = 0
+on.Size = UDim2.new(0, 100, 0, 48)
+on.Font = Enum.Font.SourceSans
+on.Text = "On"
+on.TextColor3 = Color3.fromRGB(0, 0, 0)
+on.TextSize = 14.000
+
+UICorner.Parent = on
+
+off.Name = "off"
+off.Parent = Frame
+off.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+off.BorderColor3 = Color3.fromRGB(0, 0, 0)
+off.BorderSizePixel = 0
+off.Position = UDim2.new(0, 0, 0.519999981, 0)
+off.Size = UDim2.new(0, 100, 0, 48)
+off.Font = Enum.Font.SourceSans
+off.Text = "Off"
+off.TextColor3 = Color3.fromRGB(0, 0, 0)
+off.TextSize = 14.000
+
+UICorner_2.Parent = off
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.150000006, 0, -0.340000004, 0)
+TextLabel.Size = UDim2.new(0, 130, 0, 41)
+TextLabel.Font = Enum.Font.IndieFlower
+TextLabel.Text = "ฟาร์มผัก By.KKR"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 25.000
+TextLabel.TextWrapped = true
+
+UICorner_3.Parent = Frame
+
+-- Scripts:
+
+local function CCUMUV_fake_script() -- KKRHUB4king.LocalScript 
+	local script = Instance.new('LocalScript', KKRHUB4king)
+
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	local farmFolder = game.Workspace:WaitForChild("ที่ฟาร์มผัก") -- โฟลเดอร์ "ที่ฟาร์มผัก"
+	local farmVegetables = farmFolder:GetChildren() -- ผักฟาร์มหลายอัน
+	local teleportLoopActive = false -- สถานะการทำงานของลูป
+	
+	local onButton = script.Parent.Frame.on -- ปุ่มเปิด
+	local offButton = script.Parent.Frame.off -- ปุ่มปิด
+	
+	local function teleportAndModifyProximityPrompt()
+		-- สุ่มเลือกผักฟาร์ม
+		local randomFarm = farmVegetables[math.random(1, #farmVegetables)]
+	
+		-- หา Green Plant ภายในผักฟาร์ม
+		local greenPlant = randomFarm:FindFirstChild("Green Plant")
+	
+		if greenPlant then
+			-- หา RobPart ภายใน Green Plant
+			local robPart = greenPlant:FindFirstChild("RobPart")
+	
+			if robPart then
+				-- วาร์ปไปที่ตำแหน่งของ RobPart
+				character:SetPrimaryPartCFrame(robPart.CFrame)
+	
+				-- หา Attachment ภายใน RobPart
+				local attachment = robPart:FindFirstChild("Attachment")
+	
+				if attachment then
+					-- หา ProximityPrompt ภายใน Attachment
+					local proximityPrompt = attachment:FindFirstChild("ProximityPrompt")
+	
+					if proximityPrompt then
+						-- ตั้งค่า HoldDuration ให้เท่ากับ 0 วินาที
+						proximityPrompt.HoldDuration = 0
+					end
+				end
+			end
+		end
+	end
+	
+	-- ฟังก์ชันสำหรับเริ่มลูปการวาร์ป
+	local function startTeleportLoop()
+		teleportLoopActive = true
+		while teleportLoopActive do
+			teleportAndModifyProximityPrompt()
+			wait(1.5) -- ระยะเวลาระหว่างการวาร์ป (สามารถปรับได้ตามต้องการ)
+		end
+	end
+	
+	-- ฟังก์ชันสำหรับหยุดลูปการวาร์ป
+	local function stopTeleportLoop()
+		teleportLoopActive = false
+	end
+	
+	-- เชื่อมโยงกับปุ่ม onButton สำหรับเริ่มลูป
+	onButton.MouseButton1Click:Connect(function()
+		startTeleportLoop()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "เริ่มใช้งาน";
+			Text = "✅✅"; -- what the text says (ofc)
+			Duration = 5;
+		})	
+	end)
+	
+	-- เชื่อมโยงกับปุ่ม offButton สำหรับหยุดลูป
+	offButton.MouseButton1Click:Connect(function()
+		stopTeleportLoop()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "ปิดการใช้งาน";
+			Text = "❎❎"; -- what the text says (ofc)
+			Duration = 5;
+		})
+	end)
+	
+end
+coroutine.wrap(CCUMUV_fake_script)()
