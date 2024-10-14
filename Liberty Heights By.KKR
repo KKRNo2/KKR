@@ -1,0 +1,670 @@
+game.StarterGui:SetCore("SendNotification", {
+	Title = "KKR HUB";  -- The title
+	Text = "เปิด Ui เรียบร้อย😈"; -- The text
+	Icon = "rbxassetid://13440851998";
+	Duration = "3"; -- How much will the warning be visible
+})
+local KKRHUB = Instance.new("ScreenGui")
+local Logo = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local on = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
+local off = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Manu = Instance.new("Frame")
+local Admin = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Farm = Instance.new("TextButton")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Aimbot = Instance.new("TextButton")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local By = Instance.new("TextButton")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local KKRHUB_2 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local Logokkr = Instance.new("ImageLabel")
+local Dc = Instance.new("TextButton")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local Byyy = Instance.new("TextLabel")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local FrameAdmin = Instance.new("Frame")
+local AdminButton = Instance.new("TextButton")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local FrameFarm = Instance.new("Frame")
+local FarmButton = Instance.new("TextButton")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local TextLabel_3 = Instance.new("TextLabel")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local TextLabel_4 = Instance.new("TextLabel")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local FrameAimbot = Instance.new("Frame")
+local AimbotButton = Instance.new("TextButton")
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
+local TextLabel_5 = Instance.new("TextLabel")
+local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
+local TextLabel_6 = Instance.new("TextLabel")
+local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+KKRHUB.Name = "KKRHUB"
+KKRHUB.Parent = game.CoreGui
+KKRHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Logo.Name = "Logo"
+Logo.Parent = KKRHUB
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0.0345911942, 0, 0.281173587, 0)
+Logo.Size = UDim2.new(0.0433962271, 0, 0.0709046423, 0)
+
+UICorner.Parent = Logo
+
+on.Name = "on"
+on.Parent = Logo
+on.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+on.BorderColor3 = Color3.fromRGB(0, 0, 0)
+on.BorderSizePixel = 0
+on.Position = UDim2.new(0.171432495, 0, 0.148623765, 0)
+on.Size = UDim2.new(0.652173936, 0, 0.689655185, 0)
+on.Image = "rbxassetid://13440863336"
+
+UICorner_2.Parent = on
+
+off.Name = "off"
+off.Parent = Logo
+off.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+off.BorderColor3 = Color3.fromRGB(0, 0, 0)
+off.BorderSizePixel = 0
+off.Position = UDim2.new(0.171432495, 0, 0.148623765, 0)
+off.Size = UDim2.new(0.652173936, 0, 0.689655185, 0)
+off.Visible = false
+off.Image = "rbxassetid://13440863336"
+
+UICorner_3.Parent = off
+
+Frame.Parent = KKRHUB
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.810062885, 0, 0.360635698, 0)
+Frame.Size = UDim2.new(0.16918239, 0, 0.358190715, 0)
+
+UICorner_4.Parent = Frame
+
+Manu.Name = "Manu"
+Manu.Parent = Frame
+Manu.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Manu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Manu.BorderSizePixel = 0
+Manu.Size = UDim2.new(0.237918213, 0, 1, 0)
+Manu.ZIndex = 2
+
+Admin.Name = "Admin"
+Admin.Parent = Manu
+Admin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Admin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Admin.BorderSizePixel = 0
+Admin.Position = UDim2.new(0, 0, 0.119453922, 0)
+Admin.Size = UDim2.new(1, 0, 0.170648471, 0)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "😈AdminUi"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextScaled = true
+Admin.TextSize = 14.000
+Admin.TextWrapped = true
+
+UITextSizeConstraint.Parent = Admin
+UITextSizeConstraint.MaxTextSize = 14
+
+Farm.Name = "Farm"
+Farm.Parent = Manu
+Farm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Farm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Farm.BorderSizePixel = 0
+Farm.Position = UDim2.new(0, 0, 0.337883949, 0)
+Farm.Size = UDim2.new(1, 0, 0.170648471, 0)
+Farm.Font = Enum.Font.SourceSans
+Farm.Text = "🧑‍🌾FarmJob"
+Farm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Farm.TextScaled = true
+Farm.TextSize = 14.000
+Farm.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = Farm
+UITextSizeConstraint_2.MaxTextSize = 14
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Manu
+Aimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0, 0, 0.563139915, 0)
+Aimbot.Size = UDim2.new(1, 0, 0.170648471, 0)
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "🔫Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.TextScaled = true
+Aimbot.TextSize = 14.000
+Aimbot.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = Aimbot
+UITextSizeConstraint_3.MaxTextSize = 14
+
+By.Name = "By"
+By.Parent = Manu
+By.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+By.BorderColor3 = Color3.fromRGB(0, 0, 0)
+By.BorderSizePixel = 0
+By.Position = UDim2.new(0, 0, 0.829351544, 0)
+By.Size = UDim2.new(1, 0, 0.170648471, 0)
+By.Font = Enum.Font.SourceSans
+By.Text = "👑Credit"
+By.TextColor3 = Color3.fromRGB(0, 0, 0)
+By.TextScaled = true
+By.TextSize = 14.000
+By.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = By
+UITextSizeConstraint_4.MaxTextSize = 14
+
+KKRHUB_2.Name = "KKRHUB"
+KKRHUB_2.Parent = Frame
+KKRHUB_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KKRHUB_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KKRHUB_2.BorderSizePixel = 0
+KKRHUB_2.Position = UDim2.new(0, 0, -0.143344715, 0)
+KKRHUB_2.Size = UDim2.new(1, 0, 0.177474409, 0)
+KKRHUB_2.ZIndex = 999
+KKRHUB_2.Font = Enum.Font.Fondamento
+KKRHUB_2.Text = "KKR HUB"
+KKRHUB_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+KKRHUB_2.TextScaled = true
+KKRHUB_2.TextSize = 30.000
+KKRHUB_2.TextWrapped = true
+
+UICorner_5.Parent = KKRHUB_2
+
+UITextSizeConstraint_5.Parent = KKRHUB_2
+UITextSizeConstraint_5.MaxTextSize = 30
+
+Logokkr.Name = "Logokkr"
+Logokkr.Parent = Frame
+Logokkr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logokkr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logokkr.BorderSizePixel = 0
+Logokkr.Position = UDim2.new(0.375464678, 0, 0.238907844, 0)
+Logokkr.Size = UDim2.new(0.475836426, 0, 0.412969291, 0)
+Logokkr.Image = "rbxassetid://13440863336"
+
+Dc.Name = "Dc"
+Dc.Parent = Frame
+Dc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dc.BorderSizePixel = 0
+Dc.Position = UDim2.new(0.375464678, 0, 0.563139915, 0)
+Dc.Size = UDim2.new(0.46468401, 0, 0.150170654, 0)
+Dc.Font = Enum.Font.SourceSans
+Dc.Text = "Discord 🤙 Press to copy"
+Dc.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dc.TextScaled = true
+Dc.TextSize = 14.000
+Dc.TextWrapped = true
+Dc.MouseButton1Click:Connect(function()
+	if setclipboard then
+		setclipboard("https://discord.gg/G2KYnm8s")
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "เรียบร้อย";
+			Text = "✅";
+			Duration = 5;
+		})
+	else
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "ฟังก์ชันการคัดลอกไม่รองรับบนแพลตฟอร์มนี้";
+			Text = "⚠";
+			Duration = 5;
+		})
+	end
+end)
+
+UITextSizeConstraint_6.Parent = Dc
+UITextSizeConstraint_6.MaxTextSize = 14
+
+Byyy.Name = "Byyy"
+Byyy.Parent = Frame
+Byyy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Byyy.BackgroundTransparency = 1.000
+Byyy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Byyy.BorderSizePixel = 0
+Byyy.Position = UDim2.new(0.405204475, 0, 0.699658692, 0)
+Byyy.Size = UDim2.new(0.405204475, 0, 0.129692838, 0)
+Byyy.Font = Enum.Font.SourceSans
+Byyy.Text = "By : KKRHUB"
+Byyy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Byyy.TextScaled = true
+Byyy.TextSize = 14.000
+Byyy.TextWrapped = true
+
+UITextSizeConstraint_7.Parent = Byyy
+UITextSizeConstraint_7.MaxTextSize = 14
+
+FrameAdmin.Name = "FrameAdmin"
+FrameAdmin.Parent = Frame
+FrameAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameAdmin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAdmin.BorderSizePixel = 0
+FrameAdmin.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameAdmin.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameAdmin.Visible = false
+
+AdminButton.Name = "AdminButton"
+AdminButton.Parent = FrameAdmin
+AdminButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AdminButton.BorderSizePixel = 0
+AdminButton.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+AdminButton.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+AdminButton.Font = Enum.Font.SourceSans
+AdminButton.Text = "Admin Ui"
+AdminButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdminButton.TextScaled = true
+AdminButton.TextSize = 20.000
+AdminButton.TextWrapped = true
+AdminButton.MouseButton1Click:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "KKR HUB";
+		Text = "😈";
+		Duration = 5;
+	})
+	local player = game.Players.LocalPlayer
+	local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("AdminUi")
+	local frame = screenGui:WaitForChild("Frame")
+	local openKey = Enum.KeyCode.Z
+
+	local function toggleUI()
+		screenGui.Enabled = not screenGui.Enabled
+
+		if screenGui.Enabled then
+			frame.Visible = true
+		else
+			frame.Visible = false
+		end
+	end
+
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == openKey and not gameProcessed then
+			toggleUI()
+		end
+	end)
+
+
+	---------------------------------------
+
+
+	local KKR = game.Players.LocalPlayer
+	local KKRGui = KKR:WaitForChild("PlayerGui"):WaitForChild("Mask")
+	local KKRframe = KKRGui:WaitForChild("MainFrame")
+	local KKRKey = Enum.KeyCode.X
+	local function toggleFrame()
+		KKRframe.Visible = not KKRframe.Visible
+	end
+
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == KKRKey and not gameProcessed then
+			toggleFrame()
+		end
+	end)
+end)
+
+UITextSizeConstraint_8.Parent = AdminButton
+UITextSizeConstraint_8.MaxTextSize = 20
+
+TextLabel.Parent = FrameAdmin
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0459183678, 0, 0.333333343, 0)
+TextLabel.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "⚠Press the button Z = Choose a gun"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint_9.Parent = TextLabel
+UITextSizeConstraint_9.MaxTextSize = 14
+
+TextLabel_2.Parent = FrameAdmin
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0459183678, 0, 0.503875971, 0)
+TextLabel_2.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "⚠Press the button X = Wear a mask"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UITextSizeConstraint_10.Parent = TextLabel_2
+UITextSizeConstraint_10.MaxTextSize = 14
+
+FrameFarm.Name = "FrameFarm"
+FrameFarm.Parent = Frame
+FrameFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameFarm.BorderSizePixel = 0
+FrameFarm.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameFarm.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameFarm.Visible = false
+
+FarmButton.Name = "FarmButton"
+FarmButton.Parent = FrameFarm
+FarmButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FarmButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FarmButton.BorderSizePixel = 0
+FarmButton.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+FarmButton.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+FarmButton.Font = Enum.Font.SourceSans
+FarmButton.Text = "FarmJob"
+FarmButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FarmButton.TextScaled = true
+FarmButton.TextSize = 20.000
+FarmButton.TextWrapped = true
+FarmButton.MouseButton1Click:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "KKR HUB";
+		Text = "😈";
+		Duration = 5;
+	})
+	local farmJob = game.Workspace:WaitForChild("Farmjob")
+
+	local function setProximityPromptHoldDurationToZero(object)
+		if object:IsA("ProximityPrompt") then
+			object.HoldDuration = 0
+		end
+		for _, child in pairs(object:GetChildren()) do
+			setProximityPromptHoldDurationToZero(child)
+		end
+	end
+
+	for _, model in pairs(farmJob:GetChildren()) do
+		setProximityPromptHoldDurationToZero(model)
+	end
+
+end)
+
+UITextSizeConstraint_11.Parent = FarmButton
+UITextSizeConstraint_11.MaxTextSize = 20
+
+TextLabel_3.Parent = FrameFarm
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0153061226, 0, 0.333333343, 0)
+TextLabel_3.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "⚠You must be a farmer and go to"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UITextSizeConstraint_12.Parent = TextLabel_3
+UITextSizeConstraint_12.MaxTextSize = 14
+
+TextLabel_4.Parent = FrameFarm
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0153061226, 0, 0.503875971, 0)
+TextLabel_4.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "the farm before it can be activated."
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UITextSizeConstraint_13.Parent = TextLabel_4
+UITextSizeConstraint_13.MaxTextSize = 14
+
+FrameAimbot.Name = "FrameAimbot"
+FrameAimbot.Parent = Frame
+FrameAimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameAimbot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAimbot.BorderSizePixel = 0
+FrameAimbot.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameAimbot.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameAimbot.Visible = false
+
+AimbotButton.Name = "AimbotButton"
+AimbotButton.Parent = FrameAimbot
+AimbotButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimbotButton.BorderSizePixel = 0
+AimbotButton.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+AimbotButton.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+AimbotButton.Font = Enum.Font.SourceSans
+AimbotButton.Text = "Aimbot"
+AimbotButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AimbotButton.TextScaled = true
+AimbotButton.TextSize = 20.000
+AimbotButton.TextWrapped = true
+AimbotButton.MouseButton1Click:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "อาจมีบัคต้องขออภัยล่วงหน้าเพราะนี้คือตัวที่เราทำเอง";
+		Text = "⚠⚠⚠";
+		Duration = 15;
+	})
+	-- ตั้งค่า
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	local Camera = workspace.CurrentCamera
+	local AimbotActive = false
+	local FOV = 100 -- ระยะมุมมอง (Field of View)
+	local MaxDistance = 300 -- ระยะทางสูงสุดที่สามารถล็อกเป้าหมายได้
+	local FovEnabled = false -- สำหรับเปิด/ปิด FOV
+
+	-- วงกลม FOV
+	local fovCircle = Drawing.new("Circle")
+	fovCircle.Radius = FOV
+	fovCircle.Thickness = 2
+	fovCircle.Color = Color3.new(1, 1, 1)
+	fovCircle.Filled = false
+	fovCircle.Visible = false -- เริ่มต้นปิดวง FOV
+
+	-- ฟังก์ชันสำหรับตรวจสอบว่ามีสิ่งกีดขวางระหว่างผู้เล่นและเป้าหมายหรือไม่
+	local function isVisible(target)
+		local origin = Camera.CFrame.Position
+		local targetPosition = target.Character.Head.Position
+		local direction = (targetPosition - origin).Unit * (targetPosition - origin).Magnitude
+		local raycastParams = RaycastParams.new()
+		raycastParams.FilterDescendantsInstances = {Player.Character} -- ไม่ให้ Ray ชนตัวเราเอง
+		raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+
+		local raycastResult = workspace:Raycast(origin, direction, raycastParams)
+		if raycastResult then
+			-- ตรวจสอบว่าชนกับเป้าหมายหรือไม่
+			return raycastResult.Instance:IsDescendantOf(target.Character)
+		end
+		return true -- ถ้าไม่มีอะไรกีดขวาง
+	end
+
+	-- ฟังก์ชันสำหรับหาเป้าหมายที่อยู่ใกล้ที่สุดในวง FOV และตรวจสอบระยะทาง
+	local function findClosestPlayerInFOV()
+		local closestPlayer = nil
+		local closestDistance = FOV
+
+		for _, target in ipairs(game.Players:GetPlayers()) do
+			if target ~= Player and target.Character and target.Character:FindFirstChild("Head") then
+				local headPosition = target.Character.Head.Position
+				local screenPosition, onScreen = Camera:WorldToScreenPoint(headPosition)
+
+				if onScreen then
+					local mousePos = Vector2.new(Mouse.X, Mouse.Y)
+					local screenPos = Vector2.new(screenPosition.X, screenPosition.Y)
+					local distanceFromMouse = (mousePos - screenPos).Magnitude
+
+					-- ตรวจสอบระยะทาง
+					local playerDistance = (Camera.CFrame.Position - headPosition).Magnitude
+					if distanceFromMouse < closestDistance and playerDistance <= MaxDistance and isVisible(target) then
+						closestDistance = distanceFromMouse
+						closestPlayer = target
+					end
+				end
+			end
+		end
+
+		return closestPlayer
+	end
+
+	-- ฟังก์ชันล็อกเป้าหมายไปที่หัว
+	local function lockOnTarget(target)
+		if target and target.Character and target.Character:FindFirstChild("Head") then
+			local head = target.Character.Head
+			Camera.CFrame = CFrame.lookAt(Camera.CFrame.Position, head.Position)
+		end
+	end
+
+	-- เปิด/ปิด Aimbot และ FOV เมื่อกดปุ่ม E
+	local UIS = game:GetService("UserInputService")
+	UIS.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.F then
+			AimbotActive = not AimbotActive
+			fovCircle.Visible = AimbotActive -- เปิด/ปิดวง FOV ตามสถานะ Aimbot
+		end
+	end)
+
+	-- เปิดใช้งาน FOV เมื่อคลิกขวา
+	Mouse.Button2Down:Connect(function()
+		FovEnabled = true
+	end)
+
+	-- ปิด FOV เมื่อปล่อยคลิกขวา
+	Mouse.Button2Up:Connect(function()
+		FovEnabled = false
+	end)
+
+	-- อัปเดตการล็อกเป้าหมายและวง FOV ขณะ Aimbot เปิดใช้งาน
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if fovCircle.Visible then
+			fovCircle.Position = Vector2.new(Mouse.X, Mouse.Y)
+		end
+
+		if AimbotActive and FovEnabled then
+			local target = findClosestPlayerInFOV()
+			if target then
+				lockOnTarget(target)
+			end
+		end
+	end)
+
+end)
+
+UITextSizeConstraint_14.Parent = AimbotButton
+UITextSizeConstraint_14.MaxTextSize = 20
+
+TextLabel_5.Parent = FrameAimbot
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0153061226, 0, 0.333333343, 0)
+TextLabel_5.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "⚠Right click to use Aimbot"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UITextSizeConstraint_15.Parent = TextLabel_5
+UITextSizeConstraint_15.MaxTextSize = 14
+
+TextLabel_6.Parent = FrameAimbot
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0153061226, 0, 0.503875971, 0)
+TextLabel_6.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "⚠Press the button F = To turn on/off"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UITextSizeConstraint_16.Parent = TextLabel_6
+UITextSizeConstraint_16.MaxTextSize = 14
+
+-- Scripts:
+
+local function HGQNOFQ_fake_script() -- KKRHUB.KKRcode 
+	local script = Instance.new('LocalScript', KKRHUB)
+
+	local Bg = script.Parent.Frame
+	
+	script.Parent.Logo.Draggable = true
+	script.Parent.Logo.Active = true
+	script.Parent.Frame.Draggable = true
+	script.Parent.Frame.Active = true
+	
+	script.Parent.Logo.on.MouseButton1Click:Connect(function()
+		Bg.Visible = true
+		script.Parent.Logo.off.Visible = true
+		script.Parent.Logo.on.Visible = false
+	
+	end)
+	script.Parent.Logo.off.MouseButton1Click:Connect(function()
+		Bg.Visible = false
+		script.Parent.Logo.on.Visible = true
+		script.Parent.Logo.off.Visible = false
+	
+	end)
+	-------------------------------------------
+	local ad = script.Parent.Frame.Manu.Admin
+	local Fa = script.Parent.Frame.Manu.Farm
+	local Aim = script.Parent.Frame.Manu.Aimbot
+	local By = script.Parent.Frame.Manu.By
+	-----------------------------------------------
+	local Fad = script.Parent.Frame.FrameAdmin
+	local Faim = script.Parent.Frame.FrameAimbot
+	local ff = script.Parent.Frame.FrameFarm
+	
+	-----------------------------------------------
+	ad.MouseButton1Click:Connect(function()
+		Fad.Visible = true
+		Faim.Visible = false
+		ff.Visible = false
+	end)
+	-----------------------------------------------
+	Fa.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = false
+		ff.Visible = true
+	end)
+	-----------------------------------------------
+	Aim.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = true
+		ff.Visible = false
+	end)
+	-----------------------------------------------
+	By.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = false
+		ff.Visible = false
+	end)
+	-----------------------------------------------
+end
+coroutine.wrap(HGQNOFQ_fake_script)()
