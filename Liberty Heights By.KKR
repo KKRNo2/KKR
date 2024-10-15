@@ -284,44 +284,111 @@ AdminButton.MouseButton1Click:Connect(function()
 		Text = "😈";
 		Duration = 5;
 	})
-	local player = game.Players.LocalPlayer
-	local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("AdminUi")
-	local frame = screenGui:WaitForChild("Frame")
-	local openKey = Enum.KeyCode.Z
+local Player = game.Players.LocalPlayer
+local Mouse = Player:GetMouse()
+local Camera = workspace.CurrentCamera
+local AimbotActive = false
+local FOV = 100 -- ระยะมุมมอง (Field of View)
+local MaxDistance = 300 -- ระยะทางสูงสุดที่สามารถล็อกเป้าหมายได้
+local FovEnabled = false -- สำหรับเปิด/ปิด FOV
 
-	local function toggleUI()
-		screenGui.Enabled = not screenGui.Enabled
+-- วงกลม FOV
+local fovCircle = Drawing.new("Circle")
+fovCircle.Radius = FOV
+fovCircle.Thickness = 2
+fovCircle.Color = Color3.new(1, 1, 1)
+fovCircle.Filled = false
+fovCircle.Visible = false -- เริ่มต้นปิดวง FOV
 
-		if screenGui.Enabled then
-			frame.Visible = true
-		else
-			frame.Visible = false
-		end
-	end
+-- ฟังก์ชันสำหรับตรวจสอบว่ามีสิ่งกีดขวางระหว่างผู้เล่นและเป้าหมายหรือไม่
+local function isVisible(target)
+    local origin = Camera.CFrame.Position
+    local targetPosition = target.Character.Head.Position
+    local direction = (targetPosition - origin).Unit * (targetPosition - origin).Magnitude
+    local raycastParams = RaycastParams.new()
+    raycastParams.FilterDescendantsInstances = {Player.Character} -- ไม่ให้ Ray ชนตัวเราเอง
+    raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
 
-	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
-		if input.KeyCode == openKey and not gameProcessed then
-			toggleUI()
-		end
-	end)
+    local raycastResult = workspace:Raycast(origin, direction, raycastParams)
+    if raycastResult then
+        -- ตรวจสอบว่าชนกับเป้าหมายหรือไม่
+        return raycastResult.Instance:IsDescendantOf(target.Character)
+    end
+    return true -- ถ้าไม่มีอะไรกีดขวาง
+end
 
+-- ฟังก์ชันสำหรับหาเป้าหมายที่อยู่ใกล้ที่สุดในวง FOV และตรวจสอบระยะทาง
+local function findClosestPlayerInFOV()
+    local closestPlayer = nil
+    local closestDistance = FOV
 
-	---------------------------------------
+    for _, target in ipairs(game.Players:GetPlayers()) do
+        if target ~= Player and target.Character and target.Character:FindFirstChild("Head") then
+            local headPosition = target.Character.Head.Position
+            local screenPosition, onScreen = Camera:WorldToScreenPoint(headPosition)
 
+            if onScreen then
+                local mousePos = Vector2.new(Mouse.X, Mouse.Y)
+                local screenPos = Vector2.new(screenPosition.X, screenPosition.Y)
+                local distanceFromMouse = (mousePos - screenPos).Magnitude
 
-	local KKR = game.Players.LocalPlayer
-	local KKRGui = KKR:WaitForChild("PlayerGui"):WaitForChild("Mask")
-	local KKRframe = KKRGui:WaitForChild("MainFrame")
-	local KKRKey = Enum.KeyCode.X
-	local function toggleFrame()
-		KKRframe.Visible = not KKRframe.Visible
-	end
+                -- ตรวจสอบระยะทาง
+                local playerDistance = (Camera.CFrame.Position - headPosition).Magnitude
+                if distanceFromMouse < closestDistance and playerDistance <= MaxDistance and isVisible(target) then
+                    closestDistance = distanceFromMouse
+                    closestPlayer = target
+                end
+            end
+        end
+    end
 
-	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
-		if input.KeyCode == KKRKey and not gameProcessed then
-			toggleFrame()
-		end
-	end)
+    return closestPlayer
+end
+
+-- ฟังก์ชันล็อกเป้าหมายไปที่หัว (แก้ไขให้กล้องไม่เอียงโดยใช้ Vector3 ของตัวผู้เล่น)
+local function lockOnTarget(target)
+    if target and target.Character and target.Character:FindFirstChild("Head") then
+        local head = target.Character.Head
+        local camPosition = Camera.CFrame.Position
+        -- คำนวณทิศทางไปที่เป้าหมายโดยไม่มีการเอียง
+        local direction = (head.Position - camPosition).Unit
+        -- ปรับ CFrame ของกล้องเพื่อเล็งไปที่หัวเป้าหมาย โดยใช้ Y axis เป็นแนวตั้งเพื่อป้องกันการเอียง
+        Camera.CFrame = CFrame.new(camPosition, camPosition + Vector3.new(direction.X, 0, direction.Z))
+    end
+end
+
+-- เปิด/ปิด Aimbot และ FOV เมื่อกดปุ่ม F
+local UIS = game:GetService("UserInputService")
+UIS.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.F then
+        AimbotActive = not AimbotActive
+        fovCircle.Visible = AimbotActive -- เปิด/ปิดวง FOV ตามสถานะ Aimbot
+    end
+end)
+
+-- เปิดใช้งาน FOV เมื่อคลิกขวา
+Mouse.Button2Down:Connect(function()
+    FovEnabled = true
+end)
+
+-- ปิด FOV เมื่อปล่อยคลิกขวา
+Mouse.Button2Up:Connect(function()
+    FovEnabled = false
+end)
+
+-- อัปเดตการล็อกเป้าหมายและวง FOV ขณะ Aimbot เปิดใช้งาน
+game:GetService("RunService").RenderStepped:Connect(function()
+    if fovCircle.Visible then
+        fovCircle.Position = Vector2.new(Mouse.X, Mouse.Y)
+    end
+
+    if AimbotActive and FovEnabled then
+        local target = findClosestPlayerInFOV()
+        if target then
+            lockOnTarget(target)
+        end
+    end
+end)
 end)
 
 UITextSizeConstraint_8.Parent = AdminButton
