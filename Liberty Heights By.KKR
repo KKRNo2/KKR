@@ -467,108 +467,91 @@ AimbotButton.MouseButton1Click:Connect(function()
 		Text = "⚠⚠⚠";
 		Duration = 15;
 	})
-	-- ตั้งค่า
-	local Player = game.Players.LocalPlayer
-	local Mouse = Player:GetMouse()
-	local Camera = workspace.CurrentCamera
-	local AimbotActive = false
-	local FOV = 100 -- ระยะมุมมอง (Field of View)
-	local MaxDistance = 300 -- ระยะทางสูงสุดที่สามารถล็อกเป้าหมายได้
-	local FovEnabled = false -- สำหรับเปิด/ปิด FOV
+local Camera = workspace.CurrentCamera
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local TweenService = game:GetService("TweenService")
+local LocalPlayer = Players.LocalPlayer
+local Holding = false
 
-	-- วงกลม FOV
-	local fovCircle = Drawing.new("Circle")
-	fovCircle.Radius = FOV
-	fovCircle.Thickness = 2
-	fovCircle.Color = Color3.new(1, 1, 1)
-	fovCircle.Filled = false
-	fovCircle.Visible = false -- เริ่มต้นปิดวง FOV
+_G.AimbotEnabled = true
+_G.FovEnabled = true -- เปิด/ปิด FOV
+_G.TeamCheck = false -- ล็อกเป้าเฉพาะทีมศัตรู
+_G.AimPart = "Head" -- ส่วนที่จะล็อก
+_G.Sensitivity = 0 -- ความไวในการล็อกเป้า
+_G.FovRadius = 100 -- ขนาดวง FOV
+_G.MaximumLockDistance = 300 -- ระยะทางสูงสุดในการล็อกเป้า
 
-	-- ฟังก์ชันสำหรับตรวจสอบว่ามีสิ่งกีดขวางระหว่างผู้เล่นและเป้าหมายหรือไม่
-	local function isVisible(target)
-		local origin = Camera.CFrame.Position
-		local targetPosition = target.Character.Head.Position
-		local direction = (targetPosition - origin).Unit * (targetPosition - origin).Magnitude
-		local raycastParams = RaycastParams.new()
-		raycastParams.FilterDescendantsInstances = {Player.Character} -- ไม่ให้ Ray ชนตัวเราเอง
-		raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+local FovCircle = Drawing.new("Circle")
+FovCircle.Color = Color3.fromRGB(255, 255, 255)
+FovCircle.Thickness = 2
+FovCircle.NumSides = 64
+FovCircle.Radius = _G.FovRadius
+FovCircle.Visible = _G.FovEnabled
+FovCircle.Transparency = 1
 
-		local raycastResult = workspace:Raycast(origin, direction, raycastParams)
-		if raycastResult then
-			-- ตรวจสอบว่าชนกับเป้าหมายหรือไม่
-			return raycastResult.Instance:IsDescendantOf(target.Character)
-		end
-		return true -- ถ้าไม่มีอะไรกีดขวาง
-	end
+local function UpdateFov()
+    FovCircle.Position = UserInputService:GetMouseLocation()
+    FovCircle.Radius = _G.FovRadius
+    FovCircle.Visible = _G.FovEnabled
+end
 
-	-- ฟังก์ชันสำหรับหาเป้าหมายที่อยู่ใกล้ที่สุดในวง FOV และตรวจสอบระยะทาง
-	local function findClosestPlayerInFOV()
-		local closestPlayer = nil
-		local closestDistance = FOV
+local function GetClosestPlayer()
+    local MaximumDistance = _G.FovRadius
+    local Target = nil
 
-		for _, target in ipairs(game.Players:GetPlayers()) do
-			if target ~= Player and target.Character and target.Character:FindFirstChild("Head") then
-				local headPosition = target.Character.Head.Position
-				local screenPosition, onScreen = Camera:WorldToScreenPoint(headPosition)
+    coroutine.wrap(function()
+        wait(20); MaximumDistance = _G.FovRadius -- Reset MaximumDistance
+    end)()
 
-				if onScreen then
-					local mousePos = Vector2.new(Mouse.X, Mouse.Y)
-					local screenPos = Vector2.new(screenPosition.X, screenPosition.Y)
-					local distanceFromMouse = (mousePos - screenPos).Magnitude
+    for _, v in next, Players:GetPlayers() do
+        if v.Name ~= LocalPlayer.Name then
+            if _G.TeamCheck and v.Team ~= LocalPlayer.Team or not _G.TeamCheck then
+                if v.Character and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Humanoid").Health > 0 then
+                    local ScreenPoint = Camera:WorldToScreenPoint(v.Character.HumanoidRootPart.Position)
+                    local VectorDistance = (Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2.new(ScreenPoint.X, ScreenPoint.Y)).Magnitude
+                    local WorldDistance = (v.Character.HumanoidRootPart.Position - LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+                    
+                    -- ตรวจสอบระยะทาง
+                    if VectorDistance < MaximumDistance and WorldDistance <= _G.MaximumLockDistance then
+                        Target = v
+                        MaximumDistance = VectorDistance
+                    end
+                end
+            end
+        end
+    end
 
-					-- ตรวจสอบระยะทาง
-					local playerDistance = (Camera.CFrame.Position - headPosition).Magnitude
-					if distanceFromMouse < closestDistance and playerDistance <= MaxDistance and isVisible(target) then
-						closestDistance = distanceFromMouse
-						closestPlayer = target
-					end
-				end
-			end
-		end
+    return Target
+end
 
-		return closestPlayer
-	end
+UserInputService.InputBegan:Connect(function(Input)
+    if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+        Holding = true
+    elseif Input.KeyCode == Enum.KeyCode.F then
+        _G.AimbotEnabled = not _G.AimbotEnabled
+        _G.FovEnabled = not _G.FovEnabled
+        FovCircle.Visible = _G.FovEnabled
+    end
+end)
 
-	-- ฟังก์ชันล็อกเป้าหมายไปที่หัว
-	local function lockOnTarget(target)
-		if target and target.Character and target.Character:FindFirstChild("Head") then
-			local head = target.Character.Head
-			Camera.CFrame = CFrame.lookAt(Camera.CFrame.Position, head.Position)
-		end
-	end
+UserInputService.InputEnded:Connect(function(Input)
+    if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+        Holding = false
+    end
+end)
 
-	-- เปิด/ปิด Aimbot และ FOV เมื่อกดปุ่ม E
-	local UIS = game:GetService("UserInputService")
-	UIS.InputBegan:Connect(function(input)
-		if input.KeyCode == Enum.KeyCode.F then
-			AimbotActive = not AimbotActive
-			fovCircle.Visible = AimbotActive -- เปิด/ปิดวง FOV ตามสถานะ Aimbot
-		end
-	end)
+RunService.RenderStepped:Connect(function()
+    UpdateFov()
+    if Holding and _G.AimbotEnabled then
+        local ClosestPlayer = GetClosestPlayer()
+        if ClosestPlayer then
+            TweenService:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, ClosestPlayer.Character[_G.AimPart].Position)}):Play()
+        end
+    end
+end)
 
-	-- เปิดใช้งาน FOV เมื่อคลิกขวา
-	Mouse.Button2Down:Connect(function()
-		FovEnabled = true
-	end)
-
-	-- ปิด FOV เมื่อปล่อยคลิกขวา
-	Mouse.Button2Up:Connect(function()
-		FovEnabled = false
-	end)
-
-	-- อัปเดตการล็อกเป้าหมายและวง FOV ขณะ Aimbot เปิดใช้งาน
-	game:GetService("RunService").RenderStepped:Connect(function()
-		if fovCircle.Visible then
-			fovCircle.Position = Vector2.new(Mouse.X, Mouse.Y)
-		end
-
-		if AimbotActive and FovEnabled then
-			local target = findClosestPlayerInFOV()
-			if target then
-				lockOnTarget(target)
-			end
-		end
-	end)
 
 end)
 
