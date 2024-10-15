@@ -476,12 +476,11 @@ local LocalPlayer = Players.LocalPlayer
 local Holding = false
 
 _G.AimbotEnabled = true
-_G.FovEnabled = true -- เปิด/ปิด FOV
+_G.FovEnabled = true -- เปิด/ปิดการแสดงและใช้ FOV
 _G.TeamCheck = false -- ล็อกเป้าเฉพาะทีมศัตรู
 _G.AimPart = "Head" -- ส่วนที่จะล็อก
 _G.Sensitivity = 0 -- ความไวในการล็อกเป้า
 _G.FovRadius = 100 -- ขนาดวง FOV
-_G.MaximumLockDistance = 300 -- ระยะทางสูงสุดในการล็อกเป้า
 
 local FovCircle = Drawing.new("Circle")
 FovCircle.Color = Color3.fromRGB(255, 255, 255)
@@ -511,10 +510,8 @@ local function GetClosestPlayer()
                 if v.Character and v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Humanoid").Health > 0 then
                     local ScreenPoint = Camera:WorldToScreenPoint(v.Character.HumanoidRootPart.Position)
                     local VectorDistance = (Vector2.new(UserInputService:GetMouseLocation().X, UserInputService:GetMouseLocation().Y) - Vector2.new(ScreenPoint.X, ScreenPoint.Y)).Magnitude
-                    local WorldDistance = (v.Character.HumanoidRootPart.Position - LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
                     
-                    -- ตรวจสอบระยะทาง
-                    if VectorDistance < MaximumDistance and WorldDistance <= _G.MaximumLockDistance then
+                    if VectorDistance < MaximumDistance then
                         Target = v
                         MaximumDistance = VectorDistance
                     end
@@ -551,8 +548,6 @@ RunService.RenderStepped:Connect(function()
         end
     end
 end)
-
-
 end)
 
 UITextSizeConstraint_14.Parent = AimbotButton
