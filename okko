@@ -1,0 +1,2019 @@
+
+
+local KKRHUB = Instance.new("ScreenGui")
+local Logo = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local on = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
+local off = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local FrameE = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Manu = Instance.new("Frame")
+local Admin = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Farm = Instance.new("TextButton")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Aimbot = Instance.new("TextButton")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local By = Instance.new("TextButton")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local Hunger = Instance.new("TextButton")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local KKRHUB_2 = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local Thai = Instance.new("ImageButton")
+local UICorner_6 = Instance.new("UICorner")
+local Logokkr = Instance.new("ImageLabel")
+local Dc = Instance.new("TextButton")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local Byyy = Instance.new("TextLabel")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local FrameAdmin = Instance.new("Frame")
+local AdminButton = Instance.new("TextButton")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local TextLabel_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local FrameFarm = Instance.new("Frame")
+local FarmButton = Instance.new("TextButton")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local TextLabel_3 = Instance.new("TextLabel")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local TextLabel_4 = Instance.new("TextLabel")
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
+local FrameAimbot = Instance.new("Frame")
+local AimbotButton = Instance.new("TextButton")
+local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
+local TextLabel_5 = Instance.new("TextLabel")
+local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
+local TextLabel_6 = Instance.new("TextLabel")
+local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local FrameNoH = Instance.new("Frame")
+local NoHButton = Instance.new("TextButton")
+local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
+local TextLabel_7 = Instance.new("TextLabel")
+local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
+local FrameT = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local Manu_2 = Instance.new("Frame")
+local Admin_2 = Instance.new("TextButton")
+local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
+local Farm_2 = Instance.new("TextButton")
+local UITextSizeConstraint_21 = Instance.new("UITextSizeConstraint")
+local Aimbot_2 = Instance.new("TextButton")
+local UITextSizeConstraint_22 = Instance.new("UITextSizeConstraint")
+local By_2 = Instance.new("TextButton")
+local UITextSizeConstraint_23 = Instance.new("UITextSizeConstraint")
+local Hunger_2 = Instance.new("TextButton")
+local UITextSizeConstraint_24 = Instance.new("UITextSizeConstraint")
+local KKRHUB_3 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local UITextSizeConstraint_25 = Instance.new("UITextSizeConstraint")
+local E = Instance.new("ImageButton")
+local UICorner_9 = Instance.new("UICorner")
+local Logokkr_2 = Instance.new("ImageLabel")
+local Dc_2 = Instance.new("TextButton")
+local UITextSizeConstraint_26 = Instance.new("UITextSizeConstraint")
+local Byyy_2 = Instance.new("TextLabel")
+local UITextSizeConstraint_27 = Instance.new("UITextSizeConstraint")
+local FrameAdmin_2 = Instance.new("Frame")
+local AdminButton_2 = Instance.new("TextButton")
+local UITextSizeConstraint_28 = Instance.new("UITextSizeConstraint")
+local TextLabel_8 = Instance.new("TextLabel")
+local UITextSizeConstraint_29 = Instance.new("UITextSizeConstraint")
+local TextLabel_9 = Instance.new("TextLabel")
+local UITextSizeConstraint_30 = Instance.new("UITextSizeConstraint")
+local FrameFarm_2 = Instance.new("Frame")
+local FarmButton_2 = Instance.new("TextButton")
+local UITextSizeConstraint_31 = Instance.new("UITextSizeConstraint")
+local TextLabel_10 = Instance.new("TextLabel")
+local UITextSizeConstraint_32 = Instance.new("UITextSizeConstraint")
+local TextLabel_11 = Instance.new("TextLabel")
+local UITextSizeConstraint_33 = Instance.new("UITextSizeConstraint")
+local FrameAimbot_2 = Instance.new("Frame")
+local AimbotButton_2 = Instance.new("TextButton")
+local UITextSizeConstraint_34 = Instance.new("UITextSizeConstraint")
+local TextLabel_12 = Instance.new("TextLabel")
+local UITextSizeConstraint_35 = Instance.new("UITextSizeConstraint")
+local TextLabel_13 = Instance.new("TextLabel")
+local UITextSizeConstraint_36 = Instance.new("UITextSizeConstraint")
+local FrameNoH_2 = Instance.new("Frame")
+local NoHButton_2 = Instance.new("TextButton")
+local UITextSizeConstraint_37 = Instance.new("UITextSizeConstraint")
+local TextLabel_14 = Instance.new("TextLabel")
+local UITextSizeConstraint_38 = Instance.new("UITextSizeConstraint")
+local TextLabel_15 = Instance.new("TextLabel")
+local UITextSizeConstraint_39 = Instance.new("UITextSizeConstraint")
+local Notification = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local KKR = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel_16 = Instance.new("TextLabel")
+local UITextSizeConstraint_40 = Instance.new("UITextSizeConstraint")
+local UIGradient_2 = Instance.new("UIGradient")
+
+--Properties:
+
+KKRHUB.Name = "KKRHUB"
+KKRHUB.Parent = game.CoreGui
+KKRHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Logo.Name = "Logo"
+Logo.Parent = KKRHUB
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0.0345911942, 0, 0.281173587, 0)
+Logo.Size = UDim2.new(0.0433962271, 0, 0.0709046423, 0)
+
+UICorner.Parent = Logo
+
+on.Name = "on"
+on.Parent = Logo
+on.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+on.BorderColor3 = Color3.fromRGB(0, 0, 0)
+on.BorderSizePixel = 0
+on.Position = UDim2.new(0.171432495, 0, 0.148623765, 0)
+on.Size = UDim2.new(0.652173936, 0, 0.689655185, 0)
+on.Image = "rbxassetid://13440863336"
+
+UICorner_2.Parent = on
+
+off.Name = "off"
+off.Parent = Logo
+off.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+off.BorderColor3 = Color3.fromRGB(0, 0, 0)
+off.BorderSizePixel = 0
+off.Position = UDim2.new(0.171432495, 0, 0.148623765, 0)
+off.Size = UDim2.new(0.652173936, 0, 0.689655185, 0)
+off.Visible = false
+off.Image = "rbxassetid://13440863336"
+
+UICorner_3.Parent = off
+
+FrameE.Name = "FrameE"
+FrameE.Parent = KKRHUB
+FrameE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameE.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameE.BorderSizePixel = 0
+FrameE.Position = UDim2.new(0.810062885, 0, 0.360635698, 0)
+FrameE.Size = UDim2.new(0.16918239, 0, 0.358190715, 0)
+
+UICorner_4.Parent = FrameE
+
+Manu.Name = "Manu"
+Manu.Parent = FrameE
+Manu.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Manu.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Manu.BorderSizePixel = 0
+Manu.Size = UDim2.new(0.237918213, 0, 1, 0)
+Manu.ZIndex = 2
+
+Admin.Name = "Admin"
+Admin.Parent = Manu
+Admin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Admin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Admin.BorderSizePixel = 0
+Admin.Position = UDim2.new(0, 0, 0.0682593882, 0)
+Admin.Size = UDim2.new(1, 0, 0.170648471, 0)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "😈AdminUi"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextScaled = true
+Admin.TextSize = 14.000
+Admin.TextWrapped = true
+
+UITextSizeConstraint.Parent = Admin
+UITextSizeConstraint.MaxTextSize = 14
+
+Farm.Name = "Farm"
+Farm.Parent = Manu
+Farm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Farm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Farm.BorderSizePixel = 0
+Farm.Position = UDim2.new(0, 0, 0.283276439, 0)
+Farm.Size = UDim2.new(1, 0, 0.170648471, 0)
+Farm.Font = Enum.Font.SourceSans
+Farm.Text = "🧑‍🌾FarmJob"
+Farm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Farm.TextScaled = true
+Farm.TextSize = 14.000
+Farm.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = Farm
+UITextSizeConstraint_2.MaxTextSize = 14
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = Manu
+Aimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.BorderSizePixel = 0
+Aimbot.Position = UDim2.new(0, 0, 0.481228679, 0)
+Aimbot.Size = UDim2.new(1, 0, 0.170648471, 0)
+Aimbot.Font = Enum.Font.SourceSans
+Aimbot.Text = "🔫Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.TextScaled = true
+Aimbot.TextSize = 14.000
+Aimbot.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = Aimbot
+UITextSizeConstraint_3.MaxTextSize = 14
+
+By.Name = "By"
+By.Parent = Manu
+By.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+By.BorderColor3 = Color3.fromRGB(0, 0, 0)
+By.BorderSizePixel = 0
+By.Position = UDim2.new(0, 0, 0.914675772, 0)
+By.Size = UDim2.new(1, 0, 0.0853242353, 0)
+By.Font = Enum.Font.SourceSans
+By.Text = "👑Credit"
+By.TextColor3 = Color3.fromRGB(0, 0, 0)
+By.TextScaled = true
+By.TextSize = 14.000
+By.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = By
+UITextSizeConstraint_4.MaxTextSize = 14
+
+Hunger.Name = "Hunger"
+Hunger.Parent = Manu
+Hunger.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hunger.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hunger.BorderSizePixel = 0
+Hunger.Position = UDim2.new(0, 0, 0.699658692, 0)
+Hunger.Size = UDim2.new(1, 0, 0.170648471, 0)
+Hunger.Font = Enum.Font.SourceSans
+Hunger.Text = "😶No Hunger"
+Hunger.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hunger.TextScaled = true
+Hunger.TextSize = 14.000
+Hunger.TextWrapped = true
+
+UITextSizeConstraint_5.Parent = Hunger
+UITextSizeConstraint_5.MaxTextSize = 14
+
+KKRHUB_2.Name = "KKRHUB"
+KKRHUB_2.Parent = FrameE
+KKRHUB_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KKRHUB_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KKRHUB_2.BorderSizePixel = 0
+KKRHUB_2.Position = UDim2.new(0, 0, -0.143344715, 0)
+KKRHUB_2.Size = UDim2.new(1, 0, 0.177474409, 0)
+KKRHUB_2.ZIndex = 999
+KKRHUB_2.Font = Enum.Font.Fondamento
+KKRHUB_2.Text = "KKR HUB"
+KKRHUB_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+KKRHUB_2.TextScaled = true
+KKRHUB_2.TextSize = 30.000
+KKRHUB_2.TextWrapped = true
+
+UICorner_5.Parent = KKRHUB_2
+
+UITextSizeConstraint_6.Parent = KKRHUB_2
+UITextSizeConstraint_6.MaxTextSize = 30
+
+Thai.Name = "Thai"
+Thai.Parent = KKRHUB_2
+Thai.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Thai.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Thai.BorderSizePixel = 0
+Thai.Position = UDim2.new(0.807199121, 0, 0.0961538404, 0)
+Thai.Size = UDim2.new(0.18227078, 0, 0.711538434, 0)
+Thai.Image = "rbxassetid://7392792063"
+
+UICorner_6.Parent = Thai
+
+Logokkr.Name = "Logokkr"
+Logokkr.Parent = FrameE
+Logokkr.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logokkr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logokkr.BorderSizePixel = 0
+Logokkr.Position = UDim2.new(0.375464678, 0, 0.238907844, 0)
+Logokkr.Size = UDim2.new(0.475836426, 0, 0.412969291, 0)
+Logokkr.Image = "rbxassetid://13440863336"
+
+Dc.Name = "Dc"
+Dc.Parent = FrameE
+Dc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dc.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dc.BorderSizePixel = 0
+Dc.Position = UDim2.new(0.375464678, 0, 0.563139915, 0)
+Dc.Size = UDim2.new(0.46468401, 0, 0.150170654, 0)
+Dc.Font = Enum.Font.SourceSans
+Dc.Text = "Discord 🤙 Press to copy"
+Dc.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dc.TextScaled = true
+Dc.TextSize = 14.000
+Dc.TextWrapped = true
+Dc.MouseButton1Click:Connect(function()
+	if setclipboard then
+		setclipboard("https://discord.gg/G2KYnm8s")
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "เรียบร้อย";
+			Text = "✅";
+			Duration = 5;
+		})
+	else
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "ฟังก์ชันการคัดลอกไม่รองรับบนแพลตฟอร์มนี้";
+			Text = "⚠";
+			Duration = 5;
+		})
+	end
+end)
+
+UITextSizeConstraint_7.Parent = Dc
+UITextSizeConstraint_7.MaxTextSize = 14
+
+Byyy.Name = "Byyy"
+Byyy.Parent = FrameE
+Byyy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Byyy.BackgroundTransparency = 1.000
+Byyy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Byyy.BorderSizePixel = 0
+Byyy.Position = UDim2.new(0.405204475, 0, 0.699658692, 0)
+Byyy.Size = UDim2.new(0.405204475, 0, 0.129692838, 0)
+Byyy.Font = Enum.Font.SourceSans
+Byyy.Text = "By : KKRHUB"
+Byyy.TextColor3 = Color3.fromRGB(0, 0, 0)
+Byyy.TextScaled = true
+Byyy.TextSize = 14.000
+Byyy.TextWrapped = true
+
+UITextSizeConstraint_8.Parent = Byyy
+UITextSizeConstraint_8.MaxTextSize = 14
+
+FrameAdmin.Name = "FrameAdmin"
+FrameAdmin.Parent = FrameE
+FrameAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameAdmin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAdmin.BorderSizePixel = 0
+FrameAdmin.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameAdmin.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameAdmin.Visible = false
+
+AdminButton.Name = "AdminButton"
+AdminButton.Parent = FrameAdmin
+AdminButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AdminButton.BorderSizePixel = 0
+AdminButton.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+AdminButton.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+AdminButton.Font = Enum.Font.SourceSans
+AdminButton.Text = "Admin Ui"
+AdminButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdminButton.TextScaled = true
+AdminButton.TextSize = 20.000
+AdminButton.TextWrapped = true
+AdminButton.MouseButton1Click:Connect(function()
+	-- LocalScript ภายใน StarterPlayerScripts
+	local player = game.Players.LocalPlayer
+	local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("AdminUi") -- ชื่อ ScreenGui: AdminUi
+	local frame = screenGui:WaitForChild("Frame") -- ชื่อ Frame ภายใน AdminUi
+	local openKey = Enum.KeyCode.Z -- กดปุ่ม E เพื่อเปิด/ปิด UI
+
+	local function toggleUI()
+		-- สลับการเปิด/ปิด ScreenGui
+		screenGui.Enabled = not screenGui.Enabled
+
+		-- ถ้า ScreenGui ถูกเปิดอยู่ ให้เปิด Frame ด้วย
+		if screenGui.Enabled then
+			frame.Visible = true
+		else
+			frame.Visible = false
+		end
+	end
+
+	-- ตรวจจับการกดปุ่ม
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == openKey and not gameProcessed then
+			toggleUI() -- สลับการเปิด/ปิด UI และ Frame
+		end
+	end)
+
+	----------------------------
+
+	-- LocalScript ภายใน StarterPlayerScripts
+	local player = game.Players.LocalPlayer
+	local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("Mask") -- ชื่อ ScreenGui: AdminUi
+	local frame = screenGui:WaitForChild("MainFrame") -- ชื่อ Frame ภายใน AdminUi
+	local openKey = Enum.KeyCode.X -- กดปุ่ม E เพื่อเปิด/ปิด Frame
+
+	local function toggleFrame()
+		-- สลับการเปิด/ปิดเฉพาะ Frame
+		frame.Visible = not frame.Visible
+	end
+
+	-- ตรวจจับการกดปุ่ม
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == openKey and not gameProcessed then
+			toggleFrame() -- สลับการเปิด/ปิด Frame
+		end
+	end)
+
+end)
+
+UITextSizeConstraint_9.Parent = AdminButton
+UITextSizeConstraint_9.MaxTextSize = 20
+
+TextLabel.Parent = FrameAdmin
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0459183678, 0, 0.333333343, 0)
+TextLabel.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "⚠Press the button Z = Choose a gun"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UITextSizeConstraint_10.Parent = TextLabel
+UITextSizeConstraint_10.MaxTextSize = 14
+
+TextLabel_2.Parent = FrameAdmin
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0459183678, 0, 0.503875971, 0)
+TextLabel_2.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "⚠Press the button X = Wear a mask"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+UITextSizeConstraint_11.Parent = TextLabel_2
+UITextSizeConstraint_11.MaxTextSize = 14
+
+FrameFarm.Name = "FrameFarm"
+FrameFarm.Parent = FrameE
+FrameFarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameFarm.BorderSizePixel = 0
+FrameFarm.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameFarm.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameFarm.Visible = false
+
+FarmButton.Name = "FarmButton"
+FarmButton.Parent = FrameFarm
+FarmButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FarmButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FarmButton.BorderSizePixel = 0
+FarmButton.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+FarmButton.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+FarmButton.Font = Enum.Font.SourceSans
+FarmButton.Text = "FarmJob"
+FarmButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FarmButton.TextScaled = true
+FarmButton.TextSize = 20.000
+FarmButton.TextWrapped = true
+FarmButton.MouseButton1Click:Connect(function()
+	local farmJob = game.Workspace:WaitForChild("Farmjob")
+
+	local function setProximityPromptHoldDurationToZero(object)
+		if object:IsA("ProximityPrompt") then
+			object.HoldDuration = 0
+		end
+		for _, child in pairs(object:GetChildren()) do
+			setProximityPromptHoldDurationToZero(child)
+		end
+	end
+
+	for _, model in pairs(farmJob:GetChildren()) do
+		setProximityPromptHoldDurationToZero(model)
+	end
+
+end)
+
+UITextSizeConstraint_12.Parent = FarmButton
+UITextSizeConstraint_12.MaxTextSize = 20
+
+TextLabel_3.Parent = FrameFarm
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0153061226, 0, 0.333333343, 0)
+TextLabel_3.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "⚠You must be a farmer and go to"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+UITextSizeConstraint_13.Parent = TextLabel_3
+UITextSizeConstraint_13.MaxTextSize = 14
+
+TextLabel_4.Parent = FrameFarm
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0153061226, 0, 0.503875971, 0)
+TextLabel_4.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "the farm before it can be activated."
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+UITextSizeConstraint_14.Parent = TextLabel_4
+UITextSizeConstraint_14.MaxTextSize = 14
+
+FrameAimbot.Name = "FrameAimbot"
+FrameAimbot.Parent = FrameE
+FrameAimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameAimbot.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAimbot.BorderSizePixel = 0
+FrameAimbot.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameAimbot.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameAimbot.Visible = false
+
+AimbotButton.Name = "AimbotButton"
+AimbotButton.Parent = FrameAimbot
+AimbotButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimbotButton.BorderSizePixel = 0
+AimbotButton.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+AimbotButton.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+AimbotButton.Font = Enum.Font.SourceSans
+AimbotButton.Text = "Aimbot"
+AimbotButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AimbotButton.TextScaled = true
+AimbotButton.TextSize = 20.000
+AimbotButton.TextWrapped = true
+AimbotButton.MouseButton1Click:Connect(function()
+	local Player = game.Players.LocalPlayer
+	local Mouse = Player:GetMouse()
+	local Camera = workspace.CurrentCamera
+	local AimbotActive = false
+	local FOV = 100 -- ระยะมุมมอง (Field of View)
+	local MaxDistance = 300 -- ระยะทางสูงสุดที่สามารถล็อกเป้าหมายได้
+	local FovEnabled = false -- สำหรับเปิด/ปิด FOV
+
+	-- วงกลม FOV
+	local fovCircle = Drawing.new("Circle")
+	fovCircle.Radius = FOV
+	fovCircle.Thickness = 2
+	fovCircle.Color = Color3.new(1, 1, 1)
+	fovCircle.Filled = false
+	fovCircle.Visible = false -- เริ่มต้นปิดวง FOV
+
+	-- ฟังก์ชันสำหรับตรวจสอบว่ามีสิ่งกีดขวางระหว่างผู้เล่นและเป้าหมายหรือไม่
+	local function isVisible(target)
+		local origin = Camera.CFrame.Position
+		local targetPosition = target.Character.Head.Position
+		local direction = (targetPosition - origin).Unit * (targetPosition - origin).Magnitude
+		local raycastParams = RaycastParams.new()
+		raycastParams.FilterDescendantsInstances = {Player.Character} -- ไม่ให้ Ray ชนตัวเราเอง
+		raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+
+		local raycastResult = workspace:Raycast(origin, direction, raycastParams)
+		if raycastResult then
+			-- ตรวจสอบว่าชนกับเป้าหมายหรือไม่
+			return raycastResult.Instance:IsDescendantOf(target.Character)
+		end
+		return true -- ถ้าไม่มีอะไรกีดขวาง
+	end
+
+	-- ฟังก์ชันสำหรับหาเป้าหมายที่อยู่ใกล้ที่สุดในวง FOV และตรวจสอบระยะทาง
+	local function findClosestPlayerInFOV()
+		local closestPlayer = nil
+		local closestDistance = FOV
+
+		for _, target in ipairs(game.Players:GetPlayers()) do
+			if target ~= Player and target.Character and target.Character:FindFirstChild("Head") then
+				local headPosition = target.Character.Head.Position
+				local screenPosition, onScreen = Camera:WorldToScreenPoint(headPosition)
+
+				if onScreen then
+					local mousePos = Vector2.new(Mouse.X, Mouse.Y)
+					local screenPos = Vector2.new(screenPosition.X, screenPosition.Y)
+					local distanceFromMouse = (mousePos - screenPos).Magnitude
+
+					-- ตรวจสอบระยะทาง
+					local playerDistance = (Camera.CFrame.Position - headPosition).Magnitude
+					if distanceFromMouse < closestDistance and playerDistance <= MaxDistance and isVisible(target) then
+						closestDistance = distanceFromMouse
+						closestPlayer = target
+					end
+				end
+			end
+		end
+
+		return closestPlayer
+	end
+
+	-- ฟังก์ชันล็อกเป้าหมายไปที่หัว (แก้ไขให้กล้องไม่เอียงโดยใช้ Vector3 ของตัวผู้เล่น)
+	local function lockOnTarget(target)
+		if target and target.Character and target.Character:FindFirstChild("Head") then
+			local head = target.Character.Head
+			local camPosition = Camera.CFrame.Position
+			-- คำนวณทิศทางไปที่เป้าหมายโดยไม่มีการเอียง
+			local direction = (head.Position - camPosition).Unit
+			-- ปรับ CFrame ของกล้องเพื่อเล็งไปที่หัวเป้าหมาย โดยใช้ Y axis เป็นแนวตั้งเพื่อป้องกันการเอียง
+			Camera.CFrame = CFrame.new(camPosition, camPosition + Vector3.new(direction.X, 0, direction.Z))
+		end
+	end
+
+	-- เปิด/ปิด Aimbot และ FOV เมื่อกดปุ่ม F
+	local UIS = game:GetService("UserInputService")
+	UIS.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.F then
+			AimbotActive = not AimbotActive
+			fovCircle.Visible = AimbotActive -- เปิด/ปิดวง FOV ตามสถานะ Aimbot
+		end
+	end)
+
+	-- เปิดใช้งาน FOV เมื่อคลิกขวา
+	Mouse.Button2Down:Connect(function()
+		FovEnabled = true
+	end)
+
+	-- ปิด FOV เมื่อปล่อยคลิกขวา
+	Mouse.Button2Up:Connect(function()
+		FovEnabled = false
+	end)
+
+	-- อัปเดตการล็อกเป้าหมายและวง FOV ขณะ Aimbot เปิดใช้งาน
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if fovCircle.Visible then
+			fovCircle.Position = Vector2.new(Mouse.X, Mouse.Y)
+		end
+
+		if AimbotActive and FovEnabled then
+			local target = findClosestPlayerInFOV()
+			if target then
+				lockOnTarget(target)
+			end
+		end
+	end)
+end)
+
+UITextSizeConstraint_15.Parent = AimbotButton
+UITextSizeConstraint_15.MaxTextSize = 20
+
+TextLabel_5.Parent = FrameAimbot
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0153061226, 0, 0.333333343, 0)
+TextLabel_5.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "⚠Right click to use Aimbot"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+UITextSizeConstraint_16.Parent = TextLabel_5
+UITextSizeConstraint_16.MaxTextSize = 14
+
+TextLabel_6.Parent = FrameAimbot
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.0153061226, 0, 0.503875971, 0)
+TextLabel_6.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "⚠Press the button F = To turn on/off"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UITextSizeConstraint_17.Parent = TextLabel_6
+UITextSizeConstraint_17.MaxTextSize = 14
+
+FrameNoH.Name = "FrameNoH"
+FrameNoH.Parent = FrameE
+FrameNoH.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameNoH.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameNoH.BorderSizePixel = 0
+FrameNoH.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameNoH.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameNoH.Visible = false
+
+NoHButton.Name = "NoHButton"
+NoHButton.Parent = FrameNoH
+NoHButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoHButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoHButton.BorderSizePixel = 0
+NoHButton.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+NoHButton.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+NoHButton.Font = Enum.Font.SourceSans
+NoHButton.Text = "No Hunger"
+NoHButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoHButton.TextScaled = true
+NoHButton.TextSize = 20.000
+NoHButton.TextWrapped = true
+NoHButton.MouseButton1Click:Connect(function()
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+
+	local hungerValue = character:WaitForChild("Hunger")
+
+	hungerValue.Value = 100
+
+	hungerValue.Changed:Connect(function(newValue)
+		if newValue ~= 100 then
+			hungerValue.Value = 100
+		end
+	end)
+
+end)
+
+UITextSizeConstraint_18.Parent = NoHButton
+UITextSizeConstraint_18.MaxTextSize = 20
+
+TextLabel_7.Parent = FrameNoH
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0153061226, 0, 0.333333343, 0)
+TextLabel_7.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "⚠Hunger value does not decrease"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+UITextSizeConstraint_19.Parent = TextLabel_7
+UITextSizeConstraint_19.MaxTextSize = 14
+
+FrameT.Name = "FrameT"
+FrameT.Parent = KKRHUB
+FrameT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameT.BorderSizePixel = 0
+FrameT.Position = UDim2.new(0.810062885, 0, 0.360635698, 0)
+FrameT.Size = UDim2.new(0.16918239, 0, 0.358190715, 0)
+
+UICorner_7.Parent = FrameT
+
+Manu_2.Name = "Manu"
+Manu_2.Parent = FrameT
+Manu_2.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Manu_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Manu_2.BorderSizePixel = 0
+Manu_2.Size = UDim2.new(0.237918213, 0, 1, 0)
+Manu_2.ZIndex = 2
+
+Admin_2.Name = "Admin"
+Admin_2.Parent = Manu_2
+Admin_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Admin_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Admin_2.BorderSizePixel = 0
+Admin_2.Position = UDim2.new(0, 0, 0.0682593882, 0)
+Admin_2.Size = UDim2.new(1, 0, 0.170648471, 0)
+Admin_2.Font = Enum.Font.SourceSans
+Admin_2.Text = "😈เมนูแอดมิน"
+Admin_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin_2.TextScaled = true
+Admin_2.TextSize = 14.000
+Admin_2.TextWrapped = true
+
+UITextSizeConstraint_20.Parent = Admin_2
+UITextSizeConstraint_20.MaxTextSize = 14
+
+Farm_2.Name = "Farm"
+Farm_2.Parent = Manu_2
+Farm_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Farm_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Farm_2.BorderSizePixel = 0
+Farm_2.Position = UDim2.new(0, 0, 0.283276439, 0)
+Farm_2.Size = UDim2.new(1, 0, 0.170648471, 0)
+Farm_2.Font = Enum.Font.SourceSans
+Farm_2.Text = "🧑‍🌾งานฟาม"
+Farm_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Farm_2.TextScaled = true
+Farm_2.TextSize = 14.000
+Farm_2.TextWrapped = true
+
+UITextSizeConstraint_21.Parent = Farm_2
+UITextSizeConstraint_21.MaxTextSize = 14
+
+Aimbot_2.Name = "Aimbot"
+Aimbot_2.Parent = Manu_2
+Aimbot_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot_2.BorderSizePixel = 0
+Aimbot_2.Position = UDim2.new(0, 0, 0.481228679, 0)
+Aimbot_2.Size = UDim2.new(1, 0, 0.170648471, 0)
+Aimbot_2.Font = Enum.Font.SourceSans
+Aimbot_2.Text = "🔫ล็อกหัว"
+Aimbot_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot_2.TextScaled = true
+Aimbot_2.TextSize = 14.000
+Aimbot_2.TextWrapped = true
+
+UITextSizeConstraint_22.Parent = Aimbot_2
+UITextSizeConstraint_22.MaxTextSize = 14
+
+By_2.Name = "By"
+By_2.Parent = Manu_2
+By_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+By_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+By_2.BorderSizePixel = 0
+By_2.Position = UDim2.new(0, 0, 0.914675772, 0)
+By_2.Size = UDim2.new(1, 0, 0.0853242353, 0)
+By_2.Font = Enum.Font.SourceSans
+By_2.Text = "👑เครดิต"
+By_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+By_2.TextScaled = true
+By_2.TextSize = 14.000
+By_2.TextWrapped = true
+
+UITextSizeConstraint_23.Parent = By_2
+UITextSizeConstraint_23.MaxTextSize = 14
+
+Hunger_2.Name = "Hunger"
+Hunger_2.Parent = Manu_2
+Hunger_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hunger_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Hunger_2.BorderSizePixel = 0
+Hunger_2.Position = UDim2.new(0, 0, 0.699658692, 0)
+Hunger_2.Size = UDim2.new(1, 0, 0.170648471, 0)
+Hunger_2.Font = Enum.Font.SourceSans
+Hunger_2.Text = "😶ไม่มีวันหิว"
+Hunger_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hunger_2.TextScaled = true
+Hunger_2.TextSize = 14.000
+Hunger_2.TextWrapped = true
+
+UITextSizeConstraint_24.Parent = Hunger_2
+UITextSizeConstraint_24.MaxTextSize = 14
+
+KKRHUB_3.Name = "KKRHUB"
+KKRHUB_3.Parent = FrameT
+KKRHUB_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KKRHUB_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KKRHUB_3.BorderSizePixel = 0
+KKRHUB_3.Position = UDim2.new(0, 0, -0.143344715, 0)
+KKRHUB_3.Size = UDim2.new(1, 0, 0.177474409, 0)
+KKRHUB_3.ZIndex = 999
+KKRHUB_3.Font = Enum.Font.Fondamento
+KKRHUB_3.Text = "KKR HUB"
+KKRHUB_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+KKRHUB_3.TextScaled = true
+KKRHUB_3.TextSize = 30.000
+KKRHUB_3.TextWrapped = true
+
+UICorner_8.Parent = KKRHUB_3
+
+UITextSizeConstraint_25.Parent = KKRHUB_3
+UITextSizeConstraint_25.MaxTextSize = 30
+
+E.Name = "E"
+E.Parent = KKRHUB_3
+E.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+E.BorderColor3 = Color3.fromRGB(0, 0, 0)
+E.BorderSizePixel = 0
+E.Position = UDim2.new(0.807199121, 0, 0.115385197, 0)
+E.Size = UDim2.new(0.1596113, 0, 0.652406454, 0)
+E.Image = "rbxassetid://650129609"
+
+UICorner_9.Parent = E
+
+Logokkr_2.Name = "Logokkr"
+Logokkr_2.Parent = FrameT
+Logokkr_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logokkr_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logokkr_2.BorderSizePixel = 0
+Logokkr_2.Position = UDim2.new(0.375464678, 0, 0.238907844, 0)
+Logokkr_2.Size = UDim2.new(0.475836426, 0, 0.412969291, 0)
+Logokkr_2.Image = "rbxassetid://13440863336"
+
+Dc_2.Name = "Dc"
+Dc_2.Parent = FrameT
+Dc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Dc_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Dc_2.BorderSizePixel = 0
+Dc_2.Position = UDim2.new(0.375464678, 0, 0.563139915, 0)
+Dc_2.Size = UDim2.new(0.46468401, 0, 0.150170654, 0)
+Dc_2.Font = Enum.Font.SourceSans
+Dc_2.Text = "Discord 🤙 กดปุ่มนี้เพื่อคัดลอก"
+Dc_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Dc_2.TextScaled = true
+Dc_2.TextSize = 14.000
+Dc_2.TextWrapped = true
+Dc_2.MouseButton1Click:Connect(function()
+	if setclipboard then
+		setclipboard("https://discord.gg/G2KYnm8s")
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "เรียบร้อย";
+			Text = "✅";
+			Duration = 5;
+		})
+	else
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "ฟังก์ชันการคัดลอกไม่รองรับบนแพลตฟอร์มนี้";
+			Text = "⚠";
+			Duration = 5;
+		})
+	end
+end)
+
+UITextSizeConstraint_26.Parent = Dc_2
+UITextSizeConstraint_26.MaxTextSize = 14
+
+Byyy_2.Name = "Byyy"
+Byyy_2.Parent = FrameT
+Byyy_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Byyy_2.BackgroundTransparency = 1.000
+Byyy_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Byyy_2.BorderSizePixel = 0
+Byyy_2.Position = UDim2.new(0.405204475, 0, 0.699658692, 0)
+Byyy_2.Size = UDim2.new(0.405204475, 0, 0.129692838, 0)
+Byyy_2.Font = Enum.Font.SourceSans
+Byyy_2.Text = "สร้างโดย : KKRHUB"
+Byyy_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Byyy_2.TextScaled = true
+Byyy_2.TextSize = 14.000
+Byyy_2.TextWrapped = true
+
+UITextSizeConstraint_27.Parent = Byyy_2
+UITextSizeConstraint_27.MaxTextSize = 14
+
+FrameAdmin_2.Name = "FrameAdmin"
+FrameAdmin_2.Parent = FrameT
+FrameAdmin_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameAdmin_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAdmin_2.BorderSizePixel = 0
+FrameAdmin_2.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameAdmin_2.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameAdmin_2.Visible = false
+
+AdminButton_2.Name = "AdminButton"
+AdminButton_2.Parent = FrameAdmin_2
+AdminButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AdminButton_2.BorderSizePixel = 0
+AdminButton_2.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+AdminButton_2.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+AdminButton_2.Font = Enum.Font.SourceSans
+AdminButton_2.Text = "เมนูแอดมิน"
+AdminButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdminButton_2.TextScaled = true
+AdminButton_2.TextSize = 20.000
+AdminButton_2.TextWrapped = true
+AdminButton_2.MouseButton1Click:Connect(function()
+
+	-- LocalScript ภายใน StarterPlayerScripts
+	local player = game.Players.LocalPlayer
+	local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("AdminUi") -- ชื่อ ScreenGui: AdminUi
+	local frame = screenGui:WaitForChild("Frame") -- ชื่อ Frame ภายใน AdminUi
+	local openKey = Enum.KeyCode.Z -- กดปุ่ม E เพื่อเปิด/ปิด UI
+
+	local function toggleUI()
+		-- สลับการเปิด/ปิด ScreenGui
+		screenGui.Enabled = not screenGui.Enabled
+
+		-- ถ้า ScreenGui ถูกเปิดอยู่ ให้เปิด Frame ด้วย
+		if screenGui.Enabled then
+			frame.Visible = true
+		else
+			frame.Visible = false
+		end
+	end
+
+	-- ตรวจจับการกดปุ่ม
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == openKey and not gameProcessed then
+			toggleUI() -- สลับการเปิด/ปิด UI และ Frame
+		end
+	end)
+
+	----------------------------
+
+	-- LocalScript ภายใน StarterPlayerScripts
+	local player = game.Players.LocalPlayer
+	local screenGui = player:WaitForChild("PlayerGui"):WaitForChild("Mask") -- ชื่อ ScreenGui: AdminUi
+	local frame = screenGui:WaitForChild("MainFrame") -- ชื่อ Frame ภายใน AdminUi
+	local openKey = Enum.KeyCode.X -- กดปุ่ม E เพื่อเปิด/ปิด Frame
+
+	local function toggleFrame()
+		-- สลับการเปิด/ปิดเฉพาะ Frame
+		frame.Visible = not frame.Visible
+	end
+
+	-- ตรวจจับการกดปุ่ม
+	game:GetService("UserInputService").InputBegan:Connect(function(input, gameProcessed)
+		if input.KeyCode == openKey and not gameProcessed then
+			toggleFrame() -- สลับการเปิด/ปิด Frame
+		end
+	end)
+
+end)
+
+UITextSizeConstraint_28.Parent = AdminButton_2
+UITextSizeConstraint_28.MaxTextSize = 20
+
+TextLabel_8.Parent = FrameAdmin_2
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.0459183678, 0, 0.333333343, 0)
+TextLabel_8.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "⚠กดปุ่ม Z คือ เลือกปืนกับกระสูน"
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+UITextSizeConstraint_29.Parent = TextLabel_8
+UITextSizeConstraint_29.MaxTextSize = 14
+
+TextLabel_9.Parent = FrameAdmin_2
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.0459183678, 0, 0.503875971, 0)
+TextLabel_9.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "⚠กดปุ่ม X คือใส่หน้ากาก"
+TextLabel_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+UITextSizeConstraint_30.Parent = TextLabel_9
+UITextSizeConstraint_30.MaxTextSize = 14
+
+FrameFarm_2.Name = "FrameFarm"
+FrameFarm_2.Parent = FrameT
+FrameFarm_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameFarm_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameFarm_2.BorderSizePixel = 0
+FrameFarm_2.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameFarm_2.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameFarm_2.Visible = false
+
+FarmButton_2.Name = "FarmButton"
+FarmButton_2.Parent = FrameFarm_2
+FarmButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FarmButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FarmButton_2.BorderSizePixel = 0
+FarmButton_2.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+FarmButton_2.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+FarmButton_2.Font = Enum.Font.SourceSans
+FarmButton_2.Text = "งานฟาม"
+FarmButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+FarmButton_2.TextScaled = true
+FarmButton_2.TextSize = 20.000
+FarmButton_2.TextWrapped = true
+FarmButton_2.MouseButton1Click:Connect(function()
+	local farmJob = game.Workspace:WaitForChild("Farmjob")
+
+	local function setProximityPromptHoldDurationToZero(object)
+		if object:IsA("ProximityPrompt") then
+			object.HoldDuration = 0
+		end
+		for _, child in pairs(object:GetChildren()) do
+			setProximityPromptHoldDurationToZero(child)
+		end
+	end
+
+	for _, model in pairs(farmJob:GetChildren()) do
+		setProximityPromptHoldDurationToZero(model)
+	end
+
+
+UITextSizeConstraint_31.Parent = FarmButton_2
+UITextSizeConstraint_31.MaxTextSize = 20
+
+TextLabel_10.Parent = FrameFarm_2
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0.0153061226, 0, 0.333333343, 0)
+TextLabel_10.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "⚠ไปทีมฟามก่อนกดใช้"
+TextLabel_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.TextScaled = true
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+UITextSizeConstraint_32.Parent = TextLabel_10
+UITextSizeConstraint_32.MaxTextSize = 14
+
+TextLabel_11.Parent = FrameFarm_2
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0.0153061226, 0, 0.503875971, 0)
+TextLabel_11.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "และต้องเป็นอาชีพฟามก่อน"
+TextLabel_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+UITextSizeConstraint_33.Parent = TextLabel_11
+UITextSizeConstraint_33.MaxTextSize = 14
+
+FrameAimbot_2.Name = "FrameAimbot"
+FrameAimbot_2.Parent = FrameT
+FrameAimbot_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameAimbot_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameAimbot_2.BorderSizePixel = 0
+FrameAimbot_2.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameAimbot_2.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameAimbot_2.Visible = false
+
+AimbotButton_2.Name = "AimbotButton"
+AimbotButton_2.Parent = FrameAimbot_2
+AimbotButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AimbotButton_2.BorderSizePixel = 0
+AimbotButton_2.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+AimbotButton_2.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+AimbotButton_2.Font = Enum.Font.SourceSans
+AimbotButton_2.Text = "ล็อกหัว"
+AimbotButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AimbotButton_2.TextScaled = true
+AimbotButton_2.TextSize = 20.000
+AimbotButton_2.TextWrapped = true
+AimbotButton_2.MouseButton1Click:Connect(function()
+		local Player = game.Players.LocalPlayer
+		local Mouse = Player:GetMouse()
+		local Camera = workspace.CurrentCamera
+		local AimbotActive = false
+		local FOV = 100 -- ระยะมุมมอง (Field of View)
+		local MaxDistance = 300 -- ระยะทางสูงสุดที่สามารถล็อกเป้าหมายได้
+		local FovEnabled = false -- สำหรับเปิด/ปิด FOV
+
+		-- วงกลม FOV
+		local fovCircle = Drawing.new("Circle")
+		fovCircle.Radius = FOV
+		fovCircle.Thickness = 2
+		fovCircle.Color = Color3.new(1, 1, 1)
+		fovCircle.Filled = false
+		fovCircle.Visible = false -- เริ่มต้นปิดวง FOV
+
+		-- ฟังก์ชันสำหรับตรวจสอบว่ามีสิ่งกีดขวางระหว่างผู้เล่นและเป้าหมายหรือไม่
+		local function isVisible(target)
+			local origin = Camera.CFrame.Position
+			local targetPosition = target.Character.Head.Position
+			local direction = (targetPosition - origin).Unit * (targetPosition - origin).Magnitude
+			local raycastParams = RaycastParams.new()
+			raycastParams.FilterDescendantsInstances = {Player.Character} -- ไม่ให้ Ray ชนตัวเราเอง
+			raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+
+			local raycastResult = workspace:Raycast(origin, direction, raycastParams)
+			if raycastResult then
+				-- ตรวจสอบว่าชนกับเป้าหมายหรือไม่
+				return raycastResult.Instance:IsDescendantOf(target.Character)
+			end
+			return true -- ถ้าไม่มีอะไรกีดขวาง
+		end
+
+		-- ฟังก์ชันสำหรับหาเป้าหมายที่อยู่ใกล้ที่สุดในวง FOV และตรวจสอบระยะทาง
+		local function findClosestPlayerInFOV()
+			local closestPlayer = nil
+			local closestDistance = FOV
+
+			for _, target in ipairs(game.Players:GetPlayers()) do
+				if target ~= Player and target.Character and target.Character:FindFirstChild("Head") then
+					local headPosition = target.Character.Head.Position
+					local screenPosition, onScreen = Camera:WorldToScreenPoint(headPosition)
+
+					if onScreen then
+						local mousePos = Vector2.new(Mouse.X, Mouse.Y)
+						local screenPos = Vector2.new(screenPosition.X, screenPosition.Y)
+						local distanceFromMouse = (mousePos - screenPos).Magnitude
+
+						-- ตรวจสอบระยะทาง
+						local playerDistance = (Camera.CFrame.Position - headPosition).Magnitude
+						if distanceFromMouse < closestDistance and playerDistance <= MaxDistance and isVisible(target) then
+							closestDistance = distanceFromMouse
+							closestPlayer = target
+						end
+					end
+				end
+			end
+
+			return closestPlayer
+		end
+
+		-- ฟังก์ชันล็อกเป้าหมายไปที่หัว (แก้ไขให้กล้องไม่เอียงโดยใช้ Vector3 ของตัวผู้เล่น)
+		local function lockOnTarget(target)
+			if target and target.Character and target.Character:FindFirstChild("Head") then
+				local head = target.Character.Head
+				local camPosition = Camera.CFrame.Position
+				-- คำนวณทิศทางไปที่เป้าหมายโดยไม่มีการเอียง
+				local direction = (head.Position - camPosition).Unit
+				-- ปรับ CFrame ของกล้องเพื่อเล็งไปที่หัวเป้าหมาย โดยใช้ Y axis เป็นแนวตั้งเพื่อป้องกันการเอียง
+				Camera.CFrame = CFrame.new(camPosition, camPosition + Vector3.new(direction.X, 0, direction.Z))
+			end
+		end
+
+		-- เปิด/ปิด Aimbot และ FOV เมื่อกดปุ่ม F
+		local UIS = game:GetService("UserInputService")
+		UIS.InputBegan:Connect(function(input)
+			if input.KeyCode == Enum.KeyCode.F then
+				AimbotActive = not AimbotActive
+				fovCircle.Visible = AimbotActive -- เปิด/ปิดวง FOV ตามสถานะ Aimbot
+			end
+		end)
+
+		-- เปิดใช้งาน FOV เมื่อคลิกขวา
+		Mouse.Button2Down:Connect(function()
+			FovEnabled = true
+		end)
+
+		-- ปิด FOV เมื่อปล่อยคลิกขวา
+		Mouse.Button2Up:Connect(function()
+			FovEnabled = false
+		end)
+
+		-- อัปเดตการล็อกเป้าหมายและวง FOV ขณะ Aimbot เปิดใช้งาน
+		game:GetService("RunService").RenderStepped:Connect(function()
+			if fovCircle.Visible then
+				fovCircle.Position = Vector2.new(Mouse.X, Mouse.Y)
+			end
+
+			if AimbotActive and FovEnabled then
+				local target = findClosestPlayerInFOV()
+				if target then
+					lockOnTarget(target)
+				end
+			end
+		end)
+	end)
+
+UITextSizeConstraint_34.Parent = AimbotButton_2
+UITextSizeConstraint_34.MaxTextSize = 20
+
+TextLabel_12.Parent = FrameAimbot_2
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(0.0153061226, 0, 0.333333343, 0)
+TextLabel_12.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "⚠กดเมาท์ขวา คือการล็อกหัว"
+TextLabel_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+UITextSizeConstraint_35.Parent = TextLabel_12
+UITextSizeConstraint_35.MaxTextSize = 14
+
+TextLabel_13.Parent = FrameAimbot_2
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(0.0153061226, 0, 0.503875971, 0)
+TextLabel_13.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "⚠กดปุ่ม F คือการเปิด/ปิด"
+TextLabel_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+UITextSizeConstraint_36.Parent = TextLabel_13
+UITextSizeConstraint_36.MaxTextSize = 14
+
+FrameNoH_2.Name = "FrameNoH"
+FrameNoH_2.Parent = FrameT
+FrameNoH_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrameNoH_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FrameNoH_2.BorderSizePixel = 0
+FrameNoH_2.Position = UDim2.new(0.271375477, 0, 0.0648464188, 0)
+FrameNoH_2.Size = UDim2.new(0.728624523, 0, 0.880546093, 0)
+FrameNoH_2.Visible = false
+
+NoHButton_2.Name = "NoHButton"
+NoHButton_2.Parent = FrameNoH_2
+NoHButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoHButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoHButton_2.BorderSizePixel = 0
+NoHButton_2.Position = UDim2.new(0.265306115, 0, 0.0620155036, 0)
+NoHButton_2.Size = UDim2.new(0.46938777, 0, 0.193798453, 0)
+NoHButton_2.Font = Enum.Font.SourceSans
+NoHButton_2.Text = "ไม่มีวันหิว"
+NoHButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoHButton_2.TextScaled = true
+NoHButton_2.TextSize = 20.000
+NoHButton_2.TextWrapped = true
+NoHButton_2.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+
+		local hungerValue = character:WaitForChild("Hunger")
+
+		hungerValue.Value = 100
+
+		hungerValue.Changed:Connect(function(newValue)
+			if newValue ~= 100 then
+				hungerValue.Value = 100
+			end
+		end)
+
+	end)
+
+UITextSizeConstraint_37.Parent = NoHButton_2
+UITextSizeConstraint_37.MaxTextSize = 20
+
+TextLabel_14.Parent = FrameNoH_2
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(0.0153061226, 0, 0.333333343, 0)
+TextLabel_14.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "⚠กดใช้ตอนไหนก็ได้"
+TextLabel_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+UITextSizeConstraint_38.Parent = TextLabel_14
+UITextSizeConstraint_38.MaxTextSize = 14
+
+TextLabel_15.Parent = FrameNoH_2
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(0.0153061226, 0, 0.503875971, 0)
+TextLabel_15.Size = UDim2.new(0.908163249, 0, 0.193798453, 0)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "ค่าความหิวจะไม่ลด"
+TextLabel_15.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+UITextSizeConstraint_39.Parent = TextLabel_15
+UITextSizeConstraint_39.MaxTextSize = 14
+
+Notification.Name = "Notification"
+Notification.Parent = KKRHUB
+Notification.BackgroundColor3 = Color3.fromRGB(204, 37, 31)
+Notification.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Notification.BorderSizePixel = 0
+Notification.Position = UDim2.new(0.864100099, 0, 0.76700002, 0)
+Notification.Size = UDim2.new(0.140339836, 0, 0.0709046423, 0)
+Notification.ZIndex = 0
+
+UICorner_10.Parent = Notification
+
+KKR.Name = "KKR"
+KKR.Parent = Notification
+KKR.BackgroundColor3 = Color3.fromRGB(167, 167, 167)
+KKR.BorderColor3 = Color3.fromRGB(0, 0, 0)
+KKR.BorderSizePixel = 0
+KKR.Position = UDim2.new(0.0630994067, 0, 0.120686509, 0)
+KKR.Size = UDim2.new(0.936856985, 0, 0.751695096, 0)
+
+UICorner_11.Parent = KKR
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(255, 78, 78)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = KKR
+
+TextLabel_16.Parent = KKR
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(0.14302744, 0, 0.0689653978, 0)
+TextLabel_16.Size = UDim2.new(0.708520174, 0, 0.862069011, 0)
+TextLabel_16.ZIndex = 2
+TextLabel_16.Font = Enum.Font.Unknown
+TextLabel_16.Text = "KKR HUB 😈"
+TextLabel_16.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 30.000
+TextLabel_16.TextWrapped = true
+
+UITextSizeConstraint_40.Parent = TextLabel_16
+UITextSizeConstraint_40.MaxTextSize = 30
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.15, Color3.fromRGB(165, 92, 255)), ColorSequenceKeypoint.new(0.84, Color3.fromRGB(165, 92, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = Notification
+
+-- Scripts:
+
+local function STMAPV_fake_script() -- KKRHUB.KKRcode 
+	local script = Instance.new('LocalScript', KKRHUB)
+
+	script.Parent.Logo.Draggable = true
+	script.Parent.Logo.Active = true
+	
+	local Bg = script.Parent.FrameE
+	local Thai = Bg.KKRHUB.Thai
+	
+	local BgT = script.Parent.FrameT
+	
+	
+	script.Parent.FrameE.Draggable = true
+	script.Parent.FrameE.Active = true
+	
+	BgT.Draggable = true
+	BgT.Active = true
+	
+	script.Parent.Logo.on.MouseButton1Click:Connect(function()
+		Bg.Visible = true
+		BgT.Visible = false
+		script.Parent.Logo.off.Visible = true
+		script.Parent.Logo.on.Visible = false
+	
+	end)
+	script.Parent.Logo.off.MouseButton1Click:Connect(function()
+		Bg.Visible = false
+		BgT.Visible = false
+		script.Parent.Logo.on.Visible = true
+		script.Parent.Logo.off.Visible = false
+	
+	end)
+	-------------------------------------------
+	Thai.MouseButton1Click:Connect(function()
+		BgT.Visible = true
+		Bg.Visible = false
+	end)
+	-------------------------------------------
+	local ad = script.Parent.FrameE.Manu.Admin
+	local Fa = script.Parent.FrameE.Manu.Farm
+	local Aim = script.Parent.FrameE.Manu.Aimbot
+	local By = script.Parent.FrameE.Manu.By
+	local HH = script.Parent.FrameE.Manu.Hunger
+	-----------------------------------------------
+	local Fad = script.Parent.FrameE.FrameAdmin
+	local Faim = script.Parent.FrameE.FrameAimbot
+	local ff = script.Parent.FrameE.FrameFarm
+	local H = script.Parent.FrameE.FrameNoH
+	-----------------------------------------------
+	ad.MouseButton1Click:Connect(function()
+		Fad.Visible = true
+		Faim.Visible = false
+		ff.Visible = false
+		H.Visible = false
+	end)
+	-----------------------------------------------
+	Fa.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = false
+		ff.Visible = true
+		H.Visible = false
+	end)
+	-----------------------------------------------
+	Aim.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = true
+		ff.Visible = false
+		H.Visible = false
+	end)
+	-----------------------------------------------
+	By.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = false
+		ff.Visible = false
+		H.Visible = false
+	end)
+	-----------------------------------------------
+	HH.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = false
+		ff.Visible = false
+		H.Visible = true
+	end)
+	-----------------------------------------------
+	
+	
+	
+	
+	---         TH  ------
+	BgT.KKRHUB.E.MouseButton1Click:Connect(function()
+		BgT.Visible = false
+		Bg.Visible = true
+	end)
+	-------------------------------------------
+	local ad = script.Parent.FrameT.Manu.Admin
+	local Fa = script.Parent.FrameT.Manu.Farm
+	local Aim = script.Parent.FrameT.Manu.Aimbot
+	local By = script.Parent.FrameT.Manu.By
+	local HH = script.Parent.FrameT.Manu.Hunger
+	-----------------------------------------------
+	local Fad = script.Parent.FrameT.FrameAdmin
+	local Faim = script.Parent.FrameT.FrameAimbot
+	local ff = script.Parent.FrameT.FrameFarm
+	local H = script.Parent.FrameT.FrameNoH
+	-----------------------------------------------
+	ad.MouseButton1Click:Connect(function()
+		Fad.Visible = true
+		Faim.Visible = false
+		ff.Visible = false
+		H.Visible = false
+	end)
+	-----------------------------------------------
+	Fa.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = false
+		ff.Visible = true
+		H.Visible = false
+	end)
+	-----------------------------------------------
+	Aim.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = true
+		ff.Visible = false
+		H.Visible = false
+	end)
+	-----------------------------------------------
+	By.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = false
+		ff.Visible = false
+		H.Visible = false
+	end)
+	-----------------------------------------------
+	HH.MouseButton1Click:Connect(function()
+		Fad.Visible = false
+		Faim.Visible = false
+		ff.Visible = false
+		H.Visible = true
+	end)
+	-----------------------------------------------
+	
+	
+	local Fad2 = script.Parent.FrameT.FrameAdmin_2.AdminButton_2
+	local Faim2 = script.Parent.FrameT.FrameAimbot_2.AimbotButton_2
+	local ff2 = script.Parent.FrameT.FrameFarm_2.FarmButton_2
+	local H2 = script.Parent.FrameT.FrameNoH_2.NoHButton_2
+	
+	
+	local Noti = script.Parent.Notification
+	
+	
+	local TweenService = game:GetService("TweenService")
+	local uiElement = Noti
+	local button = Fad2
+	
+	-- กำหนดการตั้งค่าของ Tween
+	local tweenInfo = TweenInfo.new(
+		1, -- เวลาที่ใช้ในการอนิเมต (1 วินาที)
+		Enum.EasingStyle.Quad, -- สไตล์การเคลื่อนไหว
+		Enum.EasingDirection.Out -- ทิศทางการเคลื่อนไหว
+	)
+	
+	-- ตั้งค่าตำแหน่งเริ่มต้นให้ UI Element เริ่มนอกจอ
+	uiElement.Position = UDim2.new(0.995, 0, 0.767, 0) -- ตำแหน่งเริ่มต้น
+	uiElement.Visible = false -- ตั้งค่าให้ UI Element ไม่แสดงผล
+	
+	-- กำหนดค่าที่ต้องการอนิเมต
+	local goal = {
+		Position = UDim2.new(0.864, 0, 0.767, 0) -- ตำแหน่งใหม่
+	}
+	
+	-- สร้างฟังก์ชันสำหรับเริ่มต้นอนิเมชั่นเมื่อกดปุ่ม
+	local function onButtonClicked()
+		uiElement.Visible = true -- ทำให้ UI Element แสดงผล
+		local tween = TweenService:Create(uiElement, tweenInfo, goal)
+		tween:Play()
+	
+		-- รอให้การอนิเมตเสร็จสิ้น
+		tween.Completed:Wait()
+	
+		-- รอเพิ่มอีก 5 วินาที
+		wait(0.1)
+	
+		-- ตั้งค่ากลับไปที่ตำแหน่งเริ่มต้น
+		local returnGoal = {
+			Position = UDim2.new(0.995, 0, 0.767, 0) -- กลับไปที่ตำแหน่งเริ่มต้น
+		}
+	
+		-- สร้างการอนิเมตเพื่อกลับไปที่ตำแหน่งเริ่มต้น
+		local returnTween = TweenService:Create(uiElement, tweenInfo, returnGoal)
+		returnTween:Play()
+	
+		-- รอให้การอนิเมตกลับเสร็จสิ้นก่อนทำให้หายไป
+		returnTween.Completed:Wait()
+		uiElement.Visible = false -- ทำให้ UI Element หายไป
+	end
+	
+	-- เชื่อมโยงเหตุการณ์เมื่อปุ่มถูกคลิก
+	button.MouseButton1Click:Connect(onButtonClicked)
+	-----------------------------------------------------------------------------------------------------------------
+	local uiElement = Noti
+	local button = Faim2
+	
+	-- กำหนดการตั้งค่าของ Tween
+	local tweenInfo = TweenInfo.new(
+		1, -- เวลาที่ใช้ในการอนิเมต (1 วินาที)
+		Enum.EasingStyle.Quad, -- สไตล์การเคลื่อนไหว
+		Enum.EasingDirection.Out -- ทิศทางการเคลื่อนไหว
+	)
+	
+	-- ตั้งค่าตำแหน่งเริ่มต้นให้ UI Element เริ่มนอกจอ
+	uiElement.Position = UDim2.new(0.995, 0, 0.767, 0) -- ตำแหน่งเริ่มต้น
+	uiElement.Visible = false -- ตั้งค่าให้ UI Element ไม่แสดงผล
+	
+	-- กำหนดค่าที่ต้องการอนิเมต
+	local goal = {
+		Position = UDim2.new(0.864, 0, 0.767, 0) -- ตำแหน่งใหม่
+	}
+	
+	-- สร้างฟังก์ชันสำหรับเริ่มต้นอนิเมชั่นเมื่อกดปุ่ม
+	local function onButtonClicked()
+		uiElement.Visible = true -- ทำให้ UI Element แสดงผล
+		local tween = TweenService:Create(uiElement, tweenInfo, goal)
+		tween:Play()
+	
+		-- รอให้การอนิเมตเสร็จสิ้น
+		tween.Completed:Wait()
+	
+		-- รอเพิ่มอีก 5 วินาที
+		wait(0.1)
+	
+		-- ตั้งค่ากลับไปที่ตำแหน่งเริ่มต้น
+		local returnGoal = {
+			Position = UDim2.new(0.995, 0, 0.767, 0) -- กลับไปที่ตำแหน่งเริ่มต้น
+		}
+	
+		-- สร้างการอนิเมตเพื่อกลับไปที่ตำแหน่งเริ่มต้น
+		local returnTween = TweenService:Create(uiElement, tweenInfo, returnGoal)
+		returnTween:Play()
+	
+		-- รอให้การอนิเมตกลับเสร็จสิ้นก่อนทำให้หายไป
+		returnTween.Completed:Wait()
+		uiElement.Visible = false -- ทำให้ UI Element หายไป
+	end
+	
+	-- เชื่อมโยงเหตุการณ์เมื่อปุ่มถูกคลิก
+	button.MouseButton1Click:Connect(onButtonClicked)
+	-----------------------------------------------------------------------------------------------------------------
+	local uiElement = Noti
+	local button = ff2
+	
+	-- กำหนดการตั้งค่าของ Tween
+	local tweenInfo = TweenInfo.new(
+		1, -- เวลาที่ใช้ในการอนิเมต (1 วินาที)
+		Enum.EasingStyle.Quad, -- สไตล์การเคลื่อนไหว
+		Enum.EasingDirection.Out -- ทิศทางการเคลื่อนไหว
+	)
+	
+	-- ตั้งค่าตำแหน่งเริ่มต้นให้ UI Element เริ่มนอกจอ
+	uiElement.Position = UDim2.new(0.995, 0, 0.767, 0) -- ตำแหน่งเริ่มต้น
+	uiElement.Visible = false -- ตั้งค่าให้ UI Element ไม่แสดงผล
+	
+	-- กำหนดค่าที่ต้องการอนิเมต
+	local goal = {
+		Position = UDim2.new(0.864, 0, 0.767, 0) -- ตำแหน่งใหม่
+	}
+	
+	-- สร้างฟังก์ชันสำหรับเริ่มต้นอนิเมชั่นเมื่อกดปุ่ม
+	local function onButtonClicked()
+		uiElement.Visible = true -- ทำให้ UI Element แสดงผล
+		local tween = TweenService:Create(uiElement, tweenInfo, goal)
+		tween:Play()
+	
+		-- รอให้การอนิเมตเสร็จสิ้น
+		tween.Completed:Wait()
+	
+		-- รอเพิ่มอีก 5 วินาที
+		wait(0.1)
+	
+		-- ตั้งค่ากลับไปที่ตำแหน่งเริ่มต้น
+		local returnGoal = {
+			Position = UDim2.new(0.995, 0, 0.767, 0) -- กลับไปที่ตำแหน่งเริ่มต้น
+		}
+	
+		-- สร้างการอนิเมตเพื่อกลับไปที่ตำแหน่งเริ่มต้น
+		local returnTween = TweenService:Create(uiElement, tweenInfo, returnGoal)
+		returnTween:Play()
+	
+		-- รอให้การอนิเมตกลับเสร็จสิ้นก่อนทำให้หายไป
+		returnTween.Completed:Wait()
+		uiElement.Visible = false -- ทำให้ UI Element หายไป
+	end
+	
+	-- เชื่อมโยงเหตุการณ์เมื่อปุ่มถูกคลิก
+	button.MouseButton1Click:Connect(onButtonClicked)
+	-----------------------------------------------------------------------------------------------------------------
+	local uiElement = Noti
+	local button = H2
+	
+	-- กำหนดการตั้งค่าของ Tween
+	local tweenInfo = TweenInfo.new(
+		1, -- เวลาที่ใช้ในการอนิเมต (1 วินาที)
+		Enum.EasingStyle.Quad, -- สไตล์การเคลื่อนไหว
+		Enum.EasingDirection.Out -- ทิศทางการเคลื่อนไหว
+	)
+	
+	-- ตั้งค่าตำแหน่งเริ่มต้นให้ UI Element เริ่มนอกจอ
+	uiElement.Position = UDim2.new(0.995, 0, 0.767, 0) -- ตำแหน่งเริ่มต้น
+	uiElement.Visible = false -- ตั้งค่าให้ UI Element ไม่แสดงผล
+	
+	-- กำหนดค่าที่ต้องการอนิเมต
+	local goal = {
+		Position = UDim2.new(0.864, 0, 0.767, 0) -- ตำแหน่งใหม่
+	}
+	
+	-- สร้างฟังก์ชันสำหรับเริ่มต้นอนิเมชั่นเมื่อกดปุ่ม
+	local function onButtonClicked()
+		uiElement.Visible = true -- ทำให้ UI Element แสดงผล
+		local tween = TweenService:Create(uiElement, tweenInfo, goal)
+		tween:Play()
+	
+		-- รอให้การอนิเมตเสร็จสิ้น
+		tween.Completed:Wait()
+	
+		-- รอเพิ่มอีก 5 วินาที
+		wait(0.1)
+	
+		-- ตั้งค่ากลับไปที่ตำแหน่งเริ่มต้น
+		local returnGoal = {
+			Position = UDim2.new(0.995, 0, 0.767, 0) -- กลับไปที่ตำแหน่งเริ่มต้น
+		}
+	
+		-- สร้างการอนิเมตเพื่อกลับไปที่ตำแหน่งเริ่มต้น
+		local returnTween = TweenService:Create(uiElement, tweenInfo, returnGoal)
+		returnTween:Play()
+	
+		-- รอให้การอนิเมตกลับเสร็จสิ้นก่อนทำให้หายไป
+		returnTween.Completed:Wait()
+		uiElement.Visible = false -- ทำให้ UI Element หายไป
+	end
+	
+	-- เชื่อมโยงเหตุการณ์เมื่อปุ่มถูกคลิก
+	button.MouseButton1Click:Connect(onButtonClicked)
+	-----------------------------------------------------------------------------------------------------------------
+	
+	
+	
+	
+	--[[
+	KKRHUBKKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUBKKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUBKKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUBKKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	KKRHUB
+	]]--
+	
+	
+	local Fad2 = script.Parent.FrameE.FrameAdmin.AdminButton
+	local Faim2 = script.Parent.FrameE.FrameAimbot.AimbotButton
+	local ff2 = script.Parent.FrameE.FrameFarm.FarmButton
+	local H2 = script.Parent.FrameE.FrameNoH.NoHButton
+	
+	
+	local Noti = script.Parent.Notification
+	
+	
+	local TweenService = game:GetService("TweenService")
+	local uiElement = Noti
+	local button = Fad2
+	
+	-- กำหนดการตั้งค่าของ Tween
+	local tweenInfo = TweenInfo.new(
+		1, -- เวลาที่ใช้ในการอนิเมต (1 วินาที)
+		Enum.EasingStyle.Quad, -- สไตล์การเคลื่อนไหว
+		Enum.EasingDirection.Out -- ทิศทางการเคลื่อนไหว
+	)
+	
+	-- ตั้งค่าตำแหน่งเริ่มต้นให้ UI Element เริ่มนอกจอ
+	uiElement.Position = UDim2.new(0.995, 0, 0.767, 0) -- ตำแหน่งเริ่มต้น
+	uiElement.Visible = false -- ตั้งค่าให้ UI Element ไม่แสดงผล
+	
+	-- กำหนดค่าที่ต้องการอนิเมต
+	local goal = {
+		Position = UDim2.new(0.864, 0, 0.767, 0) -- ตำแหน่งใหม่
+	}
+	
+	-- สร้างฟังก์ชันสำหรับเริ่มต้นอนิเมชั่นเมื่อกดปุ่ม
+	local function onButtonClicked()
+		uiElement.Visible = true -- ทำให้ UI Element แสดงผล
+		local tween = TweenService:Create(uiElement, tweenInfo, goal)
+		tween:Play()
+	
+		-- รอให้การอนิเมตเสร็จสิ้น
+		tween.Completed:Wait()
+	
+		-- รอเพิ่มอีก 5 วินาที
+		wait(0.1)
+	
+		-- ตั้งค่ากลับไปที่ตำแหน่งเริ่มต้น
+		local returnGoal = {
+			Position = UDim2.new(0.995, 0, 0.767, 0) -- กลับไปที่ตำแหน่งเริ่มต้น
+		}
+	
+		-- สร้างการอนิเมตเพื่อกลับไปที่ตำแหน่งเริ่มต้น
+		local returnTween = TweenService:Create(uiElement, tweenInfo, returnGoal)
+		returnTween:Play()
+	
+		-- รอให้การอนิเมตกลับเสร็จสิ้นก่อนทำให้หายไป
+		returnTween.Completed:Wait()
+		uiElement.Visible = false -- ทำให้ UI Element หายไป
+	end
+	
+	-- เชื่อมโยงเหตุการณ์เมื่อปุ่มถูกคลิก
+	button.MouseButton1Click:Connect(onButtonClicked)
+	-----------------------------------------------------------------------------------------------------------------
+	local uiElement = Noti
+	local button = Faim2
+	
+	-- กำหนดการตั้งค่าของ Tween
+	local tweenInfo = TweenInfo.new(
+		1, -- เวลาที่ใช้ในการอนิเมต (1 วินาที)
+		Enum.EasingStyle.Quad, -- สไตล์การเคลื่อนไหว
+		Enum.EasingDirection.Out -- ทิศทางการเคลื่อนไหว
+	)
+	
+	-- ตั้งค่าตำแหน่งเริ่มต้นให้ UI Element เริ่มนอกจอ
+	uiElement.Position = UDim2.new(0.995, 0, 0.767, 0) -- ตำแหน่งเริ่มต้น
+	uiElement.Visible = false -- ตั้งค่าให้ UI Element ไม่แสดงผล
+	
+	-- กำหนดค่าที่ต้องการอนิเมต
+	local goal = {
+		Position = UDim2.new(0.864, 0, 0.767, 0) -- ตำแหน่งใหม่
+	}
+	
+	-- สร้างฟังก์ชันสำหรับเริ่มต้นอนิเมชั่นเมื่อกดปุ่ม
+	local function onButtonClicked()
+		uiElement.Visible = true -- ทำให้ UI Element แสดงผล
+		local tween = TweenService:Create(uiElement, tweenInfo, goal)
+		tween:Play()
+	
+		-- รอให้การอนิเมตเสร็จสิ้น
+		tween.Completed:Wait()
+	
+		-- รอเพิ่มอีก 5 วินาที
+		wait(0.1)
+	
+		-- ตั้งค่ากลับไปที่ตำแหน่งเริ่มต้น
+		local returnGoal = {
+			Position = UDim2.new(0.995, 0, 0.767, 0) -- กลับไปที่ตำแหน่งเริ่มต้น
+		}
+	
+		-- สร้างการอนิเมตเพื่อกลับไปที่ตำแหน่งเริ่มต้น
+		local returnTween = TweenService:Create(uiElement, tweenInfo, returnGoal)
+		returnTween:Play()
+	
+		-- รอให้การอนิเมตกลับเสร็จสิ้นก่อนทำให้หายไป
+		returnTween.Completed:Wait()
+		uiElement.Visible = false -- ทำให้ UI Element หายไป
+	end
+	
+	-- เชื่อมโยงเหตุการณ์เมื่อปุ่มถูกคลิก
+	button.MouseButton1Click:Connect(onButtonClicked)
+	-----------------------------------------------------------------------------------------------------------------
+	local uiElement = Noti
+	local button = ff2
+	
+	-- กำหนดการตั้งค่าของ Tween
+	local tweenInfo = TweenInfo.new(
+		1, -- เวลาที่ใช้ในการอนิเมต (1 วินาที)
+		Enum.EasingStyle.Quad, -- สไตล์การเคลื่อนไหว
+		Enum.EasingDirection.Out -- ทิศทางการเคลื่อนไหว
+	)
+	
+	-- ตั้งค่าตำแหน่งเริ่มต้นให้ UI Element เริ่มนอกจอ
+	uiElement.Position = UDim2.new(0.995, 0, 0.767, 0) -- ตำแหน่งเริ่มต้น
+	uiElement.Visible = false -- ตั้งค่าให้ UI Element ไม่แสดงผล
+	
+	-- กำหนดค่าที่ต้องการอนิเมต
+	local goal = {
+		Position = UDim2.new(0.864, 0, 0.767, 0) -- ตำแหน่งใหม่
+	}
+	
+	-- สร้างฟังก์ชันสำหรับเริ่มต้นอนิเมชั่นเมื่อกดปุ่ม
+	local function onButtonClicked()
+		uiElement.Visible = true -- ทำให้ UI Element แสดงผล
+		local tween = TweenService:Create(uiElement, tweenInfo, goal)
+		tween:Play()
+	
+		-- รอให้การอนิเมตเสร็จสิ้น
+		tween.Completed:Wait()
+	
+		-- รอเพิ่มอีก 5 วินาที
+		wait(0.1)
+	
+		-- ตั้งค่ากลับไปที่ตำแหน่งเริ่มต้น
+		local returnGoal = {
+			Position = UDim2.new(0.995, 0, 0.767, 0) -- กลับไปที่ตำแหน่งเริ่มต้น
+		}
+	
+		-- สร้างการอนิเมตเพื่อกลับไปที่ตำแหน่งเริ่มต้น
+		local returnTween = TweenService:Create(uiElement, tweenInfo, returnGoal)
+		returnTween:Play()
+	
+		-- รอให้การอนิเมตกลับเสร็จสิ้นก่อนทำให้หายไป
+		returnTween.Completed:Wait()
+		uiElement.Visible = false -- ทำให้ UI Element หายไป
+	end
+	
+	-- เชื่อมโยงเหตุการณ์เมื่อปุ่มถูกคลิก
+	button.MouseButton1Click:Connect(onButtonClicked)
+	-----------------------------------------------------------------------------------------------------------------
+	local uiElement = Noti
+	local button = H2
+	
+	-- กำหนดการตั้งค่าของ Tween
+	local tweenInfo = TweenInfo.new(
+		1, -- เวลาที่ใช้ในการอนิเมต (1 วินาที)
+		Enum.EasingStyle.Quad, -- สไตล์การเคลื่อนไหว
+		Enum.EasingDirection.Out -- ทิศทางการเคลื่อนไหว
+	)
+	
+	-- ตั้งค่าตำแหน่งเริ่มต้นให้ UI Element เริ่มนอกจอ
+	uiElement.Position = UDim2.new(0.995, 0, 0.767, 0) -- ตำแหน่งเริ่มต้น
+	uiElement.Visible = false -- ตั้งค่าให้ UI Element ไม่แสดงผล
+	
+	-- กำหนดค่าที่ต้องการอนิเมต
+	local goal = {
+		Position = UDim2.new(0.864, 0, 0.767, 0) -- ตำแหน่งใหม่
+	}
+	
+	-- สร้างฟังก์ชันสำหรับเริ่มต้นอนิเมชั่นเมื่อกดปุ่ม
+	local function onButtonClicked()
+		uiElement.Visible = true -- ทำให้ UI Element แสดงผล
+		local tween = TweenService:Create(uiElement, tweenInfo, goal)
+		tween:Play()
+	
+		-- รอให้การอนิเมตเสร็จสิ้น
+		tween.Completed:Wait()
+	
+		-- รอเพิ่มอีก 5 วินาที
+		wait(0.1)
+	
+		-- ตั้งค่ากลับไปที่ตำแหน่งเริ่มต้น
+		local returnGoal = {
+			Position = UDim2.new(0.995, 0, 0.767, 0) -- กลับไปที่ตำแหน่งเริ่มต้น
+		}
+	
+		-- สร้างการอนิเมตเพื่อกลับไปที่ตำแหน่งเริ่มต้น
+		local returnTween = TweenService:Create(uiElement, tweenInfo, returnGoal)
+		returnTween:Play()
+	
+		-- รอให้การอนิเมตกลับเสร็จสิ้นก่อนทำให้หายไป
+		returnTween.Completed:Wait()
+		uiElement.Visible = false -- ทำให้ UI Element หายไป
+	end
+	
+	-- เชื่อมโยงเหตุการณ์เมื่อปุ่มถูกคลิก
+	button.MouseButton1Click:Connect(onButtonClicked)
+	-----------------------------------------------------------------------------------------------------------------
+end
+coroutine.wrap(STMAPV_fake_script)()
