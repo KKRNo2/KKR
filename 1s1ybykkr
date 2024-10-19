@@ -1,4 +1,7 @@
+-- Gui to Lua
+-- Version: 3.2
 
+-- Instances:
 
 local KKRHUB = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -15,43 +18,53 @@ local TextButton1 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local TextButton2 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local exit = Instance.new("Frame")
+local TextButton3 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local X = Instance.new("TextButton")
+local exit = Instance.new("Frame")
 local UICorner_6 = Instance.new("UICorner")
-local l = Instance.new("TextButton")
+local X = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
+local l = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
 local TextLabel_2 = Instance.new("TextLabel")
 local Frame_2 = Instance.new("Frame")
 local ImageLabel = Instance.new("ImageLabel")
-local UICorner_8 = Instance.new("UICorner")
 local UICorner_9 = Instance.new("UICorner")
-local Frame_3 = Instance.new("Frame")
 local UICorner_10 = Instance.new("UICorner")
-local on = Instance.new("TextButton")
+local Frame_3 = Instance.new("Frame")
 local UICorner_11 = Instance.new("UICorner")
-local off = Instance.new("TextButton")
+local on = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
+local off = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
 local Frame1 = Instance.new("Frame")
 local ImageLabel_2 = Instance.new("ImageLabel")
-local UICorner_13 = Instance.new("UICorner")
 local UICorner_14 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local TextLabel_3 = Instance.new("TextLabel")
+local HitboxFrame = Instance.new("Frame")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local UICorner_16 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_18 = Instance.new("UICorner")
+local on_2 = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
 local lego = Instance.new("Frame")
 local ImageButton = Instance.new("ImageButton")
-local UICorner_15 = Instance.new("UICorner")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_20 = Instance.new("UICorner")
+local UICorner_21 = Instance.new("UICorner")
 local CH = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_22 = Instance.new("UICorner")
 local Ch = Instance.new("Frame")
-local UICorner_18 = Instance.new("UICorner")
+local UICorner_23 = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
 local TextLabel_4 = Instance.new("TextLabel")
 local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
 local Bye = Instance.new("Frame")
-local UICorner_19 = Instance.new("UICorner")
+local UICorner_24 = Instance.new("UICorner")
 local byr = Instance.new("Frame")
-local UICorner_20 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
 local TextLabel_5 = Instance.new("TextLabel")
 local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
@@ -183,7 +196,7 @@ TextButton2.Parent = Menu
 TextButton2.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
 TextButton2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton2.BorderSizePixel = 0
-TextButton2.Position = UDim2.new(0, 0, 0.293193728, 0)
+TextButton2.Position = UDim2.new(0, 0, 0.560209453, 0)
 TextButton2.Size = UDim2.new(0, 76, 0, 35)
 TextButton2.Font = Enum.Font.SourceSans
 TextButton2.Text = "Test"
@@ -194,6 +207,22 @@ TextButton2.TextWrapped = true
 
 UICorner_4.Parent = TextButton2
 
+TextButton3.Name = "TextButton3"
+TextButton3.Parent = Menu
+TextButton3.BackgroundColor3 = Color3.fromRGB(83, 83, 83)
+TextButton3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton3.BorderSizePixel = 0
+TextButton3.Position = UDim2.new(0, 0, 0.329842925, 0)
+TextButton3.Size = UDim2.new(0, 76, 0, 35)
+TextButton3.Font = Enum.Font.SourceSans
+TextButton3.Text = "Test"
+TextButton3.TextColor3 = Color3.fromRGB(216, 216, 216)
+TextButton3.TextScaled = true
+TextButton3.TextSize = 14.000
+TextButton3.TextWrapped = true
+
+UICorner_5.Parent = TextButton3
+
 exit.Name = "exit"
 exit.Parent = Frame
 exit.BackgroundColor3 = Color3.fromRGB(106, 106, 106)
@@ -202,7 +231,7 @@ exit.BorderSizePixel = 0
 exit.Position = UDim2.new(0.776470602, 0, 0.187234044, 0)
 exit.Size = UDim2.new(0, 76, 0, 191)
 
-UICorner_5.Parent = exit
+UICorner_6.Parent = exit
 
 X.Name = "X"
 X.Parent = exit
@@ -218,7 +247,7 @@ X.TextScaled = true
 X.TextSize = 14.000
 X.TextWrapped = true
 
-UICorner_6.Parent = X
+UICorner_7.Parent = X
 
 l.Name = "l"
 l.Parent = exit
@@ -234,7 +263,7 @@ l.TextScaled = true
 l.TextSize = 14.000
 l.TextWrapped = true
 
-UICorner_7.Parent = l
+UICorner_8.Parent = l
 
 TextLabel_2.Parent = exit
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -268,9 +297,9 @@ ImageLabel.Size = UDim2.new(0, 162, 0, 171)
 ImageLabel.Image = "rbxassetid://13440861942"
 ImageLabel.ImageTransparency = 0.800
 
-UICorner_8.Parent = ImageLabel
+UICorner_9.Parent = ImageLabel
 
-UICorner_9.Parent = Frame_2
+UICorner_10.Parent = Frame_2
 
 Frame_3.Parent = Frame_2
 Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -279,8 +308,8 @@ Frame_3.BorderSizePixel = 0
 Frame_3.Position = UDim2.new(0.181250006, 0, 0.395348847, 0)
 Frame_3.Size = UDim2.new(0, 100, 0, 37)
 
-UICorner_10.CornerRadius = UDim.new(0, 30)
-UICorner_10.Parent = Frame_3
+UICorner_11.CornerRadius = UDim.new(0, 30)
+UICorner_11.Parent = Frame_3
 
 on.Name = "on"
 on.Parent = Frame_3
@@ -294,8 +323,8 @@ on.Text = ""
 on.TextColor3 = Color3.fromRGB(0, 0, 0)
 on.TextSize = 14.000
 
-UICorner_11.CornerRadius = UDim.new(0, 30)
-UICorner_11.Parent = on
+UICorner_12.CornerRadius = UDim.new(0, 30)
+UICorner_12.Parent = on
 
 off.Name = "off"
 off.Parent = Frame_3
@@ -310,8 +339,8 @@ off.Text = ""
 off.TextColor3 = Color3.fromRGB(0, 0, 0)
 off.TextSize = 14.000
 
-UICorner_12.CornerRadius = UDim.new(0, 30)
-UICorner_12.Parent = off
+UICorner_13.CornerRadius = UDim.new(0, 30)
+UICorner_13.Parent = off
 
 Frame1.Name = "Frame1"
 Frame1.Parent = Frame
@@ -332,9 +361,9 @@ ImageLabel_2.Size = UDim2.new(0, 162, 0, 171)
 ImageLabel_2.Image = "rbxassetid://13440861942"
 ImageLabel_2.ImageTransparency = 0.800
 
-UICorner_13.Parent = ImageLabel_2
+UICorner_14.Parent = ImageLabel_2
 
-UICorner_14.Parent = Frame1
+UICorner_15.Parent = Frame1
 
 TextLabel_3.Parent = Frame1
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -349,6 +378,60 @@ TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel_3.TextScaled = true
 TextLabel_3.TextSize = 14.000
 TextLabel_3.TextWrapped = true
+
+HitboxFrame.Name = "HitboxFrame"
+HitboxFrame.Parent = Frame
+HitboxFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HitboxFrame.BackgroundTransparency = 1.000
+HitboxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HitboxFrame.BorderSizePixel = 0
+HitboxFrame.Position = UDim2.new(0.264705896, 0, 0.225531921, 0)
+HitboxFrame.Size = UDim2.new(0, 160, 0, 172)
+HitboxFrame.Visible = false
+
+ImageLabel_3.Parent = HitboxFrame
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Size = UDim2.new(0, 162, 0, 171)
+ImageLabel_3.Image = "rbxassetid://13440861942"
+ImageLabel_3.ImageTransparency = 0.800
+
+UICorner_16.Parent = ImageLabel_3
+
+UICorner_17.Parent = HitboxFrame
+
+TextBox.Parent = HitboxFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.200000003, 0, 0.662790716, 0)
+TextBox.Size = UDim2.new(0, 95, 0, 49)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+UICorner_18.CornerRadius = UDim.new(0, 30)
+UICorner_18.Parent = TextBox
+
+on_2.Name = "on"
+on_2.Parent = HitboxFrame
+on_2.BackgroundColor3 = Color3.fromRGB(181, 80, 73)
+on_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+on_2.BorderSizePixel = 0
+on_2.Position = UDim2.new(0.365000159, 0, 0.354651153, 0)
+on_2.Size = UDim2.new(0, 41, 0, 37)
+on_2.Font = Enum.Font.SourceSans
+on_2.Text = "open"
+on_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+on_2.TextScaled = true
+on_2.TextSize = 14.000
+on_2.TextWrapped = true
+
+UICorner_19.CornerRadius = UDim.new(0, 30)
+UICorner_19.Parent = on_2
 
 lego.Name = "lego"
 lego.Parent = KKRHUB
@@ -367,9 +450,9 @@ ImageButton.Position = UDim2.new(0.119444527, 0, 0.150610626, 0)
 ImageButton.Size = UDim2.new(0, 54, 0, 45)
 ImageButton.Image = "rbxassetid://13440861942"
 
-UICorner_15.Parent = ImageButton
+UICorner_20.Parent = ImageButton
 
-UICorner_16.Parent = lego
+UICorner_21.Parent = lego
 
 CH.Name = "CH"
 CH.Parent = KKRHUB
@@ -380,8 +463,8 @@ CH.Position = UDim2.new(0.864000022, 0, 0.828000009, 0)
 CH.Size = UDim2.new(0.155541614, 0, 0.0782396048, 0)
 CH.ZIndex = 0
 
-UICorner_17.CornerRadius = UDim.new(0, 15)
-UICorner_17.Parent = CH
+UICorner_22.CornerRadius = UDim.new(0, 15)
+UICorner_22.Parent = CH
 
 Ch.Name = "Ch"
 Ch.Parent = CH
@@ -391,7 +474,7 @@ Ch.BorderSizePixel = 0
 Ch.Position = UDim2.new(0.0642944649, 0, 0.138336197, 0)
 Ch.Size = UDim2.new(0.885279, 0, 0.695903838, 0)
 
-UICorner_18.Parent = Ch
+UICorner_23.Parent = Ch
 
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(255, 78, 78)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient.Parent = Ch
@@ -422,8 +505,8 @@ Bye.Position = UDim2.new(0.864000022, 0, 0.828000009, 0)
 Bye.Size = UDim2.new(0.155541614, 0, 0.0782396048, 0)
 Bye.ZIndex = 0
 
-UICorner_19.CornerRadius = UDim.new(0, 15)
-UICorner_19.Parent = Bye
+UICorner_24.CornerRadius = UDim.new(0, 15)
+UICorner_24.Parent = Bye
 
 byr.Name = "byr"
 byr.Parent = Bye
@@ -433,7 +516,7 @@ byr.BorderSizePixel = 0
 byr.Position = UDim2.new(0.0642944649, 0, 0.138336197, 0)
 byr.Size = UDim2.new(0.885279, 0, 0.695903838, 0)
 
-UICorner_20.Parent = byr
+UICorner_25.Parent = byr
 
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.49, Color3.fromRGB(255, 78, 78)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
 UIGradient_2.Parent = byr
@@ -457,7 +540,7 @@ UITextSizeConstraint_2.MaxTextSize = 30
 
 -- Scripts:
 
-local function HUAYA_fake_script() -- KKRHUB.LocalScript 
+local function RTPOZ_fake_script() -- KKRHUB.LocalScript 
 	local script = Instance.new('LocalScript', KKRHUB)
 
 	script.Parent.lego.Draggable = true
@@ -470,101 +553,124 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 		script.Parent.lego.Visible = false
 		script.Parent.Frame.Visible = true
 	end)
-	
-	
+
+
 	script.Parent.Frame.Draggable = true
 	script.Parent.Frame.Active = true
-	
+
 	local button = script.Parent.Frame.BB.a -- ปุ่มที่ใช้กด
 	local bu = button.Parent.a2
 	local frame = script.Parent.Frame:WaitForChild("Menu") -- อ้างอิงถึง Frame ที่จะขยาย
 	local tweenService = game:GetService("TweenService") -- เรียกใช้ TweenService
 	local tb1 = frame.TextButton1
 	local tb2 = frame.TextButton2
-	
+	local tb3 = frame.TextButton3
+
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	--[[
 	Text
 	]]--
 	local tt1 = "🤓Cooldown 0 sec."
 	local tt2 = "👑Credit"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	local tt3 = "🟥HitBox"
+
+
+
+
+
+
+
+
+
+
+
+
+
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	tb1.MouseButton1Click:Connect(function()
 		script.Parent.Frame.Frame.Visible = true
 		script.Parent.Frame.Frame1.Visible = false
-	
+		script.Parent.Frame.HitboxFrame.Visible = false
+
+
 	end)
 	tb2.MouseButton1Click:Connect(function()
 		script.Parent.Frame.Frame.Visible = false
 		script.Parent.Frame.Frame1.Visible = true
-	
+		script.Parent.Frame.HitboxFrame.Visible = false
+
+
 	end)
-	
+	tb3.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Frame.Visible = false
+		script.Parent.Frame.Frame1.Visible = false
+		script.Parent.Frame.HitboxFrame.Visible = true
+
+
+	end)
+
 	-- ตั้งค่าขนาดเริ่มต้นของ Frame ให้เป็นศูนย์ (ปิดอยู่)
 	frame.Size = UDim2.new(0, 0,0, 191) -- สูง 50% ของหน้าจอ แต่กว้าง 0 (ซ่อน)
 	tb1.Size = UDim2.new(0, 0,0, 35)
 	tb2.Size = UDim2.new(0, 0,0, 35)
-	
-	
+	tb3.Size = UDim2.new(0, 0,0, 35)
+
+
 	frame.Visible = false
 	button.Visible = true
 	bu.Visible = false
-	
+
 	button.MouseButton1Click:Connect(function()
-	
+
 		button.Visible = false
 		bu.Visible = true
 		frame.Visible = true
 		local targetSize1 = UDim2.new(0, 76,0, 35)
 		local targetSize = UDim2.new(0, 76,0, 191) -- ขยายกว้างเป็น 50% ของหน้าจอ
 		local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out) -- เวลา 1 วินาที
-	
+
 		local tween = tweenService:Create(frame, tweenInfo, {Size = targetSize})
 		local twe = tweenService:Create(tb1, tweenInfo, {Size = targetSize1})
 		local twe2 = tweenService:Create(tb2, tweenInfo, {Size = targetSize1})
-	
-	
+		local twe3 = tweenService:Create(tb3, tweenInfo, {Size = targetSize1})
+
+
 		tween:Play() -- เล่นการขยายขนาด
 		twe:Play()
+		twe3:Play()
 		twe2:Play()
 		tb1.Text = tt1
 		tb2.Text = tt2
-	
+		tb3.Text = tt3
+
 	end)
-	
-	
-	
+
+
+
 	bu.MouseButton1Click:Connect(function()
 		tb1.Text = ""
 		tb2.Text = ""
-	
-	
+		tb3.Text = ""
+
+
+
 		button.Visible = true
 		bu.Visible = false
-	
+
 		local targetSize1 = UDim2.new(0, 0,0, 35)
 		local targetSize = UDim2.new(0, 0,0, 191) -- ขยายกว้างเป็น 50% ของหน้าจอ
 		local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out) -- เวลา 1 วินาที
-	
+
 		local tween = tweenService:Create(frame, tweenInfo, {Size = targetSize})
 		local twe = tweenService:Create(tb1, tweenInfo, {Size = targetSize1})
 		local twe2 = tweenService:Create(tb2, tweenInfo, {Size = targetSize1})
+		local twe3 = tweenService:Create(tb3, tweenInfo, {Size = targetSize1})
+
 		tween:Play() -- เล่นการขยายขนาด
 		twe:Play()
 		twe2:Play()
+		twe3:Play()
+
 		wait(1)
 		frame.Visible = false
 	end)
@@ -593,42 +699,42 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 	local tt1 = "X"
 	local tt2 = "-"
 	local tt3 = "By.KKR"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
 	---------------------------------------------------------------------------------------------------------------------------------------------------
-	
+
 	frame.AnchorPoint = Vector2.new(1, 0) 
 	frame.Position = UDim2.new(1, 0, 0.183, 0) -- ขอบขวาของหน้าจอ
-	
+
 	-- ตั้งค่าขนาดเริ่มต้นของ Frame ให้เป็นศูนย์ (ปิดอยู่)
 	frame.Size = UDim2.new(0, 0,0, 191) -- สูง 50% ของหน้าจอ แต่กว้าง 0 (ซ่อน)
 	tb1.Size = UDim2.new(0, 0,0, 35)
 	tb2.Size = UDim2.new(0, 0,0, 35)
 	tb3.Size = UDim2.new(0, 0,0, 35)
-	
+
 	frame.Visible = false
 	button.Visible = true
 	bu.Visible = false
-	
+
 	button.MouseButton1Click:Connect(function()
-	
+
 		button.Visible = false
 		bu.Visible = true
 		frame.Visible = true
 		local targetSize1 = UDim2.new(0, 76,0, 35)
 		local targetSize = UDim2.new(0, 76,0, 191) -- ขยายกว้างเป็น 50% ของหน้าจอ
 		local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out) -- เวลา 1 วินาที
-	
+
 		local tween = tweenService:Create(frame, tweenInfo, {Size = targetSize})
 		local twe = tweenService:Create(tb1, tweenInfo, {Size = targetSize1})
 		local twe2 = tweenService:Create(tb2, tweenInfo, {Size = targetSize1})
@@ -641,21 +747,21 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 		tb2.Text = tt2
 		tb3.Text = tt3
 	end)
-	
-	
-	
+
+
+
 	bu.MouseButton1Click:Connect(function()
 		tb1.Text = ""
 		tb2.Text = ""
 		tb3.Text = ""
-	
+
 		button.Visible = true
 		bu.Visible = false
-	
+
 		local targetSize1 = UDim2.new(0, 0,0, 35)
 		local targetSize = UDim2.new(0, 0,0, 191) -- ขยายกว้างเป็น 50% ของหน้าจอ
 		local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out) -- เวลา 1 วินาที
-	
+
 		local tween = tweenService:Create(frame, tweenInfo, {Size = targetSize})
 		local twe = tweenService:Create(tb1, tweenInfo, {Size = targetSize1})
 		local twe2 = tweenService:Create(tb2, tweenInfo, {Size = targetSize1})
@@ -678,57 +784,57 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 	---------------------------------------------------------     ------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
-	
-	
+
+
 	-- สร้างฟังก์ชันเพื่อเลื่อนปุ่มไปทางขวา
 	local function moveButtonRight(button)
 		-- ใช้ TweenService เพื่อทำให้การเลื่อนดูราบรื่น
 		local tweenService = game:GetService("TweenService")
-	
+
 		-- กำหนดตำแหน่งใหม่ที่ต้องการให้เลื่อนไป
 		local newPosition = UDim2.new(button.Position.X.Scale + 0.7, 0, button.Position.Y.Scale, 0) -- เลื่อนไปทางขวา 20% ของหน้าจอ
-	
+
 		-- กำหนด TweenInfo (ระยะเวลา 0.5 วินาที, การเคลื่อนไหวเป็นแบบ linear)
 		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	
+
 		-- สร้าง Tween และเล่นมัน
 		local tween = tweenService:Create(button, tweenInfo, {Position = newPosition})
 		tween:Play()
 	end
-	
+
 	-- กำหนดให้ฟังก์ชันทำงานเมื่อกดปุ่ม
 	script.Parent.Frame.Frame.Frame.on.MouseButton1Click:Connect(function()
 		moveButtonRight(script.Parent.Frame.Frame.Frame.on) -- เลื่อนปุ่มไปทางขวา
 		moveButtonRight(script.Parent.Frame.Frame.Frame.off) -- เลื่อนปุ่มไปทางขวา
 		wait(1)
 		script.Parent.Frame.Frame.Frame.on.Visible = false 	script.Parent.Frame.Frame.Frame.off.Visible = true
-	
+
 	end)
 	local function moveButtonRight1(button1)
 		-- ใช้ TweenService เพื่อทำให้การเลื่อนดูราบรื่น
 		local tweenService = game:GetService("TweenService")
-	
+
 		-- กำหนดตำแหน่งใหม่ที่ต้องการให้เลื่อนไป
 		local newPosition = UDim2.new(button1.Position.X.Scale + -0.7, 0, button1.Position.Y.Scale, 0) -- เลื่อนไปทางขวา 20% ของหน้าจอ
-	
+
 		-- กำหนด TweenInfo (ระยะเวลา 0.5 วินาที, การเคลื่อนไหวเป็นแบบ linear)
 		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	
+
 		-- สร้าง Tween และเล่นมัน
 		local tween = tweenService:Create(button1, tweenInfo, {Position = newPosition})
 		tween:Play()
 	end
-	
+
 	-- กำหนดให้ฟังก์ชันทำงานเมื่อกดปุ่ม
 	script.Parent.Frame.Frame.Frame.off.MouseButton1Click:Connect(function()
 		moveButtonRight1(script.Parent.Frame.Frame.Frame.off) -- เลื่อนปุ่มไปทางขวา
 		moveButtonRight1(script.Parent.Frame.Frame.Frame.on)
 		wait(1)
 		script.Parent.Frame.Frame.Frame.on.Visible = true 	script.Parent.Frame.Frame.Frame.off.Visible = false
-	
+
 	end)
-	
-	
+
+
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -743,54 +849,54 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 	local function moveFrameBack5(frame)
 		-- ใช้ TweenService เพื่อทำให้การเลื่อนกลับไปตำแหน่งเดิมดูราบรื่น
 		local tweenService = game:GetService("TweenService")
-	
+
 		-- กำหนดตำแหน่งเดิม {0.999, 0}, {0.828, 0}
 		local originalPosition = UDim2.new(0.999, 0, 0.828, 0)
-	
+
 		-- กำหนด TweenInfo (ระยะเวลา 0.5 วินาที, การเคลื่อนไหวเป็นแบบ linear)
 		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	
+
 		-- สร้าง Tween และเล่นมัน
 		local tween = tweenService:Create(frame, tweenInfo, {Position = originalPosition})
 		tween:Play()
 		wait(0.5)
 		script.Parent.CH.Visible = false
-	
+
 	end
-	
+
 	local function moveFrameToNewPosition(frame)
 		-- ใช้ TweenService เพื่อทำให้การเลื่อนดูราบรื่น
 		local tweenService = game:GetService("TweenService")
-	
+
 		-- กำหนดตำแหน่งใหม่ที่ต้องการให้เลื่อนไป (เปลี่ยนเป็น {0.864, 0}, {0.828, 0})
 		local newPosition = UDim2.new(0.864, 0, 0.828, 0)
-	
+
 		-- กำหนด TweenInfo (ระยะเวลา 0.5 วินาที, การเคลื่อนไหวเป็นแบบ linear)
 		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	
+
 		-- สร้าง Tween และเล่นมัน
 		local tween = tweenService:Create(frame, tweenInfo, {Position = newPosition})
 		script.Parent.CH.Visible = true
 		tween:Play()
-	
+
 		-- ตั้งเวลา 5 วินาที แล้วเลื่อนกลับไปที่เดิม
 		delay(3, function()
 			moveFrameBack5(frame)
 		end)
 	end
-	
+
 	-- ฟังก์ชันเลื่อน Frame กลับไปยังตำแหน่งเริ่มต้น
-	
-	
+
+
 	-- ตั้งค่า Position เริ่มต้นของ Frame เป็น {0.999, 0}, {0.828, 0}
 	script.Parent.CH.Visible = false
 	script.Parent.CH.Position = UDim2.new(0.999, 0, 0.828, 0)
-	
+
 	-- เมื่อกดปุ่มให้เลื่อนไปยังตำแหน่งใหม่
 	script.Parent.Frame.Frame.Frame.on.MouseButton1Click:Connect(function()
 		moveFrameToNewPosition(script.Parent.CH)
 	end)
-	
+
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -802,23 +908,23 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 	---------------------------------------------------------     ------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 	local function moveFrameBack4(kkr)
 		-- ใช้ TweenService เพื่อทำให้การเลื่อนกลับไปตำแหน่งเดิมดูราบรื่น
 		local tweenService = game:GetService("TweenService")
-	
+
 		-- กำหนดตำแหน่งเดิม {0.999, 0}, {0.828, 0}
 		local originalPosition = UDim2.new(0.999, 0, 0.828, 0)
-	
+
 		-- กำหนด TweenInfo (ระยะเวลา 0.5 วินาที, การเคลื่อนไหวเป็นแบบ linear)
 		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	
+
 		-- สร้าง Tween และเล่นมัน
 		local tween = tweenService:Create(kkr, tweenInfo, {Position = originalPosition})
 		tween:Play()
@@ -826,42 +932,42 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 		script.Parent.Bye.Visible = false
 		wait(0.5)
 		script.Parent:Destroy()
-	
-	
+
+
 	end
-	
+
 	local function moveFrameToNewPosition4(kkr)
 		-- ใช้ TweenService เพื่อทำให้การเลื่อนดูราบรื่น
 		local tweenService = game:GetService("TweenService")
-	
+
 		-- กำหนดตำแหน่งใหม่ที่ต้องการให้เลื่อนไป (เปลี่ยนเป็น {0.864, 0}, {0.828, 0})
 		local newPosition = UDim2.new(0.864, 0, 0.828, 0)
-	
+
 		-- กำหนด TweenInfo (ระยะเวลา 0.5 วินาที, การเคลื่อนไหวเป็นแบบ linear)
 		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
-	
+
 		-- สร้าง Tween และเล่นมัน
 		local tween = tweenService:Create(kkr, tweenInfo, {Position = newPosition})
 		script.Parent.Bye.Visible = true
 		tween:Play()
-	
+
 		-- ตั้งเวลา 5 วินาที แล้วเลื่อนกลับไปที่เดิม
 		delay(3, function()
 			moveFrameBack4(kkr)
 		end)
 	end
-	
+
 	-- ฟังก์ชันเลื่อน Frame กลับไปยังตำแหน่งเริ่มต้น
-	
-	
+
+
 	-- ตั้งค่า Position เริ่มต้นของ Frame เป็น {0.999, 0}, {0.828, 0}
 	script.Parent.Bye.Visible = false
 	script.Parent.Bye.Position = UDim2.new(0.999, 0, 0.828, 0)
-	
+
 	-- เมื่อกดปุ่มให้เลื่อนไปยังตำแหน่งใหม่
 	script.Parent.Frame.exit.X.MouseButton1Click:Connect(function()
 		moveFrameToNewPosition4(script.Parent.Bye)
-		
+
 	end)
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -944,11 +1050,11 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 	---------------------------------------------------------     ------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	---------------------------------------------------------------------------------------------------------------------------------------------------
-	
-	
+
+
 	-- สร้างตัวแปรเพื่อเก็บค่า HoldDuration เดิมของ ProximityPrompt
 	local originalDurations = {}
-	
+
 	-- ฟังก์ชันปรับ HoldDuration เป็น 0
 	local function setProximityPromptDurationToZero()
 		for _, prompt in ipairs(workspace:GetDescendants()) do
@@ -962,7 +1068,7 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 			end
 		end
 	end
-	
+
 	-- ฟังก์ชันปรับ HoldDuration กลับเป็นค่าเดิม
 	local function resetProximityPromptDuration()
 		for _, prompt in ipairs(workspace:GetDescendants()) do
@@ -974,16 +1080,199 @@ local function HUAYA_fake_script() -- KKRHUB.LocalScript
 			end
 		end
 	end
-	
+
 	-- เมื่อกด Button1 ให้ปรับ HoldDuration เป็น 0
 	script.Parent.Frame.Frame.Frame.on.MouseButton1Click:Connect(function()
 		setProximityPromptDurationToZero()
 	end)
-	
+
 	-- เมื่อกด Button2 ให้ปรับ HoldDuration กลับเป็นค่าเดิม
 	script.Parent.Frame.Frame.Frame.off.MouseButton1Click:Connect(function()
 		resetProximityPromptDuration()
 	end)
-	
+
+	---------------------------------------------------------------------------------------------------------------------------------------------------
+	------------------------------------------      -------------------       -------------------------------------------------------------------------------------
+	---------------------------------------           -----------------      ----------  ---------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------              -----------------------------------------------------------------------------------------------
+	--------------------------------------------------------         -------------------------------------------------------------------------------------------
+	---------------------------------------------------------     ------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------------------------------------------------------
+	---------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+	local textBox = script.Parent.Frame.HitboxFrame:WaitForChild("TextBox")
+	local button = script.Parent.Frame.HitboxFrame.on
+	textBox.Text = "ใส่จำนวนตัวเลขขนาด"
+
+	local isExpanding = false  -- To control the loop for hitbox expansion
+
+	button.MouseButton1Click:Connect(function()
+		local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/KKRNo2/KKR/refs/heads/main/uikkrgg')))()
+		local Window = OrionLib:MakeWindow({
+			Name = "KKRHUB",
+			HidePremium = false,
+			SaveConfig = true,
+			ConfigFolder = "OrionTest"
+		})
+
+		local Tab = Window:MakeTab({
+			Name = "Main",
+			Icon = "rbxassetid://13440861942",
+			PremiumOnly = false
+		})
+
+		local Section = Tab:AddSection({
+			Name = "Script"
+		})
+
+		-- Function to convert the TextBox input to a number
+		local function getHitboxSize()
+			local size = tonumber(textBox.Text)
+			if size then
+				return Vector3.new(size, size, size)
+			else
+				return Vector3.new(5, 5, 5)  -- default size if input is invalid
+			end
+		end
+
+		-- Function to reset hitboxes to default size
+		local function resetHitbox(hitbox)
+			hitbox.Size = Vector3.new(2, 2, 1)  -- Default HumanoidRootPart size
+			hitbox.CanCollide = true
+			hitbox.Transparency = 0
+			hitbox.Color = Color3.fromRGB(255, 255, 255)  -- Reset color to white
+		end
+
+		-- Function to add a HumanoidRootPart if missing
+		local function addHitboxIfMissing(character)
+			if not character:FindFirstChild("HumanoidRootPart") then
+				local humanoidRootPart = Instance.new("Part")
+				humanoidRootPart.Name = "HumanoidRootPart"
+				humanoidRootPart.Size = Vector3.new(2, 2, 1)  -- Default size
+				humanoidRootPart.Anchored = false
+				humanoidRootPart.CanCollide = true
+				humanoidRootPart.Transparency = 0
+				humanoidRootPart.Color = Color3.fromRGB(255, 255, 255)
+				humanoidRootPart.Parent = character
+				character.PrimaryPart = humanoidRootPart
+			end
+		end
+
+		-- Function to expand all player hitboxes
+		local function expandAllPlayerHitboxes()
+			local localPlayer = game.Players.LocalPlayer
+			local hitboxSize = getHitboxSize()
+
+			for _, player in ipairs(game.Players:GetPlayers()) do
+				pcall(function()
+					if player ~= localPlayer and player.Character then
+						-- Add hitbox if missing
+						addHitboxIfMissing(player.Character)
+
+						-- Expand the hitbox
+						local hitbox = player.Character:FindFirstChild("HumanoidRootPart")
+						if hitbox then
+							hitbox.Size = hitboxSize
+							hitbox.CanCollide = false
+							hitbox.Transparency = 0.5
+							hitbox.Color = Color3.fromRGB(255, 0, 0)
+						end
+					end
+				end)
+			end
+		end
+
+		-- Button to start expanding hitboxes continuously
+		Tab:AddButton({
+			Name = "Expand All Player Hitboxes",
+			Callback = function()
+				isExpanding = true  -- Enable the loop
+				while isExpanding do
+					expandAllPlayerHitboxes()
+					wait(1)  -- Loop every 1 second to keep hitboxes expanded
+				end
+			end
+		})
+
+		-- Add a button to turn off hitbox expansion and stop the loop
+		Tab:AddButton({
+			Name = "Turn Off Hitbox Expansion",
+			Callback = function()
+				isExpanding = false  -- Stop the loop
+				local function resetAllHitboxes()
+					-- Reset player hitboxes
+					for _, player in ipairs(game.Players:GetPlayers()) do
+						pcall(function()
+							if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+								resetHitbox(player.Character:FindFirstChild("HumanoidRootPart"))
+							end
+						end)
+					end
+				end
+
+				resetAllHitboxes()  -- Call the function to reset all hitboxes
+			end
+		})
+	end)
+	--------------------------------------------------------
+	local function moveFrameBack77(frame)
+		-- ใช้ TweenService เพื่อทำให้การเลื่อนกลับไปตำแหน่งเดิมดูราบรื่น
+		local tweenService = game:GetService("TweenService")
+
+		-- กำหนดตำแหน่งเดิม {0.999, 0}, {0.828, 0}
+		local originalPosition = UDim2.new(0.999, 0, 0.828, 0)
+
+		-- กำหนด TweenInfo (ระยะเวลา 0.5 วินาที, การเคลื่อนไหวเป็นแบบ linear)
+		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+
+		-- สร้าง Tween และเล่นมัน
+		local tween = tweenService:Create(frame, tweenInfo, {Position = originalPosition})
+		tween:Play()
+		wait(0.5)
+		script.Parent.CH.Visible = false
+
+	end
+
+	local function moveFrameToNewPosition77(frame)
+		-- ใช้ TweenService เพื่อทำให้การเลื่อนดูราบรื่น
+		local tweenService = game:GetService("TweenService")
+
+		-- กำหนดตำแหน่งใหม่ที่ต้องการให้เลื่อนไป (เปลี่ยนเป็น {0.864, 0}, {0.828, 0})
+		local newPosition = UDim2.new(0.864, 0, 0.828, 0)
+
+		-- กำหนด TweenInfo (ระยะเวลา 0.5 วินาที, การเคลื่อนไหวเป็นแบบ linear)
+		local tweenInfo = TweenInfo.new(0.5, Enum.EasingStyle.Linear, Enum.EasingDirection.Out)
+
+		-- สร้าง Tween และเล่นมัน
+		local tween = tweenService:Create(frame, tweenInfo, {Position = newPosition})
+		script.Parent.CH.Visible = true
+		tween:Play()
+
+		-- ตั้งเวลา 5 วินาที แล้วเลื่อนกลับไปที่เดิม
+		delay(3, function()
+			moveFrameBack77(frame)
+		end)
+	end
+
+	-- ฟังก์ชันเลื่อน Frame กลับไปยังตำแหน่งเริ่มต้น
+
+
+	-- ตั้งค่า Position เริ่มต้นของ Frame เป็น {0.999, 0}, {0.828, 0}
+	script.Parent.CH.Visible = false
+	script.Parent.CH.Position = UDim2.new(0.999, 0, 0.828, 0)
+
+	-- เมื่อกดปุ่มให้เลื่อนไปยังตำแหน่งใหม่
+	button.MouseButton1Click:Connect(function()
+		moveFrameToNewPosition77(script.Parent.CH)
+	end)
+
+
+
+
 end
-coroutine.wrap(HUAYA_fake_script)()
+coroutine.wrap(RTPOZ_fake_script)()
