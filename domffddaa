@@ -1,0 +1,573 @@
+
+
+local KKRHUB = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Gtb = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local UIListLayout = Instance.new("UIListLayout")
+local evo = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local C8 = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local BM_I8 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local DuneBuggy = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Alphard = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Ferrari488 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Gtr34 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Gtr_r35 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local SuperCar = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Lamborghini = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local LightUtility = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local MadicCar = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local MustangGT = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local PickupTruck = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local Police_Car = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local R8 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local Racing_pickup = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local Rx7 = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local SUV = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local Sedan = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local SporrtDonate = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local SportsCar = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local Ferrari2013 = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Gtr_r50 = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Van1970 = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Bugatti = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local UICorner_28 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_29 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local X = Instance.new("TextButton")
+
+
+KKRHUB.Name = "KKRHUB"
+KKRHUB.Parent = game.CoreGui
+
+Frame.Parent = KKRHUB
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.105296344, 0, 0.332518339, 0)
+Frame.Size = UDim2.new(0, 383, 0, 346)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(134, 134, 134)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0600522198, 0, 0.0982658938, 0)
+Frame_2.Size = UDim2.new(0, 336, 0, 252)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.237597913, 0, 0.826589584, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "เสกรถ ByKKRHUB"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.10443864, 0, 0.147398844, 0)
+ScrollingFrame.Size = UDim2.new(0, 305, 0, 214)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 1050)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
+
+Gtb.Name = "Gtb"
+Gtb.Parent = ScrollingFrame
+Gtb.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Gtb.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gtb.BorderSizePixel = 0
+Gtb.Size = UDim2.new(0, 305, 0, 50)
+Gtb.Font = Enum.Font.SourceSans
+Gtb.Text = "Gtb"
+Gtb.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gtb.TextSize = 30.000
+
+UICorner.Parent = Gtb
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+evo.Name = "evo"
+evo.Parent = ScrollingFrame
+evo.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+evo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+evo.BorderSizePixel = 0
+evo.Size = UDim2.new(0, 305, 0, 50)
+evo.Font = Enum.Font.SourceSans
+evo.Text = "evo"
+evo.TextColor3 = Color3.fromRGB(0, 0, 0)
+evo.TextSize = 30.000
+
+UICorner_2.Parent = evo
+
+C8.Name = "C8"
+C8.Parent = ScrollingFrame
+C8.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+C8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+C8.BorderSizePixel = 0
+C8.Size = UDim2.new(0, 305, 0, 50)
+C8.Font = Enum.Font.SourceSans
+C8.Text = "C8"
+C8.TextColor3 = Color3.fromRGB(0, 0, 0)
+C8.TextSize = 30.000
+
+UICorner_3.Parent = C8
+
+BM_I8.Name = " BM_I8"
+BM_I8.Parent = ScrollingFrame
+BM_I8.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+BM_I8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BM_I8.BorderSizePixel = 0
+BM_I8.Size = UDim2.new(0, 305, 0, 50)
+BM_I8.Font = Enum.Font.SourceSans
+BM_I8.Text = " BM I8"
+BM_I8.TextColor3 = Color3.fromRGB(0, 0, 0)
+BM_I8.TextSize = 30.000
+
+UICorner_4.Parent = BM_I8
+
+DuneBuggy.Name = "DuneBuggy"
+DuneBuggy.Parent = ScrollingFrame
+DuneBuggy.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+DuneBuggy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DuneBuggy.BorderSizePixel = 0
+DuneBuggy.Size = UDim2.new(0, 305, 0, 50)
+DuneBuggy.Font = Enum.Font.SourceSans
+DuneBuggy.Text = "DuneBuggy"
+DuneBuggy.TextColor3 = Color3.fromRGB(0, 0, 0)
+DuneBuggy.TextSize = 30.000
+
+UICorner_5.Parent = DuneBuggy
+
+Alphard.Name = "Alphard"
+Alphard.Parent = ScrollingFrame
+Alphard.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Alphard.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Alphard.BorderSizePixel = 0
+Alphard.Size = UDim2.new(0, 305, 0, 50)
+Alphard.Font = Enum.Font.SourceSans
+Alphard.Text = "Alphard"
+Alphard.TextColor3 = Color3.fromRGB(0, 0, 0)
+Alphard.TextSize = 30.000
+
+UICorner_6.Parent = Alphard
+
+Ferrari488.Name = "Ferrari488"
+Ferrari488.Parent = ScrollingFrame
+Ferrari488.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Ferrari488.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ferrari488.BorderSizePixel = 0
+Ferrari488.Size = UDim2.new(0, 305, 0, 50)
+Ferrari488.Font = Enum.Font.SourceSans
+Ferrari488.Text = "Ferrari488"
+Ferrari488.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ferrari488.TextSize = 30.000
+
+UICorner_7.Parent = Ferrari488
+
+Gtr34.Name = "Gtr34"
+Gtr34.Parent = ScrollingFrame
+Gtr34.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Gtr34.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gtr34.BorderSizePixel = 0
+Gtr34.Size = UDim2.new(0, 305, 0, 50)
+Gtr34.Font = Enum.Font.SourceSans
+Gtr34.Text = "Gtr34"
+Gtr34.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gtr34.TextSize = 30.000
+
+UICorner_8.Parent = Gtr34
+
+Gtr_r35.Name = "Gtr_r35"
+Gtr_r35.Parent = ScrollingFrame
+Gtr_r35.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Gtr_r35.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gtr_r35.BorderSizePixel = 0
+Gtr_r35.Size = UDim2.new(0, 305, 0, 50)
+Gtr_r35.Font = Enum.Font.SourceSans
+Gtr_r35.Text = "Gtr_r35"
+Gtr_r35.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gtr_r35.TextSize = 30.000
+
+UICorner_9.Parent = Gtr_r35
+
+SuperCar.Name = "SuperCar"
+SuperCar.Parent = ScrollingFrame
+SuperCar.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+SuperCar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SuperCar.BorderSizePixel = 0
+SuperCar.Size = UDim2.new(0, 305, 0, 50)
+SuperCar.Font = Enum.Font.SourceSans
+SuperCar.Text = "Super Car"
+SuperCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+SuperCar.TextSize = 30.000
+
+UICorner_10.Parent = SuperCar
+
+Lamborghini.Name = "Lamborghini"
+Lamborghini.Parent = ScrollingFrame
+Lamborghini.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Lamborghini.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Lamborghini.BorderSizePixel = 0
+Lamborghini.Size = UDim2.new(0, 305, 0, 50)
+Lamborghini.Font = Enum.Font.SourceSans
+Lamborghini.Text = "Lamborghini"
+Lamborghini.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lamborghini.TextSize = 30.000
+
+UICorner_11.Parent = Lamborghini
+
+LightUtility.Name = "LightUtility"
+LightUtility.Parent = ScrollingFrame
+LightUtility.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+LightUtility.BorderColor3 = Color3.fromRGB(0, 0, 0)
+LightUtility.BorderSizePixel = 0
+LightUtility.Size = UDim2.new(0, 305, 0, 50)
+LightUtility.Font = Enum.Font.SourceSans
+LightUtility.Text = "LightUtility"
+LightUtility.TextColor3 = Color3.fromRGB(0, 0, 0)
+LightUtility.TextSize = 30.000
+
+UICorner_12.Parent = LightUtility
+
+MadicCar.Name = "Madic Car"
+MadicCar.Parent = ScrollingFrame
+MadicCar.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+MadicCar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MadicCar.BorderSizePixel = 0
+MadicCar.Size = UDim2.new(0, 305, 0, 50)
+MadicCar.Font = Enum.Font.SourceSans
+MadicCar.Text = "Madic Car"
+MadicCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+MadicCar.TextSize = 30.000
+
+UICorner_13.Parent = MadicCar
+
+MustangGT.Name = "MustangGT"
+MustangGT.Parent = ScrollingFrame
+MustangGT.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+MustangGT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MustangGT.BorderSizePixel = 0
+MustangGT.Size = UDim2.new(0, 305, 0, 50)
+MustangGT.Font = Enum.Font.SourceSans
+MustangGT.Text = "MustangGT"
+MustangGT.TextColor3 = Color3.fromRGB(0, 0, 0)
+MustangGT.TextSize = 30.000
+
+UICorner_14.Parent = MustangGT
+
+PickupTruck.Name = "Pickup Truck"
+PickupTruck.Parent = ScrollingFrame
+PickupTruck.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+PickupTruck.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PickupTruck.BorderSizePixel = 0
+PickupTruck.Size = UDim2.new(0, 305, 0, 50)
+PickupTruck.Font = Enum.Font.SourceSans
+PickupTruck.Text = "Pickup Truck"
+PickupTruck.TextColor3 = Color3.fromRGB(0, 0, 0)
+PickupTruck.TextSize = 30.000
+
+UICorner_15.Parent = PickupTruck
+
+Police_Car.Name = "Police_Car"
+Police_Car.Parent = ScrollingFrame
+Police_Car.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Police_Car.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Police_Car.BorderSizePixel = 0
+Police_Car.Size = UDim2.new(0, 305, 0, 50)
+Police_Car.Font = Enum.Font.SourceSans
+Police_Car.Text = "Police_Car"
+Police_Car.TextColor3 = Color3.fromRGB(0, 0, 0)
+Police_Car.TextSize = 30.000
+
+UICorner_16.Parent = Police_Car
+
+R8.Name = "R8"
+R8.Parent = ScrollingFrame
+R8.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+R8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+R8.BorderSizePixel = 0
+R8.Size = UDim2.new(0, 305, 0, 50)
+R8.Font = Enum.Font.SourceSans
+R8.Text = "R8"
+R8.TextColor3 = Color3.fromRGB(0, 0, 0)
+R8.TextSize = 30.000
+
+UICorner_17.Parent = R8
+
+Racing_pickup.Name = "Racing_pickup"
+Racing_pickup.Parent = ScrollingFrame
+Racing_pickup.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Racing_pickup.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Racing_pickup.BorderSizePixel = 0
+Racing_pickup.Size = UDim2.new(0, 305, 0, 50)
+Racing_pickup.Font = Enum.Font.SourceSans
+Racing_pickup.Text = "Racing_pickup"
+Racing_pickup.TextColor3 = Color3.fromRGB(0, 0, 0)
+Racing_pickup.TextSize = 30.000
+
+UICorner_18.Parent = Racing_pickup
+
+Rx7.Name = "Rx7"
+Rx7.Parent = ScrollingFrame
+Rx7.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Rx7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Rx7.BorderSizePixel = 0
+Rx7.Size = UDim2.new(0, 305, 0, 50)
+Rx7.Font = Enum.Font.SourceSans
+Rx7.Text = "Rx7"
+Rx7.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rx7.TextSize = 30.000
+
+UICorner_19.Parent = Rx7
+
+SUV.Name = "SUV"
+SUV.Parent = ScrollingFrame
+SUV.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+SUV.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SUV.BorderSizePixel = 0
+SUV.Size = UDim2.new(0, 305, 0, 50)
+SUV.Font = Enum.Font.SourceSans
+SUV.Text = "SUV"
+SUV.TextColor3 = Color3.fromRGB(0, 0, 0)
+SUV.TextSize = 30.000
+
+UICorner_20.Parent = SUV
+
+Sedan.Name = "Sedan"
+Sedan.Parent = ScrollingFrame
+Sedan.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Sedan.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sedan.BorderSizePixel = 0
+Sedan.Size = UDim2.new(0, 305, 0, 50)
+Sedan.Font = Enum.Font.SourceSans
+Sedan.Text = "Sedan"
+Sedan.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sedan.TextSize = 30.000
+
+UICorner_21.Parent = Sedan
+
+SporrtDonate.Name = "SporrtDonate"
+SporrtDonate.Parent = ScrollingFrame
+SporrtDonate.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+SporrtDonate.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SporrtDonate.BorderSizePixel = 0
+SporrtDonate.Size = UDim2.new(0, 305, 0, 50)
+SporrtDonate.Font = Enum.Font.SourceSans
+SporrtDonate.Text = "SporrtDonate"
+SporrtDonate.TextColor3 = Color3.fromRGB(0, 0, 0)
+SporrtDonate.TextSize = 30.000
+
+UICorner_22.Parent = SporrtDonate
+
+SportsCar.Name = "Sports Car"
+SportsCar.Parent = ScrollingFrame
+SportsCar.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+SportsCar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SportsCar.BorderSizePixel = 0
+SportsCar.Size = UDim2.new(0, 305, 0, 50)
+SportsCar.Font = Enum.Font.SourceSans
+SportsCar.Text = "Sports Car"
+SportsCar.TextColor3 = Color3.fromRGB(0, 0, 0)
+SportsCar.TextSize = 30.000
+
+UICorner_23.Parent = SportsCar
+
+Ferrari2013.Name = "Ferrari 2013"
+Ferrari2013.Parent = ScrollingFrame
+Ferrari2013.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Ferrari2013.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Ferrari2013.BorderSizePixel = 0
+Ferrari2013.Size = UDim2.new(0, 305, 0, 50)
+Ferrari2013.Font = Enum.Font.SourceSans
+Ferrari2013.Text = "Ferrari 2013"
+Ferrari2013.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ferrari2013.TextSize = 30.000
+
+UICorner_24.Parent = Ferrari2013
+
+Gtr_r50.Name = "Gtr_r50"
+Gtr_r50.Parent = ScrollingFrame
+Gtr_r50.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Gtr_r50.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gtr_r50.BorderSizePixel = 0
+Gtr_r50.Size = UDim2.new(0, 305, 0, 50)
+Gtr_r50.Font = Enum.Font.SourceSans
+Gtr_r50.Text = "Gtr_r50"
+Gtr_r50.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gtr_r50.TextSize = 30.000
+
+UICorner_25.Parent = Gtr_r50
+
+Van1970.Name = "Van 1970"
+Van1970.Parent = ScrollingFrame
+Van1970.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Van1970.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Van1970.BorderSizePixel = 0
+Van1970.Size = UDim2.new(0, 305, 0, 50)
+Van1970.Font = Enum.Font.SourceSans
+Van1970.Text = "Van 1970"
+Van1970.TextColor3 = Color3.fromRGB(0, 0, 0)
+Van1970.TextSize = 30.000
+
+UICorner_26.Parent = Van1970
+
+Bugatti.Name = "Bugatti"
+Bugatti.Parent = ScrollingFrame
+Bugatti.BackgroundColor3 = Color3.fromRGB(165, 165, 165)
+Bugatti.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bugatti.BorderSizePixel = 0
+Bugatti.Size = UDim2.new(0, 305, 0, 50)
+Bugatti.Font = Enum.Font.SourceSans
+Bugatti.Text = "Bugatti"
+Bugatti.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bugatti.TextSize = 30.000
+
+UICorner_27.Parent = Bugatti
+
+UICorner_28.Parent = Frame
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.968668401, 0, 0.0982658938, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UICorner_29.Parent = TextLabel
+
+TextBox.Parent = Frame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.968668401, 0, 0.341040462, 0)
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "ใส่ชื่อกุญแจที่อยู่ในกระเป๋าคุณ"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+X.Name = "X"
+X.Parent = Frame
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(-0.0393900275, 0, -0.0388654582, 0)
+X.Size = UDim2.new(0, 80, 0, 47)
+X.Font = Enum.Font.SourceSans
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+
+
+local function ZPMRVPK_fake_script() 
+	local script = Instance.new('LocalScript', KKRHUB)
+
+	local player = game.Players.LocalPlayer
+	local inventory = player:FindFirstChild("Inventory")
+	local textLabel = script.Parent.Frame.TextLabel
+	local bu = textLabel.Parent.TextButton
+	local box = textLabel.Parent.TextBox
+	
+	script.Parent.Frame.Draggable = true
+	script.Parent.Frame.Active = true
+	
+	local scrollingFrame = textLabel.Parent.ScrollingFrame
+	
+	local function onButtonClicked(button)
+		textLabel.Text = button.Name
+	end
+	
+	for _, button in pairs(scrollingFrame:GetChildren()) do
+		if button:IsA("TextButton") then
+			button.MouseButton1Click:Connect(function()
+				onButtonClicked(button)
+			end)
+		end
+	end
+	
+	
+	
+	
+	
+	
+	local X = script.Parent.Frame.X
+	X.MouseButton1Click:Connect(function()
+		script.Parent:Destroy()
+	end)
+	
+
+	
+bu.MouseButton1Click:Connect(function()
+    if inventory then
+        local valueToUpdate = inventory:FindFirstChild(box.Text) 
+        if valueToUpdate then
+            valueToUpdate.Value = textLabel.Text
+            
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "KKR HUB"; 
+                Text = textLabel.Text" เฟี้ยวไหม";
+                Icon = "rbxassetid://13867768098";
+                Duration = 3;
+            })
+        else
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "KKR HUB";  
+                Text = "ไม่มีกุญแจนี้ในกระเป๋า"; 
+                Icon = "rbxassetid://13867790056";
+                Duration = 3; 
+            })
+        end
+    end
+end)
+	
+	
+	
+end
+coroutine.wrap(ZPMRVPK_fake_script)()
