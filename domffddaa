@@ -552,7 +552,7 @@ bu.MouseButton1Click:Connect(function()
             
             game.StarterGui:SetCore("SendNotification", {
                 Title = "KKR HUB"; 
-                Text = textLabel.Text" เฟี้ยวไหม";
+                Text = textLabel.Text;
                 Icon = "rbxassetid://13867768098";
                 Duration = 3;
             })
