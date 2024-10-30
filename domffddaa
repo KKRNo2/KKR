@@ -1,71 +1,77 @@
 
-
 local KKRHUB = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local Frame_2 = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
+local Car = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local Gtb = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local UIListLayout = Instance.new("UIListLayout")
 local evo = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local C8 = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local BM_I8 = Instance.new("TextButton")
+local C8 = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local DuneBuggy = Instance.new("TextButton")
+local BM_I8 = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local Alphard = Instance.new("TextButton")
+local DuneBuggy = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local Ferrari488 = Instance.new("TextButton")
+local Alphard = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
-local Gtr34 = Instance.new("TextButton")
+local Ferrari488 = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local Gtr_r35 = Instance.new("TextButton")
+local Gtr34 = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
-local SuperCar = Instance.new("TextButton")
+local Gtr_r35 = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
-local Lamborghini = Instance.new("TextButton")
+local SuperCar = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
-local LightUtility = Instance.new("TextButton")
+local Lamborghini = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
-local MadicCar = Instance.new("TextButton")
+local LightUtility = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local MustangGT = Instance.new("TextButton")
+local MadicCar = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
-local PickupTruck = Instance.new("TextButton")
+local MustangGT = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local Police_Car = Instance.new("TextButton")
+local PickupTruck = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
-local R8 = Instance.new("TextButton")
+local Police_Car = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
-local Racing_pickup = Instance.new("TextButton")
+local R8 = Instance.new("TextButton")
 local UICorner_18 = Instance.new("UICorner")
-local Rx7 = Instance.new("TextButton")
+local Racing_pickup = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
-local SUV = Instance.new("TextButton")
+local Rx7 = Instance.new("TextButton")
 local UICorner_20 = Instance.new("UICorner")
-local Sedan = Instance.new("TextButton")
+local SUV = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
-local SporrtDonate = Instance.new("TextButton")
+local Sedan = Instance.new("TextButton")
 local UICorner_22 = Instance.new("UICorner")
-local SportsCar = Instance.new("TextButton")
+local SporrtDonate = Instance.new("TextButton")
 local UICorner_23 = Instance.new("UICorner")
-local Ferrari2013 = Instance.new("TextButton")
+local SportsCar = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
-local Gtr_r50 = Instance.new("TextButton")
+local Ferrari2013 = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
-local Van1970 = Instance.new("TextButton")
+local Gtr_r50 = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
-local Bugatti = Instance.new("TextButton")
+local Van1970 = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
+local Bugatti = Instance.new("TextButton")
 local UICorner_28 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
 local UICorner_29 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_30 = Instance.new("UICorner")
 local TextBox = Instance.new("TextBox")
 local X = Instance.new("TextButton")
+local li = Instance.new("TextButton")
+local farm = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local Frame1 = Instance.new("Frame")
+local ImageButton = Instance.new("ImageButton")
 
+--Properties:
 
 KKRHUB.Name = "KKRHUB"
 KKRHUB.Parent = game.CoreGui
@@ -84,18 +90,21 @@ Frame_2.BorderSizePixel = 0
 Frame_2.Position = UDim2.new(0.0600522198, 0, 0.0982658938, 0)
 Frame_2.Size = UDim2.new(0, 336, 0, 252)
 
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(0.237597913, 0, 0.826589584, 0)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "เสกรถ ByKKRHUB"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
-TextButton.TextWrapped = true
+Car.Name = "Car"
+Car.Parent = Frame
+Car.BackgroundColor3 = Color3.fromRGB(209, 209, 209)
+Car.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Car.BorderSizePixel = 0
+Car.Position = UDim2.new(0.545691907, 0, 0.826589584, 0)
+Car.Size = UDim2.new(0, 150, 0, 60)
+Car.Font = Enum.Font.SourceSans
+Car.Text = "เสกรถ ByKKRHUB"
+Car.TextColor3 = Color3.fromRGB(0, 0, 0)
+Car.TextScaled = true
+Car.TextSize = 14.000
+Car.TextWrapped = true
+
+UICorner.Parent = Car
 
 ScrollingFrame.Parent = Frame
 ScrollingFrame.Active = true
@@ -104,7 +113,6 @@ ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 ScrollingFrame.BorderSizePixel = 0
 ScrollingFrame.Position = UDim2.new(0.10443864, 0, 0.147398844, 0)
 ScrollingFrame.Size = UDim2.new(0, 305, 0, 214)
-ScrollingFrame.CanvasPosition = Vector2.new(0, 1050)
 ScrollingFrame.CanvasSize = UDim2.new(0, 0, 5, 0)
 
 Gtb.Name = "Gtb"
@@ -118,7 +126,7 @@ Gtb.Text = "Gtb"
 Gtb.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gtb.TextSize = 30.000
 
-UICorner.Parent = Gtb
+UICorner_2.Parent = Gtb
 
 UIListLayout.Parent = ScrollingFrame
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -134,7 +142,7 @@ evo.Text = "evo"
 evo.TextColor3 = Color3.fromRGB(0, 0, 0)
 evo.TextSize = 30.000
 
-UICorner_2.Parent = evo
+UICorner_3.Parent = evo
 
 C8.Name = "C8"
 C8.Parent = ScrollingFrame
@@ -147,7 +155,7 @@ C8.Text = "C8"
 C8.TextColor3 = Color3.fromRGB(0, 0, 0)
 C8.TextSize = 30.000
 
-UICorner_3.Parent = C8
+UICorner_4.Parent = C8
 
 BM_I8.Name = " BM_I8"
 BM_I8.Parent = ScrollingFrame
@@ -160,7 +168,7 @@ BM_I8.Text = " BM I8"
 BM_I8.TextColor3 = Color3.fromRGB(0, 0, 0)
 BM_I8.TextSize = 30.000
 
-UICorner_4.Parent = BM_I8
+UICorner_5.Parent = BM_I8
 
 DuneBuggy.Name = "DuneBuggy"
 DuneBuggy.Parent = ScrollingFrame
@@ -173,7 +181,7 @@ DuneBuggy.Text = "DuneBuggy"
 DuneBuggy.TextColor3 = Color3.fromRGB(0, 0, 0)
 DuneBuggy.TextSize = 30.000
 
-UICorner_5.Parent = DuneBuggy
+UICorner_6.Parent = DuneBuggy
 
 Alphard.Name = "Alphard"
 Alphard.Parent = ScrollingFrame
@@ -186,7 +194,7 @@ Alphard.Text = "Alphard"
 Alphard.TextColor3 = Color3.fromRGB(0, 0, 0)
 Alphard.TextSize = 30.000
 
-UICorner_6.Parent = Alphard
+UICorner_7.Parent = Alphard
 
 Ferrari488.Name = "Ferrari488"
 Ferrari488.Parent = ScrollingFrame
@@ -199,7 +207,7 @@ Ferrari488.Text = "Ferrari488"
 Ferrari488.TextColor3 = Color3.fromRGB(0, 0, 0)
 Ferrari488.TextSize = 30.000
 
-UICorner_7.Parent = Ferrari488
+UICorner_8.Parent = Ferrari488
 
 Gtr34.Name = "Gtr34"
 Gtr34.Parent = ScrollingFrame
@@ -212,7 +220,7 @@ Gtr34.Text = "Gtr34"
 Gtr34.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gtr34.TextSize = 30.000
 
-UICorner_8.Parent = Gtr34
+UICorner_9.Parent = Gtr34
 
 Gtr_r35.Name = "Gtr_r35"
 Gtr_r35.Parent = ScrollingFrame
@@ -225,7 +233,7 @@ Gtr_r35.Text = "Gtr_r35"
 Gtr_r35.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gtr_r35.TextSize = 30.000
 
-UICorner_9.Parent = Gtr_r35
+UICorner_10.Parent = Gtr_r35
 
 SuperCar.Name = "SuperCar"
 SuperCar.Parent = ScrollingFrame
@@ -238,7 +246,7 @@ SuperCar.Text = "Super Car"
 SuperCar.TextColor3 = Color3.fromRGB(0, 0, 0)
 SuperCar.TextSize = 30.000
 
-UICorner_10.Parent = SuperCar
+UICorner_11.Parent = SuperCar
 
 Lamborghini.Name = "Lamborghini"
 Lamborghini.Parent = ScrollingFrame
@@ -251,7 +259,7 @@ Lamborghini.Text = "Lamborghini"
 Lamborghini.TextColor3 = Color3.fromRGB(0, 0, 0)
 Lamborghini.TextSize = 30.000
 
-UICorner_11.Parent = Lamborghini
+UICorner_12.Parent = Lamborghini
 
 LightUtility.Name = "LightUtility"
 LightUtility.Parent = ScrollingFrame
@@ -264,7 +272,7 @@ LightUtility.Text = "LightUtility"
 LightUtility.TextColor3 = Color3.fromRGB(0, 0, 0)
 LightUtility.TextSize = 30.000
 
-UICorner_12.Parent = LightUtility
+UICorner_13.Parent = LightUtility
 
 MadicCar.Name = "Madic Car"
 MadicCar.Parent = ScrollingFrame
@@ -277,7 +285,7 @@ MadicCar.Text = "Madic Car"
 MadicCar.TextColor3 = Color3.fromRGB(0, 0, 0)
 MadicCar.TextSize = 30.000
 
-UICorner_13.Parent = MadicCar
+UICorner_14.Parent = MadicCar
 
 MustangGT.Name = "MustangGT"
 MustangGT.Parent = ScrollingFrame
@@ -290,7 +298,7 @@ MustangGT.Text = "MustangGT"
 MustangGT.TextColor3 = Color3.fromRGB(0, 0, 0)
 MustangGT.TextSize = 30.000
 
-UICorner_14.Parent = MustangGT
+UICorner_15.Parent = MustangGT
 
 PickupTruck.Name = "Pickup Truck"
 PickupTruck.Parent = ScrollingFrame
@@ -303,7 +311,7 @@ PickupTruck.Text = "Pickup Truck"
 PickupTruck.TextColor3 = Color3.fromRGB(0, 0, 0)
 PickupTruck.TextSize = 30.000
 
-UICorner_15.Parent = PickupTruck
+UICorner_16.Parent = PickupTruck
 
 Police_Car.Name = "Police_Car"
 Police_Car.Parent = ScrollingFrame
@@ -316,7 +324,7 @@ Police_Car.Text = "Police_Car"
 Police_Car.TextColor3 = Color3.fromRGB(0, 0, 0)
 Police_Car.TextSize = 30.000
 
-UICorner_16.Parent = Police_Car
+UICorner_17.Parent = Police_Car
 
 R8.Name = "R8"
 R8.Parent = ScrollingFrame
@@ -329,7 +337,7 @@ R8.Text = "R8"
 R8.TextColor3 = Color3.fromRGB(0, 0, 0)
 R8.TextSize = 30.000
 
-UICorner_17.Parent = R8
+UICorner_18.Parent = R8
 
 Racing_pickup.Name = "Racing_pickup"
 Racing_pickup.Parent = ScrollingFrame
@@ -342,7 +350,7 @@ Racing_pickup.Text = "Racing_pickup"
 Racing_pickup.TextColor3 = Color3.fromRGB(0, 0, 0)
 Racing_pickup.TextSize = 30.000
 
-UICorner_18.Parent = Racing_pickup
+UICorner_19.Parent = Racing_pickup
 
 Rx7.Name = "Rx7"
 Rx7.Parent = ScrollingFrame
@@ -355,7 +363,7 @@ Rx7.Text = "Rx7"
 Rx7.TextColor3 = Color3.fromRGB(0, 0, 0)
 Rx7.TextSize = 30.000
 
-UICorner_19.Parent = Rx7
+UICorner_20.Parent = Rx7
 
 SUV.Name = "SUV"
 SUV.Parent = ScrollingFrame
@@ -368,7 +376,7 @@ SUV.Text = "SUV"
 SUV.TextColor3 = Color3.fromRGB(0, 0, 0)
 SUV.TextSize = 30.000
 
-UICorner_20.Parent = SUV
+UICorner_21.Parent = SUV
 
 Sedan.Name = "Sedan"
 Sedan.Parent = ScrollingFrame
@@ -381,7 +389,7 @@ Sedan.Text = "Sedan"
 Sedan.TextColor3 = Color3.fromRGB(0, 0, 0)
 Sedan.TextSize = 30.000
 
-UICorner_21.Parent = Sedan
+UICorner_22.Parent = Sedan
 
 SporrtDonate.Name = "SporrtDonate"
 SporrtDonate.Parent = ScrollingFrame
@@ -394,7 +402,7 @@ SporrtDonate.Text = "SporrtDonate"
 SporrtDonate.TextColor3 = Color3.fromRGB(0, 0, 0)
 SporrtDonate.TextSize = 30.000
 
-UICorner_22.Parent = SporrtDonate
+UICorner_23.Parent = SporrtDonate
 
 SportsCar.Name = "Sports Car"
 SportsCar.Parent = ScrollingFrame
@@ -407,7 +415,7 @@ SportsCar.Text = "Sports Car"
 SportsCar.TextColor3 = Color3.fromRGB(0, 0, 0)
 SportsCar.TextSize = 30.000
 
-UICorner_23.Parent = SportsCar
+UICorner_24.Parent = SportsCar
 
 Ferrari2013.Name = "Ferrari 2013"
 Ferrari2013.Parent = ScrollingFrame
@@ -420,7 +428,7 @@ Ferrari2013.Text = "Ferrari 2013"
 Ferrari2013.TextColor3 = Color3.fromRGB(0, 0, 0)
 Ferrari2013.TextSize = 30.000
 
-UICorner_24.Parent = Ferrari2013
+UICorner_25.Parent = Ferrari2013
 
 Gtr_r50.Name = "Gtr_r50"
 Gtr_r50.Parent = ScrollingFrame
@@ -433,7 +441,7 @@ Gtr_r50.Text = "Gtr_r50"
 Gtr_r50.TextColor3 = Color3.fromRGB(0, 0, 0)
 Gtr_r50.TextSize = 30.000
 
-UICorner_25.Parent = Gtr_r50
+UICorner_26.Parent = Gtr_r50
 
 Van1970.Name = "Van 1970"
 Van1970.Parent = ScrollingFrame
@@ -446,7 +454,7 @@ Van1970.Text = "Van 1970"
 Van1970.TextColor3 = Color3.fromRGB(0, 0, 0)
 Van1970.TextSize = 30.000
 
-UICorner_26.Parent = Van1970
+UICorner_27.Parent = Van1970
 
 Bugatti.Name = "Bugatti"
 Bugatti.Parent = ScrollingFrame
@@ -459,9 +467,9 @@ Bugatti.Text = "Bugatti"
 Bugatti.TextColor3 = Color3.fromRGB(0, 0, 0)
 Bugatti.TextSize = 30.000
 
-UICorner_27.Parent = Bugatti
+UICorner_28.Parent = Bugatti
 
-UICorner_28.Parent = Frame
+UICorner_29.Parent = Frame
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -475,7 +483,7 @@ TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
 TextLabel.TextWrapped = true
 
-UICorner_29.Parent = TextLabel
+UICorner_30.Parent = TextLabel
 
 TextBox.Parent = Frame
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -505,18 +513,73 @@ X.TextScaled = true
 X.TextSize = 14.000
 X.TextWrapped = true
 
+li.Name = "li"
+li.Parent = Frame
+li.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+li.BackgroundTransparency = 1.000
+li.BorderColor3 = Color3.fromRGB(0, 0, 0)
+li.BorderSizePixel = 0
+li.Position = UDim2.new(0.104213104, 0, -0.0388654582, 0)
+li.Size = UDim2.new(0, 80, 0, 47)
+li.Font = Enum.Font.SourceSans
+li.Text = "-"
+li.TextColor3 = Color3.fromRGB(0, 0, 0)
+li.TextScaled = true
+li.TextSize = 14.000
+li.TextWrapped = true
 
-local function ZPMRVPK_fake_script() 
+farm.Name = "farm"
+farm.Parent = Frame
+farm.BackgroundColor3 = Color3.fromRGB(209, 209, 209)
+farm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+farm.BorderSizePixel = 0
+farm.Position = UDim2.new(0.125326365, 0, 0.826589584, 0)
+farm.Size = UDim2.new(0, 150, 0, 60)
+farm.Font = Enum.Font.SourceSans
+farm.Text = "ทำให้ฟาม = 0 วิ"
+farm.TextColor3 = Color3.fromRGB(0, 0, 0)
+farm.TextScaled = true
+farm.TextSize = 14.000
+farm.TextWrapped = true
+
+UICorner_31.Parent = farm
+
+Frame1.Name = "Frame1"
+Frame1.Parent = KKRHUB
+Frame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame1.BorderSizePixel = 0
+Frame1.Position = UDim2.new(0.916035354, 0, 0.332518339, 0)
+Frame1.Size = UDim2.new(0, 76, 0, 70)
+
+ImageButton.Parent = Frame1
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.158000007, 0, 0.143000007, 0)
+ImageButton.Size = UDim2.new(0, 52, 0, 49)
+ImageButton.Image = "rbxassetid://9180622665"
+
+-- Scripts:
+
+local function QROD_fake_script() -- KKRHUB.LocalScript 
 	local script = Instance.new('LocalScript', KKRHUB)
 
 	local player = game.Players.LocalPlayer
 	local inventory = player:FindFirstChild("Inventory")
 	local textLabel = script.Parent.Frame.TextLabel
-	local bu = textLabel.Parent.TextButton
+	local bu = textLabel.Parent.Car
 	local box = textLabel.Parent.TextBox
+	local buu = textLabel.Parent.farm
 	
 	script.Parent.Frame.Draggable = true
 	script.Parent.Frame.Active = true
+	script.Parent.Frame.Visible = true
+	
+	script.Parent.Frame1.Draggable = true
+	script.Parent.Frame1.Active = true
+	script.Parent.Frame1.Visible = false
+	
 	
 	local scrollingFrame = textLabel.Parent.ScrollingFrame
 	
@@ -542,32 +605,65 @@ local function ZPMRVPK_fake_script()
 		script.Parent:Destroy()
 	end)
 	
-
+	local l = script.Parent.Frame.li
+	l.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = false
+		script.Parent.Frame1.Visible = true
+	end)
 	
-bu.MouseButton1Click:Connect(function()
-    if inventory then
-        local valueToUpdate = inventory:FindFirstChild(box.Text) 
-        if valueToUpdate then
-            valueToUpdate.Value = textLabel.Text
-            
-            game.StarterGui:SetCore("SendNotification", {
-                Title = "KKR HUB"; 
-                Text = textLabel.Text;
-                Icon = "rbxassetid://13867768098";
-                Duration = 3;
-            })
-        else
-            game.StarterGui:SetCore("SendNotification", {
-                Title = "KKR HUB";  
-                Text = "ไม่มีกุญแจนี้ในกระเป๋า"; 
-                Icon = "rbxassetid://13867790056";
-                Duration = 3; 
-            })
-        end
-    end
-end)
+	script.Parent.Frame1.ImageButton.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = true
+		script.Parent.Frame1.Visible = false
+	end)
+	script.Parent.Frame.li.MouseButton1Click:Connect(function()
+		script.Parent.Frame.Visible = false
+		script.Parent.Frame1.Visible = true
+	end)
+	local car = textLabel
 	
+	bu.MouseButton1Click:Connect(function()
+		if inventory then
+			local valueToUpdate = inventory:FindFirstChild(box.Text) 
+			if valueToUpdate then
+				valueToUpdate.Value = textLabel.Text
 	
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "KKR HUB"; 
+					Text = textLabel.Text;
+					Icon = "rbxassetid://13867768098";
+					Duration = 3;
+				})
+			else
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "KKR HUB";  
+					Text = "ไม่มีกุญแจนี้ในกระเป๋า"; 
+					Icon = "rbxassetid://13867790056";
+					Duration = 3; 
+				})
+			end
+		end
+	end)
+	
+	-- ฟังก์ชันในการค้นหา ProximityPrompt และตั้งค่า HoldDuration
+	local function setProximityPromptHoldDurationToZero(parent)
+		for _, object in ipairs(parent:GetDescendants()) do
+			if object:IsA("ProximityPrompt") then
+				object.HoldDuration = 0 -- ตั้งค่า HoldDuration เป็น 0
+			end
+		end
+	end
+	
+	-- เชื่อมต่อฟังก์ชันกับปุ่มที่มีอยู่
+	
+		buu.MouseButton1Click:Connect(function()
+			setProximityPromptHoldDurationToZero(workspace) -- ตั้งค่า HoldDuration เป็น 0 สำหรับ ProximityPrompt ใน Workspace
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "KKR HUB";  
+			Text = "เสร็จแล้วครัฟ"; 
+			Icon = "rbxassetid://13867768098";
+			Duration = 3; 
+		})
+		end)
 	
 end
-coroutine.wrap(ZPMRVPK_fake_script)()
+coroutine.wrap(QROD_fake_script)()
