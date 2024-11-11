@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+game:GetService("StarterGui"):SetCore("SendNotification",{["Title"] = "New update",["Duration"] = 20,["Button1"] = " KKRHUB :) "})
 
 local KKRHUB = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -1052,44 +1049,59 @@ local function RTPOZ_fake_script() -- KKRHUB.LocalScript
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-	-- สร้างตัวแปรเพื่อเก็บค่า HoldDuration เดิมของ ProximityPrompt
-	local originalDurations = {}
+local originalDurations = {}
 
-	-- ฟังก์ชันปรับ HoldDuration เป็น 0
-	local function setProximityPromptDurationToZero()
-		for _, prompt in ipairs(workspace:GetDescendants()) do
-			if prompt:IsA("ProximityPrompt") and prompt.Name == "ProximityPrompt" then
-				-- เก็บค่าเดิมของ HoldDuration ถ้ายังไม่ได้เก็บ
-				if not originalDurations[prompt] then
-					originalDurations[prompt] = prompt.HoldDuration
-				end
-				-- ตั้งค่า HoldDuration เป็น 0
-				prompt.HoldDuration = 0
-			end
-		end
-	end
+-- ฟังก์ชันปรับ HoldDuration เป็น 0 และเก็บค่าเดิม
+local function setProximityPromptHoldDurationToZero(parent)
+    for _, object in ipairs(parent:GetDescendants()) do
+        if object:IsA("ProximityPrompt") then
+            -- เก็บค่า HoldDuration เดิม ถ้ายังไม่ได้เก็บ
+            if not originalDurations[object] then
+                originalDurations[object] = object.HoldDuration
+            end
+            object.HoldDuration = 0
+        end
+    end
+end
 
-	-- ฟังก์ชันปรับ HoldDuration กลับเป็นค่าเดิม
-	local function resetProximityPromptDuration()
-		for _, prompt in ipairs(workspace:GetDescendants()) do
-			if prompt:IsA("ProximityPrompt") and prompt.Name == "ProximityPrompt" then
-				-- ถ้ามีการเก็บค่าเดิมไว้ ก็ปรับกลับ
-				if originalDurations[prompt] then
-					prompt.HoldDuration = originalDurations[prompt]
-				end
-			end
-		end
-	end
+-- ฟังก์ชันปรับ HoldDuration กลับเป็นค่าเดิม
+local function resetProximityPromptDuration()
+    for prompt, originalDuration in pairs(originalDurations) do
+        if prompt and prompt.Parent then  -- ตรวจสอบว่า prompt ยังอยู่ในเกม
+            prompt.HoldDuration = originalDuration
+        end
+    end
+end
 
-	-- เมื่อกด Button1 ให้ปรับ HoldDuration เป็น 0
-	script.Parent.Frame.Frame.Frame.on.MouseButton1Click:Connect(function()
-		setProximityPromptDurationToZero()
-	end)
+-- เมื่อมีการเพิ่ม ProximityPrompt ใหม่
+local function onDescendantAdded(object)
+    if object:IsA("ProximityPrompt") then
+        -- เก็บค่า HoldDuration เดิม ถ้ายังไม่ได้เก็บ
+        if not originalDurations[object] then
+            originalDurations[object] = object.HoldDuration
+        end
+        object.HoldDuration = 0
+    end
+end
 
-	-- เมื่อกด Button2 ให้ปรับ HoldDuration กลับเป็นค่าเดิม
-	script.Parent.Frame.Frame.Frame.off.MouseButton1Click:Connect(function()
-		resetProximityPromptDuration()
-	end)
+-- ตั้งค่า HoldDuration เป็น 0 ให้กับ ProximityPrompt ที่มีอยู่ใน workspace
+setProximityPromptHoldDurationToZero(workspace)
+
+-- เชื่อมต่อฟังก์ชันเมื่อมีการเพิ่ม ProximityPrompt ใหม่
+workspace.DescendantAdded:Connect(onDescendantAdded)
+
+-- ปุ่มสำหรับตั้งค่า HoldDuration เป็น 0
+script.Parent.Frame.Frame.Frame.on.MouseButton1Click:Connect(function()
+    setProximityPromptHoldDurationToZero(workspace)
+end)
+
+-- ปุ่มสำหรับคืนค่า HoldDuration เป็นค่าเดิม
+script.Parent.Frame.Frame.Frame.off.MouseButton1Click:Connect(function()
+    resetProximityPromptDuration()
+end)
+
+print("KKRHUB")
+
 
 	---------------------------------------------------------------------------------------------------------------------------------------------------
 	------------------------------------------      -------------------       -------------------------------------------------------------------------------------
