@@ -1,0 +1,131 @@
+local KKRGG = loadstring(game:HttpGet(('https://raw.githubusercontent.com/KKRNo2/KKR/refs/heads/main/uikkrgg')))()
+KKRGG:MakeNotification({
+    Name = "KKRHUB😈 ยินดีต้อนรับ",
+    Content = "หมวดหมู่ ภาษา : ไทย🇹🇭",
+    Time = 3
+})
+
+local Window = KKRGG:MakeWindow({
+    Name = "KKRHUB 🇹🇭",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "KKRHUB"
+})
+
+local Tab = Window:MakeTab({
+    Name = "HitBox",
+    Icon = "rbxassetid://13440861942",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "ตัว Hitbox ของเราสามารถปรับใช้งานได้เรียลทาม"
+})
+local Section = Tab:AddSection({
+    Name = "วิธีใช้เบื้องต้น😉 : กด hitboxทุกคน และ สามารถตั้งค่าได้เลยโดยไม่ต้องไปกด hitboxทุกคน อีก"
+})
+local Section = Tab:AddSection({
+    Name = "ตั้งค่า"
+})
+
+local hitboxSizeValue = 20 
+local transparencyValue = 0.5 
+local hitboxColor = Color3.fromRGB(255, 0, 0) 
+
+Tab:AddTextbox({
+    Name = "ขนาด Hitbox",
+    Default = tostring(hitboxSizeValue),
+    TextDisappear = false,
+    Callback = function(sizeX)
+        hitboxSizeValue = tonumber(sizeX) or 20 
+    end
+})
+
+Tab:AddColorpicker({
+    Name = "ปรับสี hitbox",
+    Default = hitboxColor,
+    Callback = function(Value)
+        hitboxColor = Value 
+    end
+})
+
+Tab:AddSlider({
+    Name = "ปรับความโปร่งใส",
+    Min = 0,
+    Max = 1,
+    Default = transparencyValue,
+    Color = Color3.fromRGB(255, 255, 255),
+    Increment = 0.1,
+    ValueName = "",
+    Callback = function(TransparencyXxX)
+        transparencyValue = TransparencyXxX 
+    end
+})
+
+
+
+local function getHitboxSize()
+    return Vector3.new(hitboxSizeValue, hitboxSizeValue, hitboxSizeValue)
+end
+
+local function resetHitbox(hitbox)
+    hitbox.Size = Vector3.new(2, 2, 1)
+    hitbox.CanCollide = true
+    hitbox.Transparency = 0
+    hitbox.Color = Color3.fromRGB(255, 255, 255)
+end
+
+local function addHitboxIfMissing(character)
+end
+
+local function expandAllPlayerHitboxes()
+    local localPlayer = game.Players.LocalPlayer
+    local hitboxSize = getHitboxSize()
+
+    for _, player in ipairs(game.Players:GetPlayers()) do
+        pcall(function()
+            if player ~= localPlayer and player.Character then
+                addHitboxIfMissing(player.Character)
+
+                local hitbox = player.Character:FindFirstChild("HumanoidRootPart")
+                if hitbox then
+                    hitbox.Size = hitboxSize
+                    hitbox.CanCollide = false
+                    hitbox.Transparency = transparencyValue
+                    hitbox.Color = hitboxColor 
+                end
+            end
+        end)
+    end
+end
+
+local isExpanding = false
+local Section = Tab:AddSection({
+    Name = "ใช้งาน"
+})
+Tab:AddButton({
+    Name = "hitbox ทุกคน",
+    Callback = function()
+        if isExpanding then
+            isExpanding = false
+            KKRGG:MakeNotification({
+                Name = "🌐⚠🌐",
+                Content = "การใช้งาน Hitbox ขนาดเล็ก✅",
+                Time = 3
+            })
+            return
+        end
+
+        isExpanding = true
+        KKRGG:MakeNotification({
+            Name = "🌐⚠🌐",
+            Content = "การใช้งาน Hitbox ขนาดใหญ่✅",
+            Time = 3
+        })
+
+        while isExpanding do
+            expandAllPlayerHitboxes()
+            wait(1)
+        end
+    end
+})
